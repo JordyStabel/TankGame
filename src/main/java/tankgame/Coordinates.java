@@ -24,26 +24,15 @@ public class Coordinates {
         this.y = y;
     }
 
-    /**
-     * Set the coordinates of an object
-     *
-     * @param x the horizontal coordinate to be set
-     * @param y the vertical vertical coordinate to be set
-     */
+    // Set both X & Y values for a coordinate
     public void setCoordinates(int x, int y) {
         setX(x);
         setY(y);
     }
 
-    /**
-     * Constructor for coordinates
-     * @param x the horizontal coordinate to be set
-     * @param y the vertical vertical coordinate to be set
-     */
+    // Constructor for coordinates
     public Coordinates(int x, int y) {
         this.x = x;
         this.y = y;
     }
-
-
 }

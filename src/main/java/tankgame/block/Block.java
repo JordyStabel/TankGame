@@ -1,23 +1,17 @@
 package tankgame.block;
 
-import java.util.Observable;
+public class Block {
 
-abstract class Block {
-    private String stateName;
-    private int width;
-    private int height;
-    private boolean destroyed = false;
+    private String blockType;
+    private boolean isDestroyed;
 
     public String getStateName() {
-        return stateName;
+        return blockType;
     }
 
-    /**
-     * Constructor for Tile
-     * @param stateName String the state the tile should be in
-     */
-    Block(String stateName) {
-        this.stateName = stateName;
-        this.width = 5;
+    // Constructor for Block
+    Block(String blockType) {
+        this.blockType = blockType;
+        this.isDestroyed = false;
     }
 }

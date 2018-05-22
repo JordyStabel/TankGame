@@ -1,0 +1,5 @@
+
+[squid:S1854"8Remove this useless assignment to local variable "tank".(ผฉบüÿÿÿÿ8สฎำนธ,
+Xsquid:UnusedPrivateMethod	",Remove this unused private "newTank" method.(ฏ๎สำ8ฬฮนธ,
+Lsquid:S1481")Remove this unused "tank" local variable.(ผฉบüÿÿÿÿ8สฎำนธ,
+Dsquid:S1172	"&Remove these unused method parameters.(ฏ๎สำ8ึกึนธ,

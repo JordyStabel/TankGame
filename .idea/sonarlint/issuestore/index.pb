@@ -7,8 +7,6 @@ U
 %src/main/java/tankgame/ITankGame.java,7\8\7823f82c843a268dda21345fb581623d561ac536
 b
 2src/main/java/tankgamegui/TankGameApplication.java,3\e\3e5233da99227ce279652e596a4dda823615b685
-X
-(src/main/java/tankgamegui/BlockType.java,2\9\29109a041f05cef9c0afba96a122b14e399acdbb
 ^
 .src/main/java/tankgame/block/BlockContext.java,2\7\27aa3345ae6783a96eb703bd675cdb277a336411
 _

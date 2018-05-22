@@ -1,4 +1,4 @@
 package tankgame;
 
-public class TankGame implements ITankGame {
+public class TankGame { //implements ITankGames
 }

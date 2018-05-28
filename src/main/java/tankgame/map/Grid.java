@@ -20,8 +20,8 @@ public class Grid implements IGrid {
     private Random random = new Random();
 
     // Constructor for Grid
-    Grid(int width, int height){
-        this.blockList = CreateGrid(1000, 10);
+    public Grid(int width, int height){
+        this.blockList = CreateGrid(width, height);
     }
 
     public IBlockContext[][] CreateGrid(int maxX, int maxY) {

@@ -1,14 +1,38 @@
 
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ß½İÚúÿÿÿÿ8‰Ğ••¸,
-fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ö´×&8‰Ğ••¸,
-wsquid:S1450"[Remove the "labelNrEdges" field and declare it as a local variable in the relevant methods.(Ÿà†ƒ8‰Ğ••¸,
-Bsquid:S1170"!Make this final field static too.(›šĞşÿÿÿÿ8‰Ğ••¸,
-fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.( åšF8‰Ğ••¸,
-Bsquid:S1170"!Make this final field static too.(Òú™öøÿÿÿÿ8‰Ğ••¸,
-ysquid:S1450"XRemove the "labelCalc" field and declare it as a local variable in the relevant methods.(“ü³Õùÿÿÿÿ8‰Ğ••¸,
-ysquid:S1450"XRemove the "labelDraw" field and declare it as a local variable in the relevant methods.(ô°Œúÿÿÿÿ8‰Ğ••¸,
-usquid:S1450"YRemove the "labelLevel" field and declare it as a local variable in the relevant methods.(•ïğÜ8‰Ğ••¸,
-fsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ŠÚŒ8‰Ğ••¸,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Ş›Ï‘8‰Ğ••¸,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ï‡íâ8‰Ğ••¸,
-lsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(×¿‘ùÿÿÿÿ8‰Ğ••¸,
+?squid:S1170$"!Make this final field static too.(ÛÕğÛ8÷ÍºÈ¸,
+Lsquid:S1604Ë"(Make this anonymous inner class a lambda(ôâŠûıÿÿÿÿ8÷ÍºÈ¸,
+ysquid:S00116"URename this field "BORDERSIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â¦Ôœøÿÿÿÿ8÷ÍºÈ¸,
+tsquid:S00116"URename this field "AREAHEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‹ÙÁ–8÷ÍºÈ¸,
+ squid:S1186ì"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(»ßÕ8ı¢°É¸,
+Lsquid:S1604º"(Make this anonymous inner class a lambda(ôâŠûıÿÿÿÿ8÷ÍºÈ¸,
+>squid:S1170 "!Make this final field static too.(¿•ª/8÷ÍºÈ¸,
+?squid:S1170"!Make this final field static too.(òÎ÷8÷ÍºÈ¸,
+osquid:CommentedOutCodeLineÍ"<This block of commented-out lines of code should be removed.(µÒı²úÿÿÿÿ8÷ÍºÈ¸,
+Msquid:S1481‘")Remove this unused "posY" local variable.(¹¼ÕÁıÿÿÿÿ8÷ÍºÈ¸,
+?squid:S1170"!Make this final field static too.(·–ë8÷ÍºÈ¸,
+?squid:S1170%"!Make this final field static too.(Š°¸ª8÷ÍºÈ¸,
+\squid:S1854‘"8Remove this useless assignment to local variable "posY".(¹¼ÕÁıÿÿÿÿ8÷ÍºÈ¸,
+Dsquid:S1170!"!Make this final field static too.(Æ«¦›ıÿÿÿÿ8÷ÍºÈ¸,
+Ksquid:S1172¸",Remove this unused method parameter "event".(¡Òìš8÷ÍºÈ¸,
+zsquid:S00116!"VRename this field "BUTTONWIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ«¦›ıÿÿÿÿ8÷ÍºÈ¸,
+{squid:S00116%"\Rename this field "NRSQUARESVERTICAL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š°¸ª8÷ÍºÈ¸,
+osquid:CommentedOutCodeLineÅ"<This block of commented-out lines of code should be removed.(å¿„şùÿÿÿÿ8÷ÍºÈ¸,
+Lsquid:S1604â"(Make this anonymous inner class a lambda(ôâŠûıÿÿÿÿ8÷ÍºÈ¸,
+Gsquid:S1148£"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8÷ÍºÈ¸,
+{squid:S1450>"XRemove the "oceanArea" field and declare it as a local variable in the relevant methods.(¯Ô…Âùÿÿÿÿ8÷ÍºÈ¸,
+]squid:UnusedPrivateMethodÚ"0Remove this unused private "playersTurn" method.(£‹Õ8ŠŠîÈ¸,
+\squid:S1854"8Remove this useless assignment to local variable "posX".(…Í“çıÿÿÿÿ8÷ÍºÈ¸,
+usquid:S00116"VRename this field "SQUAREWIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·–ë8÷ÍºÈ¸,
+Lsquid:S1068U".Remove this unused "horizontal" private field.(é†»¡8÷ÍºÈ¸,
+?squid:S1170"!Make this final field static too.(‹ÙÁ–8÷ÍºÈ¸,
+hsquid:S1192…"IDefine a constant instead of duplicating this literal "\'s grid" 5 times.(øÜ¶î8÷ÍºÈ¸,
+Dsquid:S1170"!Make this final field static too.(Â¦Ôœøÿÿÿÿ8÷ÍºÈ¸,
+Jsquid:S1068R"-Remove this unused "gameEnded" private field.(åã‹|8ŠŠîÈ¸,
+ssquid:S00116"TRename this field "AREAWIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òÎ÷8÷ÍºÈ¸,
+Lsquid:S1604„"(Make this anonymous inner class a lambda(ôâŠûıÿÿÿÿ8÷ÍºÈ¸,
+vsquid:S1192‡"RDefine a constant instead of duplicating this literal "Select square in " 3 times.(¼âÿˆûÿÿÿÿ8÷ÍºÈ¸,
+}squid:S00116$"^Rename this field "NRSQUARESHORIZONTAL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÛÕğÛ8÷ÍºÈ¸,
+Gsquid:S1148ä"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8÷ÍºÈ¸,
+Msquid:S1481")Remove this unused "posX" local variable.(…Í“çıÿÿÿÿ8÷ÍºÈ¸,
+Lsquid:S1604¢"(Make this anonymous inner class a lambda(ôâŠûıÿÿÿÿ8÷ÍºÈ¸,
+usquid:S00116 "WRename this field "SQUAREHEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿•ª/8÷ÍºÈ¸,

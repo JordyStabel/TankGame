@@ -16,11 +16,13 @@ import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 import tankgame.ITankGame;
 import tankgame.TankGame;
+import tankgamegui.enums.BlockType;
+import tankgamegui.enums.ShellType;
 import tankgamegui.enums.TankType;
 
 import java.io.IOException;
 
-public class TankGameApplication extends Application implements ITankGame{
+public class TankGameApplication extends Application implements ITankGameGUI {
 
     // Constants to define size of GUI elements
     private final int BORDERSIZE = 10; // Size of borders in pixels
@@ -39,12 +41,6 @@ public class TankGameApplication extends Application implements ITankGame{
 
     // Label for opponent's name
     private Label labelOpponentName;
-
-    // Target area, a 10 x 10 grid where the opponent's ships are placed
-    private Rectangle targetArea;
-
-    // Squares for the target area
-    private Rectangle[][] squaresTargetArea;
 
     // player's number (to be determined by the sea battle game)
     int playerNr = 0;
@@ -82,7 +78,7 @@ public class TankGameApplication extends Application implements ITankGame{
     // Flag to indicate whether the game is in playing mode
     private boolean playingMode = false;
 
-    // Flag to indicate that the game is endend
+    // Flag to indicate that the game is ended
     private boolean gameEnded = false;
 
     // Flag to indicate whether next ship should be placed horizontally or vertically
@@ -125,7 +121,7 @@ public class TankGameApplication extends Application implements ITankGame{
 
         // For debug purposes
         // Make de grid lines visible
-        //grid.setGridLinesVisible(true);
+        grid.setGridLinesVisible(true);
 
         // Create the scene and add the grid pane
         Group root = new Group();
@@ -137,37 +133,6 @@ public class TankGameApplication extends Application implements ITankGame{
         labelOpponentName = new Label(opponentName + "\'s grid");
         labelOpponentName.setMinWidth(AREAWIDTH);
         grid.add(labelOpponentName, 0, 0, 1, 2);
-
-        // Target area, a 10 x 10 grid where the opponent's ships are placed
-        targetArea = new Rectangle(BORDERSIZE, 3 * BORDERSIZE, AREAWIDTH, AREAHEIGHT);
-        targetArea.setFill(Color.WHITE);
-        root.getChildren().add(targetArea);
-
-        // Create 10 x 10 squares for the target area
-        squaresTargetArea = new Rectangle[NRSQUARESHORIZONTAL][NRSQUARESVERTICAL];
-        for (int i = 0; i < NRSQUARESHORIZONTAL; i++) {
-            for (int j = 0; j < NRSQUARESVERTICAL; j++) {
-                double x = targetArea.getX() + i * (AREAWIDTH / NRSQUARESHORIZONTAL) + 2;
-                double y = targetArea.getY() + j * (AREAHEIGHT / NRSQUARESVERTICAL) + 2;
-                Rectangle rectangle = new Rectangle(x, y, SQUAREWIDTH, SQUAREHEIGHT);
-                rectangle.setArcWidth(10.0);
-                rectangle.setArcHeight(10.0);
-                rectangle.setStroke(Color.BLACK);
-                rectangle.setFill(Color.LIGHTBLUE);
-                rectangle.setVisible(true);
-                final int xpos = i;
-                final int ypos = j;
-                rectangle.addEventHandler(MouseEvent.MOUSE_PRESSED,
-                        new EventHandler<MouseEvent>() {
-                            @Override
-                            public void handle(MouseEvent event) {
-                                rectangleTargetAreaMousePressed(event, xpos, ypos);
-                            }
-                        });
-                squaresTargetArea[i][j] = rectangle;
-                root.getChildren().add(rectangle);
-            }
-        }
 
         // Label for player's name
         playerName = "";
@@ -370,7 +335,7 @@ public class TankGameApplication extends Application implements ITankGame{
         buttonPlaceAircraftCarrier.setOnAction(new EventHandler() {
             @Override
             public void handle(Event event) {
-                placeShipAtSelectedSquare(TankType.SMALL.toString());
+                placeShipAtSelectedSquare(TankType.SMALL);
             }
         });
         buttonPlaceAircraftCarrier.setDisable(true);
@@ -385,7 +350,7 @@ public class TankGameApplication extends Application implements ITankGame{
         buttonPlaceBattleShip.setOnAction(new EventHandler() {
             @Override
             public void handle(Event event) {
-                placeShipAtSelectedSquare(ShipType.BATTLESHIP, horizontal);
+                placeShipAtSelectedSquare(TankType.SMALL);
             }
         });
         buttonPlaceBattleShip.setDisable(true);
@@ -400,7 +365,7 @@ public class TankGameApplication extends Application implements ITankGame{
         buttonPlaceCruiser.setOnAction(new EventHandler() {
             @Override
             public void handle(Event event) {
-                placeShipAtSelectedSquare(ShipType.CRUISER, horizontal);
+                placeShipAtSelectedSquare(TankType.SMALL);
             }
         });
         buttonPlaceCruiser.setDisable(true);
@@ -415,7 +380,7 @@ public class TankGameApplication extends Application implements ITankGame{
         buttonPlaceSubmarine.setOnAction(new EventHandler() {
             @Override
             public void handle(Event event) {
-                placeShipAtSelectedSquare(ShipType.SUBMARINE, horizontal);
+                placeShipAtSelectedSquare(TankType.SMALL);
             }
         });
         buttonPlaceSubmarine.setDisable(true);
@@ -430,7 +395,7 @@ public class TankGameApplication extends Application implements ITankGame{
         buttonPlaceMineSweeper.setOnAction(new EventHandler() {
             @Override
             public void handle(Event event) {
-                placeShipAtSelectedSquare(ShipType.MINESWEEPER, horizontal);
+                placeShipAtSelectedSquare(TankType.SMALL);
             }
         });
         buttonPlaceMineSweeper.setDisable(true);
@@ -465,14 +430,6 @@ public class TankGameApplication extends Application implements ITankGame{
         game = new TankGame();
     }
 
-    /**
-     * Set the name of the player.
-     * The player's name will be shown above the ocean area.
-     *
-     * @param playerNr identification of player
-     * @param name     player's name
-     */
-    @Override
     public void setPlayerName(int playerNr, String name) {
         // Check identification of player
         if (playerNr != this.playerNr) {
@@ -490,14 +447,6 @@ public class TankGameApplication extends Application implements ITankGame{
         });
     }
 
-    /**
-     * Set the name of the opponent.
-     * The opponent's name will be shown above the target area.
-     *
-     * @param playerNr identification of player
-     * @param name     opponent's name
-     */
-    @Override
     public void setOpponentName(int playerNr, String name) {
         // Check identification of player
         if (playerNr != this.playerNr) {
@@ -515,23 +464,8 @@ public class TankGameApplication extends Application implements ITankGame{
         });
     }
 
-    /**
-     * Communicate the result of a shot fired by the opponent.
-     * The result of the shot will be one of the following:
-     * MISSED  - No ship was hit
-     * HIT     - A ship was hit
-     * SUNK    - A ship was sunk
-     * ALLSUNK - All ships are sunk
-     *
-     * @param playerNr identification of player
-     * @param shotType result of shot fired by opponent
-     */
-    @Override
-    public void opponentFiresShot(int playerNr, ShotType shotType) {
-        if (shotType.equals(ShotType.SUNK)) {
-            showMessage("ship of " + playerName + " is sunk");
-        }
-        if (shotType.equals(ShotType.ALLSUNK)) {
+    public void opponentFiresShot(int playerNr, ShellType shellType) {
+        if (shellType.equals(ShellType.DESTROYED)) {
             showMessage("Winner: " + opponentName + ".\nPress Start new game to continue");
             buttonStartNewGame.setDisable(false);
             gameEnded = true;
@@ -539,17 +473,7 @@ public class TankGameApplication extends Application implements ITankGame{
         switchTurn();
     }
 
-    /**
-     * Show state of a square in the ocean area.
-     * The color of the square depends on the state of the square.
-     *
-     * @param playerNr    identification of player
-     * @param posX        x-position of square
-     * @param posY        y-position of square
-     * @param squareState state of square
-     */
-    @Override
-    public void showSquarePlayer(int playerNr, final int posX, final int posY, final SquareState squareState) {
+    public void showSquarePlayer(int playerNr, final int posX, final int posY, final BlockType blockType) {
         // Check identification of player
         if (playerNr != this.playerNr) {
             showMessage("ERROR: Wrong player number method showSquarePlayer()");
@@ -559,37 +483,16 @@ public class TankGameApplication extends Application implements ITankGame{
             @Override
             public void run() {
                 Rectangle square = squaresOceanArea[posX][posY];
-                setSquareColor(square, squareState);
-            }
-        });
-    }
-
-    /**
-     * Show state of a square in the target area.
-     * The color of the square depends on the state of the square.
-     *
-     * @param playerNr    identification of player
-     * @param posX        x-position of square
-     * @param posY        y-position of square
-     * @param squareState state of square
-     */
-    @Override
-    public void showSquareOpponent(int playerNr, final int posX, final int posY, final SquareState squareState) {
-        // Check identification of player
-        if (playerNr != this.playerNr) {
-            showMessage("ERROR: Wrong player number method showSquareOpponent()");
-            return;
-        }
-        Platform.runLater(new Runnable() {
-            @Override
-            public void run() {
-                Rectangle square = squaresTargetArea[posX][posY];
-                setSquareColor(square, squareState);
+                setSquareColor(square, blockType);
             }
         });
     }
 
     @Override
+    public void showSquareOpponent(int playerNr, int posX, int posY, BlockType blockType) {
+
+    }
+
     public void startGame() {
         playingMode = true;
         labelHorizontalVertical.setDisable(true);
@@ -607,34 +510,24 @@ public class TankGameApplication extends Application implements ITankGame{
         buttonRemoveShip.setDisable(true);
     }
 
-    /**
-     * Set the color of the square according to position type.
-     * Setting the color will be performed by the JavaFX Application Thread.
-     *
-     * @param square the square of which the color should be changed.
-     * @param type   position type to determine the color.
-     */
-    private void setSquareColor(final Rectangle square, final SquareState squareState) {
+    private void setSquareColor(final Rectangle square, final BlockType blockType) {
         // Ensure that changing the color of the square is performed by
         // the JavaFX Application Thread.
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
-                switch (squareState) {
+                switch (blockType) {
                     case WATER:
                         square.setFill(Color.LIGHTBLUE);
                         break;
-                    case SHIP:
+                    case TANK:
                         square.setFill(Color.DARKGRAY);
                         break;
-                    case SHOTMISSED:
+                    case GROUND:
                         square.setFill(Color.BLUE);
                         break;
-                    case SHOTHIT:
+                    case SURFACE:
                         square.setFill(Color.RED);
-                        break;
-                    case SHIPSUNK:
-                        square.setFill(Color.GREEN);
                         break;
                     default:
                         square.setFill(Color.LIGHTBLUE);
@@ -653,7 +546,7 @@ public class TankGameApplication extends Application implements ITankGame{
             showMessage("Enter your name before registering");
         } else {
             labelPlayerName.setText(playerName + "\'s grid");
-            playerNr = game.registerPlayer(playerName, (ISeaBattleGUI) this, singlePlayerMode);
+            playerNr = game.registerPlayer(playerName, this, singlePlayerMode);
             if (playerNr != -1) {
                 labelYourName.setDisable(true);
                 textFieldPlayerName.setDisable(true);
@@ -685,7 +578,7 @@ public class TankGameApplication extends Application implements ITankGame{
      */
     private void placeShipsAutomatically() {
         // Place the player's ships automatically.
-        game.placeShipsAutomatically(playerNr);
+        //game.placeShipsAutomatically(playerNr);
     }
 
     /**
@@ -693,7 +586,7 @@ public class TankGameApplication extends Application implements ITankGame{
      */
     private void removeAllShips() {
         // Remove the player's ships
-        game.removeAllShips(playerNr);
+        //game.removeAllShips(playerNr);
     }
 
     /**
@@ -717,19 +610,12 @@ public class TankGameApplication extends Application implements ITankGame{
         game.startNewGame(playerNr);
         boolean success=true;
         try{
-            game = new SeaBattleGame();
+            game = new TankGame();
             for (Rectangle[] tileArray :
                     squaresOceanArea) {
                 for (Rectangle tile :
                         tileArray) {
-                    setSquareColor(tile, SquareState.WATER);
-                }
-            }
-            for (Rectangle[] tileArray :
-                    squaresTargetArea) {
-                for (Rectangle tile :
-                        tileArray) {
-                    setSquareColor(tile, SquareState.WATER);
+                    setSquareColor(tile, BlockType.WATER);
                 }
             }
         }catch (Exception e){
@@ -749,23 +635,11 @@ public class TankGameApplication extends Application implements ITankGame{
         }
     }
 
-    /**
-     * Place a ship of a certain ship type. The bow of the ship will
-     * be placed at the selected square in the ocean area. The stern is
-     * placed to the right of the bow when the ship should be placed
-     * horizontally and below of the bow when the ship should be placed
-     * vertically. The exact position of the stern depends on the size
-     * of the ship.
-     *
-     * @param shipType   type of the ship to be placed
-     * @param horizontal indicates whether ship should be placed horizontally or
-     *                   vertically.
-     */
-    private void placeShipAtSelectedSquare(ShipType shipType, boolean horizontal) {
+    private void placeShipAtSelectedSquare(TankType tankType) {
         if (squareSelectedInOceanArea) {
             int bowX = selectedSquareX;
             int bowY = selectedSquareY;
-            boolean success = game.placeShip(playerNr, shipType, bowX, bowY, horizontal);
+            boolean success = game.placeTank(playerNr, tankType, bowX, bowY);
             if (!success) {
                 showMessage("Cannot place ship");
             }
@@ -781,12 +655,12 @@ public class TankGameApplication extends Application implements ITankGame{
         if (squareSelectedInOceanArea) {
             int posX = selectedSquareX;
             int posY = selectedSquareY;
-            boolean success = game.removeShip(playerNr, posX, posY);
+            boolean success = game.removeTanks(playerNr);
             if (!success) {
-                showMessage("Cannot remove ship");
+                showMessage("Cannot remove tanks");
             }
         } else {
-            showMessage("Select square in " + playerName + "\'s grid to remove ship");
+            showMessage("Select square in " + playerName + "\'s grid to remove tank");
         }
     }
 
@@ -807,54 +681,6 @@ public class TankGameApplication extends Application implements ITankGame{
                 alert.showAndWait();
             }
         });
-    }
-
-    /**
-     * Event handler when mouse button is pressed in rectangle in target area.
-     * A shot will be fired at the selected square when in playing mode.
-     * A message will be shown otherwise.
-     *
-     * @param event mouse event
-     * @param x     x-coordinate of selected square
-     * @param y     y-coordinate of selected square
-     */
-    private void rectangleTargetAreaMousePressed(MouseEvent event, int x, int y) {
-        if (playingMode && !gameEnded) {
-            // Game is in playing mode
-            Color color = (Color) squaresTargetArea[x][y].getFill();
-            squaresTargetArea[x][y].setFill(Color.YELLOW);
-            if (playersTurn()) {
-                // It is this player's turn
-                // player fires a shot at the selected target area
-                ShotType resultPlayer = game.fireShotPlayer(playerNr, x, y);
-                if (resultPlayer == null) {
-                    squaresTargetArea[x][y].setFill(color);
-                    return;
-                }
-                if (resultPlayer.equals(ShotType.SUNK)) {
-                    showMessage("ship of " + opponentName + " is sunk");
-                }
-                if (resultPlayer.equals(ShotType.ALLSUNK)) {
-                    showMessage("Winner: " + playerName + ".\nPress Start new game to continue");
-                    buttonStartNewGame.setDisable(false);
-                    gameEnded = true;
-                }
-                // Opponent's turn
-                switchTurn();
-                if (singlePlayerMode) {
-//                    ShotType resultOpponent = game.fireShotOpponent(playerNr);
-                }
-            } else {
-                // It is not this player's turn yet
-                showMessage("Wait till " + opponentName + " has fired a shot");
-            }
-        } else {
-            if (gameEnded) {
-                showMessage("Press Start new game");
-            } else {
-                showMessage("Select square in " + playerName + "\'s grid to place ships");
-            }
-        }
     }
 
     /**

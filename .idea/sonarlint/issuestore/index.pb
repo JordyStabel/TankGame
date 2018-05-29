@@ -51,3 +51,21 @@ $src/main/java/tankgame/map/Grid.java,c\e\cec71afee6c72cae7add3c645239686238b30
 TankGame.iml,2\d\2d62947e7028dedfbb8ea94aa4b271d4ef9bc7cb
 X
 (src/test/java/tankgame/map/GridTest.java,e\a\ea0ba4eacae4ca745f80f7b5ae041a704d375918
+Z
+*src/main/java/websocketshared/Message.java,6\7\67d0a33aa3adacb1d33593ee7c0dc125081fa521
+_
+/src/main/java/tankgameclient/ICommunicator.java,b\8\b82d2e379812fb523d1d24b1a8044f422d70a317
+^
+.src/main/java/tankgameclient/ClientSocket.java,d\d\dd83f0ffaefefc79b9db2f2c56b2001bf7e06378
+a
+1src/main/java/websocketshared/MessageDecoder.java,0\f\0f864085ce1c856f8d22a945299a637720dc523d
+a
+1src/main/java/websocketshared/MessageEncoder.java,8\0\8064a50bce454c4144b14cadd691dd9d66b9ce22
+_
+/src/main/java/websocketshared/MethodCaller.java,3\5\353991eb28d23c4e60296327cc4c363787ef6ff4
+i
+9src/main/java/tankgameserver/TankGameServerWebSocket.java,b\6\b606e09b885c30d98e52bb63d646edd9dbdd9377
+`
+0src/main/java/tankgameserver/TankGameServer.java,8\b\8bfbb144a0d5d7954fba6c91e8ff52e9ebfc6100
+C
+tankgame_logger.log,3\f\3f8049efc4bc165d4155992161252213665f1d58

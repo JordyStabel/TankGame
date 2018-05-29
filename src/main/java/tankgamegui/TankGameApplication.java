@@ -21,8 +21,13 @@ import tankgamegui.enums.ShellType;
 import tankgamegui.enums.TankType;
 
 import java.io.IOException;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class TankGameApplication extends Application implements ITankGameGUI {
+
+    private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
     // Constants to define size of GUI elements
     private final int BORDERSIZE = 10; // Size of borders in pixels
@@ -733,5 +738,18 @@ public class TankGameApplication extends Application implements ITankGameGUI {
 
     public static void main(String[] args){
         launch(args);
+        setupLogger();
+        LOGGER.log(Level.INFO, "Program has started");
+    }
+
+    private static void setupLogger(){
+        try{
+            FileHandler fileHandler = new FileHandler("tankgame_logger.log", true);
+            fileHandler.setLevel(Level.FINEST);
+            LOGGER.addHandler(fileHandler);
+        }
+        catch (IOException e){
+            LOGGER.log(Level.SEVERE, "File logger failed." , e);
+        }
     }
 }

@@ -1,12 +1,15 @@
 package tankgameclient;
 
 import websocketshared.Message;
+import websocketshared.MessageDecoder;
+import websocketshared.MessageEncoder;
+import websocketshared.MethodCaller;
 
 import javax.websocket.*;
 import java.io.IOException;
 import java.net.URI;
 
-@ClientEndPoint(decorders)
+@ClientEndpoint(decoders = MessageDecoder.class, encoders = MessageEncoder.class)
 public class ClientSocket implements ICommunicator{
     private Object controller;
     private MethodCaller methodCaller;
@@ -73,7 +76,7 @@ public class ClientSocket implements ICommunicator{
     }
 
     @Override
-    public void broadcast(Message message) {
+    public void broadcastMessage(Message message) {
         session.getAsyncRemote().sendObject(message);
     }
 

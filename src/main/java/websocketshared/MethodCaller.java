@@ -61,20 +61,20 @@ public class MethodCaller {
 
     private final static Map<String, Enum<?>> enumMap = new HashMap<>();
 
-    static {
-        enumMap.put("WATER", SquareState.WATER);
-        enumMap.put("SHIP", SquareState.SHIP);
-        enumMap.put("SHOTMISSED", SquareState.SHOTMISSED);
-        enumMap.put("SHOTHIT", SquareState.SHOTHIT);
-        enumMap.put("SHIPSUNK", SquareState.SHIPSUNK);
-        enumMap.put("MISSED", ShotType.MISSED);
-        enumMap.put("HIT", ShotType.HIT);
-        enumMap.put("SUNK", ShotType.SUNK);
-        enumMap.put("ALLSUNK", ShotType.ALLSUNK);
-        enumMap.put("AIRCRAFTCARRIER", ShipType.AIRCRAFTCARRIER);
-        enumMap.put("BATTLESHIP", ShipType.BATTLESHIP);
-        enumMap.put("CRUISER", ShipType.CRUISER);
-        enumMap.put("SUBMARINE", ShipType.SUBMARINE);
-        enumMap.put("MINESWEEPER", ShipType.MINESWEEPER);
-    }
+//    static {
+//        enumMap.put("WATER", SquareState.WATER);
+//        enumMap.put("SHIP", SquareState.SHIP);
+//        enumMap.put("SHOTMISSED", SquareState.SHOTMISSED);
+//        enumMap.put("SHOTHIT", SquareState.SHOTHIT);
+//        enumMap.put("SHIPSUNK", SquareState.SHIPSUNK);
+//        enumMap.put("MISSED", ShotType.MISSED);
+//        enumMap.put("HIT", ShotType.HIT);
+//        enumMap.put("SUNK", ShotType.SUNK);
+//        enumMap.put("ALLSUNK", ShotType.ALLSUNK);
+//        enumMap.put("AIRCRAFTCARRIER", ShipType.AIRCRAFTCARRIER);
+//        enumMap.put("BATTLESHIP", ShipType.BATTLESHIP);
+//        enumMap.put("CRUISER", ShipType.CRUISER);
+//        enumMap.put("SUBMARINE", ShipType.SUBMARINE);
+//        enumMap.put("MINESWEEPER", ShipType.MINESWEEPER);
+//    }
 }

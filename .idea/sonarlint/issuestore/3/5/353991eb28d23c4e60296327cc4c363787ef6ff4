@@ -1,7 +1,7 @@
 
-osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Ößà§8åú×Üº,
-osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ö…Àè8åú×Üº,
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Û“¤8åú×Üº,
-Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8åú×Üº,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8åú×Üº,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8åú×Üº,
+Fsquid:S1148$"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8º¡Âä¼,
+Xsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8º¡Âä¼,
+Fsquid:S1148!"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8º¡Âä¼,
+qsquid:ModifiersOrderCheck1"EReorder the modifiers to comply with the Java Language Specification.(Ößà§8º¡Âä¼,
+isquid:CommentedOutCodeLine@"<This block of commented-out lines of code should be removed.(Û“¤8º¡Âä¼,
+qsquid:ModifiersOrderCheck>"EReorder the modifiers to comply with the Java Language Specification.(ö…Àè8º¡Âä¼,

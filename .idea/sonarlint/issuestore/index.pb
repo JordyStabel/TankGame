@@ -69,3 +69,17 @@ i
 0src/main/java/tankgameserver/TankGameServer.java,8\b\8bfbb144a0d5d7954fba6c91e8ff52e9ebfc6100
 C
 tankgame_logger.log,3\f\3f8049efc4bc165d4155992161252213665f1d58
+g
+7src/main/java/tankgameserver/TankGameServerService.java,6\0\60daebce3fb8422188cc34533d926ee8d3780786
+_
+/src/main/java/tankgameclient/ITankGameHost.java,a\9\a9e1d499c01a647f83b63b5c77d2ad12ae0c6b83
+a
+1src/main/java/tankgameclient/ITankGameClient.java,c\a\ca31217da12f895a7ce003a15069e67db02e0454
+^
+.src/main/java/tankgameclient/TankGameHost.java,e\6\e60708347a93920b6c8ee4bea223e3cb9c71b388
+`
+0src/main/java/tankgameclient/TankGameClient.java,d\2\d2e72ad1f33d815d015c0d661ed884a09471ec1d
+U
+%src/main/java/tankgame/URLReader.java,b\1\b1e46759b5048f369c2b6215138b6d046cf0e1ea
+V
+&src/main/java/tankgame/GameEngine.java,c\a\ca515f2faf769d2b339eb2243ad0984c334c3fd1

@@ -1,6 +1,6 @@
 
-Esquid:S2629"$Invoke method(s) only conditionally.(èÔ–­ûÿÿÿÿ8åú×Üº,
-Esquid:S2629"$Invoke method(s) only conditionally.(Ùõàıÿÿÿÿ8åú×Üº,
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(øºÑûúÿÿÿÿ8åú×Üº,
-psquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(››§Íıÿÿÿÿ8åú×Üº,
+Gsquid:S2629"$Invoke method(s) only conditionally.(úÑ‡’ùÿÿÿÿ8§±˜ßº,
+Gsquid:S2629"$Invoke method(s) only conditionally.(Ÿº¢Éùÿÿÿÿ8§±˜ßº,
+Gsquid:S2629&"$Invoke method(s) only conditionally.(Ç†«Ãùÿÿÿÿ8§±˜ßº,
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(‹¯·­8§±˜ßº,
+rsquid:S00100+"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(››§Íıÿÿÿÿ8§±˜ßº,

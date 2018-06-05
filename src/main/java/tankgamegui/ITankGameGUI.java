@@ -1,6 +1,5 @@
 package tankgamegui;
 
-import tankgame.block.Block;
 import tankgamegui.enums.BlockType;
 import tankgamegui.enums.ShellType;
 

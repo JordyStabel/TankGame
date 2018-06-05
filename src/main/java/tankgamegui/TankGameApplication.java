@@ -12,8 +12,10 @@ import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import tankgame.GameEngine;
 import tankgame.ITankGame;
 import tankgame.TankGame;
 import tankgamegui.enums.BlockType;
@@ -25,21 +27,27 @@ import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class TankGameApplication extends Application implements ITankGameGUI {
+public class TankGameApplication extends Application implements ITankGameGUI, Runnable {
 
     private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
+    // Game 'engine' stuff
+    GameEngine gameEngine = new GameEngine();
+
+    // For testing only
+    public Circle ball;
+
     // Constants to define size of GUI elements
     private final int BORDERSIZE = 10; // Size of borders in pixels
-    private final int AREAWIDTH = 400; // Width of area in pixels
-    private final int AREAHEIGHT = AREAWIDTH; // Height of area in pixels
-    private final int SQUAREWIDTH = 36; // Width of single square in pixels
-    private final int SQUAREHEIGHT = 36; // Height of single square in pixels
+    private final int AREAWIDTH = 1000; // Width of area in pixels
+    private final int AREAHEIGHT = 1000; // Height of area in pixels
+    private final int SQUAREWIDTH = 10; // Width of single square in pixels
+    private final int SQUAREHEIGHT = 10; // Height of single square in pixels
     private final int BUTTONWIDTH = 180; // Width of button
 
     // Constants to define number of squares horizontal and vertical
-    private final int NRSQUARESHORIZONTAL = 10;
-    private final int NRSQUARESVERTICAL = 10;
+    private final int NRSQUARESHORIZONTAL = 100;
+    private final int NRSQUARESVERTICAL = 100;
 
     // Opponent's name
     private String opponentName;
@@ -47,8 +55,8 @@ public class TankGameApplication extends Application implements ITankGameGUI {
     // Label for opponent's name
     private Label labelOpponentName;
 
-    // player's number (to be determined by the sea battle game)
-    int playerNr = 0;
+    // player's number
+    private int playerNr = 0;
 
     // player's name
     private String playerName = null;
@@ -65,6 +73,9 @@ public class TankGameApplication extends Application implements ITankGameGUI {
 
     // Ocean area, a 10 x 10 grid where the player's ships are placed
     private Rectangle oceanArea;
+
+    // Area for testing
+    private Rectangle testArea;
 
     // Squares for the ocean area
     private Rectangle[][] squaresOceanArea;
@@ -95,17 +106,13 @@ public class TankGameApplication extends Application implements ITankGameGUI {
     private RadioButton radioVertical;
 
     // Buttons to register player, startSocket the game, and place or remove ships
-    Button buttonRegisterPlayer;
-    Button buttonPlaceAllShips;
-    Button buttonRemoveAllShips;
-    Button buttonReadyToPlay;
-    Button buttonStartNewGame;
-    Button buttonPlaceAircraftCarrier;
-    Button buttonPlaceBattleShip;
-    Button buttonPlaceCruiser;
-    Button buttonPlaceSubmarine;
-    Button buttonPlaceMineSweeper;
-    Button buttonRemoveShip;
+    private Button buttonRegisterPlayer;
+    private Button buttonPlaceAllShips;
+    private Button buttonRemoveAllShips;
+    private Button buttonReadyToPlay;
+    private Button buttonStartNewGame;
+    private Button buttonPlaceAircraftCarrier;
+    private Button buttonRemoveShip;
 
     // Flag to indicate whether square is selected in ocean area
     private boolean squareSelectedInOceanArea = false;
@@ -126,16 +133,16 @@ public class TankGameApplication extends Application implements ITankGameGUI {
 
         // For debug purposes
         // Make de grid lines visible
-        grid.setGridLinesVisible(true);
+        // grid.setGridLinesVisible(true);
 
         // Create the scene and add the grid pane
         Group root = new Group();
-        Scene scene = new Scene(root, AREAWIDTH + BUTTONWIDTH + 3 * BORDERSIZE, 2 * AREAHEIGHT + 2 * BORDERSIZE + 65);
+        Scene scene = new Scene(root, AREAWIDTH + BUTTONWIDTH + 3 * BORDERSIZE, AREAHEIGHT + 2 * BORDERSIZE + 65, Color.GREY);
         root.getChildren().add(grid);
 
         // Label for opponent's name
         opponentName = "Opponent";
-        labelOpponentName = new Label(opponentName + "\'s grid");
+        labelOpponentName = new Label(opponentName);
         labelOpponentName.setMinWidth(AREAWIDTH);
         grid.add(labelOpponentName, 0, 0, 1, 2);
 
@@ -146,9 +153,14 @@ public class TankGameApplication extends Application implements ITankGameGUI {
         grid.add(labelPlayerName, 0, 35, 1, 2);
 
         // Ocean area, a 10 x 10 grid where the player's ships are placed
-        oceanArea = new Rectangle(BORDERSIZE, 46 * BORDERSIZE, AREAWIDTH, AREAHEIGHT);
-        oceanArea.setFill(Color.WHITE);
+        oceanArea = new Rectangle(BORDERSIZE, BORDERSIZE, AREAWIDTH, AREAHEIGHT);
+        oceanArea.setFill(Color.RED);
         root.getChildren().add(oceanArea);
+
+        // Creating the testingArea
+        testArea = new Rectangle(1100,500,400, 400);
+        testArea.setFill(Color.WHITE);
+        root.getChildren().add(testArea);
 
         // Create 10 x 10 squares for the ocean area
         squaresOceanArea = new Rectangle[NRSQUARESHORIZONTAL][NRSQUARESVERTICAL];
@@ -157,8 +169,6 @@ public class TankGameApplication extends Application implements ITankGameGUI {
                 double x = oceanArea.getX() + i * (AREAWIDTH / NRSQUARESHORIZONTAL) + 2;
                 double y = oceanArea.getY() + j * (AREAHEIGHT / NRSQUARESVERTICAL) + 2;
                 Rectangle rectangle = new Rectangle(x, y, SQUAREWIDTH, SQUAREHEIGHT);
-                rectangle.setArcWidth(10.0);
-                rectangle.setArcHeight(10.0);
                 rectangle.setStroke(Color.BLACK);
                 rectangle.setFill(Color.LIGHTBLUE);
                 rectangle.setVisible(true);
@@ -169,12 +179,29 @@ public class TankGameApplication extends Application implements ITankGameGUI {
                             @Override
                             public void handle(MouseEvent event) {
                                 rectangleOceanAreaMousePressed(event, xpos, ypos);
+                                System.out.println(xpos + "-" + ypos);
                             }
                         });
                 squaresOceanArea[i][j] = rectangle;
                 root.getChildren().add(rectangle);
             }
         }
+
+        // Adding a ball to testArea
+        double x = testArea.getX() + testArea.getWidth() / 2;
+        double y = testArea.getY()  + testArea.getHeight() / 2;
+        ball = new Circle(x, y,25, Color.GREEN);
+        ball.addEventHandler(MouseEvent.MOUSE_PRESSED, new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+//                while (ball.getCenterY() >= testArea.getY()){
+//                    ball.setCenterY(ball.getCenterY() - 15);
+//
+//                }
+                System.out.println("Ball is clicked!");
+            }
+        });
+        root.getChildren().add(ball);
 
         // Text field to set the player's name
         labelYourName = new Label("Your name:");
@@ -185,7 +212,7 @@ public class TankGameApplication extends Application implements ITankGameGUI {
             @Override
             public void handle(ActionEvent event) {
                 playerName = textFieldPlayerName.getText();
-                labelPlayerName.setText(playerName + "\'s grid");
+                labelPlayerName.setText(playerName);
             }
         });
         grid.add(textFieldPlayerName, 1, 4, 1, 2);
@@ -346,66 +373,6 @@ public class TankGameApplication extends Application implements ITankGameGUI {
         buttonPlaceAircraftCarrier.setDisable(true);
         grid.add(buttonPlaceAircraftCarrier, 1, 48, 1, 3);
 
-        // Button to place battle ship on selected square
-        buttonPlaceBattleShip = new Button("Place battle ship (4)");
-        buttonPlaceBattleShip.setMinWidth(BUTTONWIDTH);
-        Tooltip tooltipPlaceBattleShip =
-                new Tooltip("Press this button to place the battle ship on the selected square");
-        buttonPlaceBattleShip.setTooltip(tooltipPlaceBattleShip);
-        buttonPlaceBattleShip.setOnAction(new EventHandler() {
-            @Override
-            public void handle(Event event) {
-                placeShipAtSelectedSquare(TankType.SMALL);
-            }
-        });
-        buttonPlaceBattleShip.setDisable(true);
-        grid.add(buttonPlaceBattleShip, 1, 52, 1, 3);
-
-        // Button to place battle ship on selected square
-        buttonPlaceCruiser = new Button("Place cruiser (3)");
-        buttonPlaceCruiser.setMinWidth(BUTTONWIDTH);
-        Tooltip tooltipPlaceCruiser =
-                new Tooltip("Press this button to place the cruiser on the selected square");
-        buttonPlaceCruiser.setTooltip(tooltipPlaceCruiser);
-        buttonPlaceCruiser.setOnAction(new EventHandler() {
-            @Override
-            public void handle(Event event) {
-                placeShipAtSelectedSquare(TankType.SMALL);
-            }
-        });
-        buttonPlaceCruiser.setDisable(true);
-        grid.add(buttonPlaceCruiser, 1, 56, 1, 3);
-
-        // Button to place mine sweeper on selected square
-        buttonPlaceSubmarine = new Button("Place submarine (3)");
-        buttonPlaceSubmarine.setMinWidth(BUTTONWIDTH);
-        Tooltip tooltipPlaceSubmarine =
-                new Tooltip("Press this button to place the submarine on the selected square");
-        buttonPlaceSubmarine.setTooltip(tooltipPlaceSubmarine);
-        buttonPlaceSubmarine.setOnAction(new EventHandler() {
-            @Override
-            public void handle(Event event) {
-                placeShipAtSelectedSquare(TankType.SMALL);
-            }
-        });
-        buttonPlaceSubmarine.setDisable(true);
-        grid.add(buttonPlaceSubmarine, 1, 60, 1, 3);
-
-        // Button to place mine sweeper on selected square
-        buttonPlaceMineSweeper = new Button("Place mine sweeper (2)");
-        buttonPlaceMineSweeper.setMinWidth(BUTTONWIDTH);
-        Tooltip tooltipPlaceMineSweeper =
-                new Tooltip("Press this button to place the mine sweeper on the selected square");
-        buttonPlaceMineSweeper.setTooltip(tooltipPlaceMineSweeper);
-        buttonPlaceMineSweeper.setOnAction(new EventHandler() {
-            @Override
-            public void handle(Event event) {
-                placeShipAtSelectedSquare(TankType.SMALL);
-            }
-        });
-        buttonPlaceMineSweeper.setDisable(true);
-        grid.add(buttonPlaceMineSweeper, 1, 64, 1, 3);
-
         // Button to remove ship that is positioned at selected square
         buttonRemoveShip = new Button("Remove ship");
         buttonRemoveShip.setMinWidth(BUTTONWIDTH);
@@ -423,7 +390,8 @@ public class TankGameApplication extends Application implements ITankGameGUI {
         grid.add(buttonRemoveShip, 1, 68, 1, 3);
 
         // Define title and assign the scene for main window
-        primaryStage.setTitle("Sea battle: the game");
+        primaryStage.setTitle("Tank Game");
+        primaryStage.setResizable(true); // Change back to false
         primaryStage.setScene(scene);
         primaryStage.show();
 
@@ -433,6 +401,9 @@ public class TankGameApplication extends Application implements ITankGameGUI {
         // When invoking methods of class SeaBattleGame an
         // UnsupportedOperationException will be thrown
         game = new TankGame();
+
+        // Start the game engine thread
+        startEngine();
     }
 
     public void setPlayerName(int playerNr, String name) {
@@ -508,10 +479,6 @@ public class TankGameApplication extends Application implements ITankGameGUI {
         buttonReadyToPlay.setDisable(true);
         buttonStartNewGame.setDisable(true);
         buttonPlaceAircraftCarrier.setDisable(true);
-        buttonPlaceBattleShip.setDisable(true);
-        buttonPlaceCruiser.setDisable(true);
-        buttonPlaceSubmarine.setDisable(true);
-        buttonPlaceMineSweeper.setDisable(true);
         buttonRemoveShip.setDisable(true);
     }
 
@@ -542,9 +509,7 @@ public class TankGameApplication extends Application implements ITankGameGUI {
         });
     }
 
-    /**
-     * Register the name of the player.
-     */
+    // Register player
     private void registerPlayer() throws Exception {
         playerName = textFieldPlayerName.getText();
         if ("".equals(playerName) || playerName == null) {
@@ -566,10 +531,6 @@ public class TankGameApplication extends Application implements ITankGameGUI {
                 buttonRemoveAllShips.setDisable(false);
                 buttonReadyToPlay.setDisable(false);
                 buttonPlaceAircraftCarrier.setDisable(false);
-                buttonPlaceBattleShip.setDisable(false);
-                buttonPlaceCruiser.setDisable(false);
-                buttonPlaceSubmarine.setDisable(false);
-                buttonPlaceMineSweeper.setDisable(false);
                 buttonRemoveShip.setDisable(false);
                 showMessage("player " + playerName + " registered");
             } else {
@@ -607,13 +568,11 @@ public class TankGameApplication extends Application implements ITankGameGUI {
         }
     }
 
-    /**
-     * Start a new game.
-     */
+    // Start new game
     private void startNewGame() throws IOException {
         // The player wants to startSocket a new game.
         game.startNewGame(playerNr);
-        boolean success=true;
+        boolean success = true;
         try{
             game = new TankGame();
             for (Rectangle[] tileArray :
@@ -624,7 +583,7 @@ public class TankGameApplication extends Application implements ITankGameGUI {
                 }
             }
         }catch (Exception e){
-            success=false;
+            success = false;
         }
         if (success) {
             playingMode = false;
@@ -673,6 +632,7 @@ public class TankGameApplication extends Application implements ITankGameGUI {
      * Show an alert message.
      * The message will disappear when the user presses ok.
      */
+    //
     private void showMessage(final String message) {
         // Use Platform.runLater() to ensure that code concerning
         // the Alert message is executed by the JavaFX Application Thread
@@ -716,32 +676,24 @@ public class TankGameApplication extends Application implements ITankGameGUI {
         }
     }
 
-    /**
-     * Method to switch player's turn.
-     * This method is synchronized because switchTurn() may be
-     * called by the Java FX Application thread or by another thread
-     * handling communication with the game server.
-     */
+    // Switch current player
     private synchronized void switchTurn() {
         playerTurn = 1 - playerTurn;
     }
 
-    /**
-     * Method to check whether it is this player's turn.
-     * This method is synchronized because switchTurn() may be
-     * called by the Java FX Application thread or another thread
-     * handling communication with the game server.
-     */
+    // Check if it's player's turn
     private synchronized boolean playersTurn() {
         return playerNr == playerTurn;
     }
 
+    // Main method for the game
     public static void main(String[] args){
         launch(args);
         setupLogger();
         LOGGER.log(Level.INFO, "Program has started");
     }
 
+    // Setup for logger
     private static void setupLogger(){
         try{
             FileHandler fileHandler = new FileHandler("tankgame_logger.log", true);
@@ -751,5 +703,86 @@ public class TankGameApplication extends Application implements ITankGameGUI {
         catch (IOException e){
             LOGGER.log(Level.SEVERE, "File logger failed." , e);
         }
+    }
+
+    @Override
+    public void run() {
+
+        isRunning = true;
+
+        System.out.println("Been here");
+
+        boolean render = false;
+        double firstTime = 0;
+        double lastTime = System.nanoTime() / 1000000000.0;
+        double passedTime = 0;
+        double unprocessedTime = 0;
+
+        double frameTime = 0;
+        int frames = 0;
+        int fps = 0;
+
+        while(isRunning){
+
+            render = false;
+
+            firstTime = System.nanoTime() / 1000000000.0;
+            passedTime = firstTime - lastTime;
+            lastTime = firstTime;
+
+            unprocessedTime += passedTime;
+            frameTime += passedTime;
+
+            while(unprocessedTime >= UPDATE_LIMIT){
+
+                unprocessedTime -= UPDATE_LIMIT;
+                render = true;
+
+                //lowerBall();
+
+                if(frameTime >= 1.0){
+                    frameTime = 0;
+                    fps = frames;
+                    frames = 0;
+                    System.out.println("FPS: " + fps);
+                }
+            }
+
+            if(render){
+                frames++;
+            }
+            else{
+                try{
+                    Thread.sleep(1);
+                }
+                catch (InterruptedException e){
+                    e.printStackTrace();
+                }
+            }
+        }
+        dispose();
+    }
+
+
+
+    public void startEngine(){
+
+        thread = new Thread(this);
+        thread.run();
+
+    }
+
+    public void stop(){
+
+    }
+
+    private void dispose(){
+
+    }
+
+    private void lowerBall(){
+       if(ball.getCenterY() >= testArea.getY()){
+            ball.setCenterY(ball.getCenterY() - 1);
+       }
     }
 }

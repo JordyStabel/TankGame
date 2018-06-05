@@ -538,3 +538,93 @@
   <message>Program has started</message>
 </record>
 </log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-05T14:33:29</date>
+  <millis>1528202009434</millis>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>tankgamegui.TankGameApplication</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Program has started</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-05T14:39:31</date>
+  <millis>1528202371048</millis>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>tankgamegui.TankGameApplication</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Program has started</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-05T14:41:17</date>
+  <millis>1528202477367</millis>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>tankgamegui.TankGameApplication</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Program has started</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-05T14:43:53</date>
+  <millis>1528202633758</millis>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>tankgamegui.TankGameApplication</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Program has started</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-05T14:45:33</date>
+  <millis>1528202733939</millis>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>tankgamegui.TankGameApplication</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Program has started</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-05T14:46:18</date>
+  <millis>1528202778085</millis>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>tankgamegui.TankGameApplication</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Program has started</message>
+</record>
+</log>

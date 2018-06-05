@@ -1,6 +1,5 @@
 package tankgamegui;
 
-import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -15,7 +14,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
-import tankgame.GameEngine;
+import processing.core.PApplet;
 import tankgame.ITankGame;
 import tankgame.TankGame;
 import tankgamegui.enums.BlockType;
@@ -27,12 +26,16 @@ import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class TankGameApplication extends Application implements ITankGameGUI, Runnable {
+public class TankGameApplication extends PApplet implements ITankGameGUI, Runnable { // extends Application,
 
     private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
     // Game 'engine' stuff
-    GameEngine gameEngine = new GameEngine();
+    //GameEngine gameEngine = new GameEngine();
+
+    int rectWidth;
+    float rectPosY;
+    float rectPosX;
 
     // For testing only
     public Circle ball;
@@ -121,7 +124,7 @@ public class TankGameApplication extends Application implements ITankGameGUI, Ru
     private int selectedSquareX;
     private int selectedSquareY;
 
-    @Override
+//    @Override
     public void start(Stage primaryStage) {
 
         // Define grid pane
@@ -401,9 +404,6 @@ public class TankGameApplication extends Application implements ITankGameGUI, Ru
         // When invoking methods of class SeaBattleGame an
         // UnsupportedOperationException will be thrown
         game = new TankGame();
-
-        // Start the game engine thread
-        startEngine();
     }
 
     public void setPlayerName(int playerNr, String name) {
@@ -691,6 +691,47 @@ public class TankGameApplication extends Application implements ITankGameGUI, Ru
         launch(args);
         setupLogger();
         LOGGER.log(Level.INFO, "Program has started");
+        PApplet.main("tankgamegui.TankGameApplication");
+    }
+
+
+
+    public void settings(){
+        size(400, 400);
+    }
+
+    public void setup(){
+        frameRate(60);
+
+        noStroke();
+        background(0);
+        rectWidth = width/4;
+    }
+
+    public void draw(){
+        background(0);
+        fill(255,0,255);
+        ellipse(mouseX, mouseY, 10, 10);
+
+        fill(0,255,0);
+        text(frameRate, 10,10);
+
+        rect(rectPosX, rectPosY, 25, 25);
+    }
+
+    public void keyPressed() {
+
+        switch (key) {
+            case 'a': rectPosX -= 5;
+                break;
+            case 's': rectPosY += 5;
+                break;
+            case 'd': rectPosX += 5;
+                break;
+            case 'w': rectPosY -= 5;
+                break;
+            default: break;
+        }
     }
 
     // Setup for logger
@@ -707,76 +748,6 @@ public class TankGameApplication extends Application implements ITankGameGUI, Ru
 
     @Override
     public void run() {
-
-        isRunning = true;
-
-        System.out.println("Been here");
-
-        boolean render = false;
-        double firstTime = 0;
-        double lastTime = System.nanoTime() / 1000000000.0;
-        double passedTime = 0;
-        double unprocessedTime = 0;
-
-        double frameTime = 0;
-        int frames = 0;
-        int fps = 0;
-
-        while(isRunning){
-
-            render = false;
-
-            firstTime = System.nanoTime() / 1000000000.0;
-            passedTime = firstTime - lastTime;
-            lastTime = firstTime;
-
-            unprocessedTime += passedTime;
-            frameTime += passedTime;
-
-            while(unprocessedTime >= UPDATE_LIMIT){
-
-                unprocessedTime -= UPDATE_LIMIT;
-                render = true;
-
-                //lowerBall();
-
-                if(frameTime >= 1.0){
-                    frameTime = 0;
-                    fps = frames;
-                    frames = 0;
-                    System.out.println("FPS: " + fps);
-                }
-            }
-
-            if(render){
-                frames++;
-            }
-            else{
-                try{
-                    Thread.sleep(1);
-                }
-                catch (InterruptedException e){
-                    e.printStackTrace();
-                }
-            }
-        }
-        dispose();
-    }
-
-
-
-    public void startEngine(){
-
-        thread = new Thread(this);
-        thread.run();
-
-    }
-
-    public void stop(){
-
-    }
-
-    private void dispose(){
 
     }
 

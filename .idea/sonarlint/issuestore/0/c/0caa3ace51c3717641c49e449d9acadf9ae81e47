@@ -1,0 +1,73 @@
+
+Bsquid:S1659Á"#Declare "lastY" on a separate line.(òÊÊé8—«¶½,
+Jsquid:S1905‘"&Remove this unnecessary cast to "int".(Œüğàşÿÿÿÿ8—«¶½,
+Csquid:S1659¡"Declare "y" on a separate line.(ãï€şúÿÿÿÿ8—«¶½,
+^squid:S1161Ó":Add the "@Override" annotation above this method signature(±Ä’Íúÿÿÿÿ8—«¶½,
+]squid:S1161~":Add the "@Override" annotation above this method signature(’Ë·éıÿÿÿÿ8—«¶½,
+hsquid:S2184"DCast one of the operands of this subtraction operation to a "float".(¡”ª¡ÿÿÿÿÿ8—«¶½,
+Csquid:S1659±"$Declare "solidY" on a separate line.(¬Ÿ¶ç8—«¶½,
+_squid:S2184ô"@Cast one of the operands of this integer division to a "double".(ÈÖíõ8—«¶½,
+Fsquid:S1659Ã""Declare "velY" on a separate line.(ÌùøÀÿÿÿÿÿ8—«¶½,
+asquid:UselessImportCheck"6Remove this unused import 'java.awt.event.MouseEvent'.(›õ8—«¶½,
+]squid:S1161&":Add the "@Override" annotation above this method signature(œô«İıÿÿÿÿ8—«¶½,
+8squid:S1220""Move this file to a named package.8—«¶½,
+dsquid:S2184ç"@Cast one of the operands of this integer division to a "double".(Ø²õµûÿÿÿÿ8—«¶½,
+lsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ìÿğˆ8—«¶½,
+qsquid:S3776è"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(âßÀ”8—«¶½,
+Nsquid:S1659³"*Declare "playerHeight" on a separate line.(½„”´üÿÿÿÿ8—«¶½,
+Ysquid:S1161‡":Add the "@Override" annotation above this method signature(ÿ‰¦¼8—«¶½,
+hsquid:S2184×"DCast one of the operands of this subtraction operation to a "float".(Ï½›ùÿÿÿÿ8—«¶½,
+csquid:S2184C"@Cast one of the operands of this integer division to a "double".(ƒ¢ºäøÿÿÿÿ8—«¶½,
+Esquid:S1905¶"&Remove this unnecessary cast to "int".(µú«œ8—«¶½,
+^squid:S1161“":Add the "@Override" annotation above this method signature(¢Óá•şÿÿÿÿ8—«¶½,
+Esquid:S1905"&Remove this unnecessary cast to "int".(µ´‚ï8—«¶½,
+Jsquid:S1905"&Remove this unnecessary cast to "int".(øêşºûÿÿÿÿ8—«¶½,
+_squid:S2184ó"@Cast one of the operands of this integer division to a "double".(¦À¼8—«¶½,
+Zsquid:UselessImportCheck"/Remove this unused import 'java.awt.Dimension'.(˜‚º·8—«¶½,
+Ssquid:S1066ñ"/Merge this if statement with the enclosing one.(•‘ÀÌüÿÿÿÿ8—«¶½,
+]squid:S2251Á">"xCheck" is decremented and will never reach "stop condition".(«èŞÄ8—«¶½,
+xsquid:S2293ÿ"YReplace the type specification in this constructor call with the diamond operator ("<>").(àïç8—«¶½,
+Jsquid:S1905"&Remove this unnecessary cast to "int".(İŒ±€ıÿÿÿÿ8—«¶½,
+Xsquid:S1161":Add the "@Override" annotation above this method signature(º³”8—«¶½,
+Esquid:S1659Z""Declare "velY" on a separate line.(øàˆ¹úÿÿÿÿ8—«¶½,
+csquid:S2184B"@Cast one of the operands of this integer division to a "double".(áß°îıÿÿÿÿ8—«¶½,
+gsquid:S2184B"DCast one of the operands of this subtraction operation to a "float".(áß°îıÿÿÿÿ8—«¶½,
+gsquid:S2184C"DCast one of the operands of this subtraction operation to a "float".(ƒ¢ºäøÿÿÿÿ8—«¶½,
+csquid:S2184š"DCast one of the operands of this subtraction operation to a "float".(ÀëÎ8—«¶½,
+dsquid:S2184ç"@Cast one of the operands of this integer division to a "double".(Ø²õµûÿÿÿÿ8—«¶½,
+@squid:S1659Y"#Declare "lastY" on a separate line.(³¦®8—«¶½,
+Ksquid:S1659¤"'Declare "numpixels" on a separate line.(°ô‹Åùÿÿÿÿ8—«¶½,
+qsquid:ModifiersOrderCheckÖ"EReorder the modifiers to comply with the Java Language Specification.(ØÀ™08—«¶½,
+Csquid:S1659À"Declare "y" on a separate line.(˜êäèùÿÿÿÿ8—«¶½,
+Esquid:S1170÷"!Make this final field static too.(ÔÖ¥şûÿÿÿÿ8—«¶½,
+Xsquid:S11618":Add the "@Override" annotation above this method signature(ÄÿÍ¤8—«¶½,
+Bsquid:S1659’"#Declare "yinc1" on a separate line.(‚Ğòß8—«¶½,
+Msquid:S2387"/"renderer" is the name of a field in "PApplet".(ÿ²Ã¾8—«¶½,
+[squid:UselessImportCheck
+"+Remove this unused import 'java.awt.Image'.(ÀÉÃıÿÿÿÿ8—«¶½,
+dsquid:S2184©"@Cast one of the operands of this integer division to a "double".(²Ò¤³ùÿÿÿÿ8—«¶½,
+dsquid:S2184×"@Cast one of the operands of this integer division to a "double".(Ï½›ùÿÿÿÿ8—«¶½,
+Esquid:S1659¤"!Declare "num" on a separate line.(°ô‹Åùÿÿÿÿ8—«¶½,
+Wsquid:S1197"8Move the array designator from the variable to the type.(À›ó·8—«¶½,
+vsquid:S3776¢"RRefactor this method to reduce its Cognitive Complexity from 65 to the 15 allowed.(¯©øÈşÿÿÿÿ8—«¶½,
+Hsquid:S1659¤"$Declare "numadd" on a separate line.(°ô‹Åùÿÿÿÿ8—«¶½,
+Bsquid:S1659’"#Declare "xinc2" on a separate line.(‚Ğòß8—«¶½,
+esquid:S2184Ã"ACast one of the operands of this addition operation to a "float".(É÷ôüùÿÿÿÿ8—«¶½,
+Bsquid:S1659X"Declare "y" on a separate line.(ÀéÏòşÿÿÿÿ8—«¶½,
+hsquid:S2184©"DCast one of the operands of this subtraction operation to a "float".(²Ò¤³ùÿÿÿÿ8—«¶½,
+fsquid:UselessImportCheck	"6Remove this unused import 'java.awt.event.FocusEvent'.(“÷ÎËúÿÿÿÿ8—«¶½,
+hsquid:S2184À"DCast one of the operands of this subtraction operation to a "float".(Ø»€Èşÿÿÿÿ8—«¶½,
+Bsquid:S1659’"#Declare "yinc2" on a separate line.(‚Ğòß8—«¶½,
+qsquid:S3776ë"RRefactor this method to reduce its Cognitive Complexity from 93 to the 15 allowed.(‹å»Õ8—«¶½,
+Usquid:UselessImportCheck"+Remove this unused import 'java.awt.Frame'.(Â Q8—«¶½,
+hsquid:S2184¿"DCast one of the operands of this subtraction operation to a "float".(Îø•Øúÿÿÿÿ8—«¶½,
+Vsquid:S1197Ö"8Move the array designator from the variable to the type.(ØÀ™08—«¶½,
+Asquid:S2189Á""Correct this loop's end condition.(«èŞÄ8—«¶½,
+nsquid:CommentedOutCodeLineP"<This block of commented-out lines of code should be removed.(²¥£«øÿÿÿÿ8—«¶½,
+dsquid:S2184Ã"@Cast one of the operands of this integer division to a "double".(É÷ôüùÿÿÿÿ8—«¶½,
+^squid:S1161Õ":Add the "@Override" annotation above this method signature(º«ê¼üÿÿÿÿ8—«¶½,
+_squid:UselessImportCheck"4Remove this unused import 'java.awt.event.KeyEvent'.(¬ğİÍ8—«¶½,
+^squid:S1161Ô":Add the "@Override" annotation above this method signature(ïï§ûÿÿÿÿ8—«¶½,
+}squid:S2293Ø"YReplace the type specification in this constructor call with the diamond operator ("<>").(ñ­Ş¸úÿÿÿÿ8—«¶½,
+Jsquid:S1905µ"&Remove this unnecessary cast to "int".(”’Ûşÿÿÿÿ8—«¶½,
+Fsquid:S1659¢""Declare "velY" on a separate line.(ÌùøÀÿÿÿÿÿ8—«¶½,

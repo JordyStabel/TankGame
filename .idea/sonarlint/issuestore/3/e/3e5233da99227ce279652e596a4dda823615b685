@@ -1,54 +1,54 @@
 
-Gsquid:S1148Ζ"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8ρθ”½,
-osquid:CommentedOutCodeLine«"<This block of commented-out lines of code should be removed.(µÒύ²ϊÿÿÿÿ8ρθ”½,
-vsquid:S1192γ"RDefine a constant instead of duplicating this literal "Select square in " 3 times.(Όβÿϋÿÿÿÿ8ρθ”½,
-osquid:CommentedOutCodeLineΛ"<This block of commented-out lines of code should be removed.(ιΨ»Ϊϋÿÿÿÿ8ρθ”½,
-Msquid:S1481ν")Remove this unused "posY" local variable.(ΉΌΥΑύÿÿÿÿ8ρθ”½,
-^squid:S1161Ώ":Add the "@Override" annotation above this method signature(τ«έύÿÿÿÿ8ρθ”½,
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(‹―·­8ρθ”½,
-xsquid:S00116-"TRename this field "AREAWIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒΪΈ¥ϋÿÿÿÿ8ρθ”½,
-nsquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(χΛβϋÿÿÿÿ8ρθ”½,
-{squid:S1450N"XRemove the "oceanArea" field and declare it as a local variable in the relevant methods.(―Τ…Βωÿÿÿÿ8ρθ”½,
-Ysquid:S1161Η":Add the "@Override" annotation above this method signature(ΔÿΝ¤8ρθ”½,
-\squid:S1854ν"8Remove this useless assignment to local variable "posY".(ΉΌΥΑύÿÿÿÿ8ρθ”½,
-Lsquid:S1068h".Remove this unused "horizontal" private field.(ι†»΅8ρθ”½,
-Dsquid:S1170,"!Make this final field static too.(Β¦Τψÿÿÿÿ8ρθ”½,
-zsquid:S00116/"VRename this field "SQUAREWIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΐώΤώÿÿÿÿ8ρθ”½,
+Ysquid:S1161»":Add the "@Override" annotation above this method signature(„η8²ε½,
+jsquid:CommentedOutCodeLine‹"<This block of commented-out lines of code should be removed.(ή›Ο‘8²ε½,
+Dsquid:S11700"!Make this final field static too.(ά§ΤΝϋÿÿÿÿ8²ε½,
+ squid:S1186ξ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(“–ύώ8²ε½,
+Lsquid:S1604³"(Make this anonymous inner class a lambda(τβϋύÿÿÿÿ8²ε½,
+Lsquid:S1604ÿ"(Make this anonymous inner class a lambda(τβϋύÿÿÿÿ8²ε½,
+nsquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(χΛβϋÿÿÿÿ8²ε½,
+Ksquid:S1172•",Remove this unused method parameter "event".(΅Òμ8²ε½,
+}squid:S001164"^Rename this field "NRSQUARESHORIZONTAL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†’λπ8²ε½,
+^squid:S1161Ώ":Add the "@Override" annotation above this method signature(τ«έύÿÿÿÿ8²ε½,
+Ysquid:S1161Η":Add the "@Override" annotation above this method signature(ΔÿΝ¤8²ε½,
+Dsquid:S11701"!Make this final field static too.(Ζ«¦›ύÿÿÿÿ8²ε½,
+tsquid:S00116."URename this field "AREAHEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§»ν8²ε½,
+Lsquid:S1604θ"(Make this anonymous inner class a lambda(τβϋύÿÿÿÿ8²ε½,
+Gsquid:S1148Ζ"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8²ε½,
 \
-squid:S106Ή"9Replace this use of System.out or System.err by a logger.(°ϋ²τόÿÿÿÿ8ρθ”½,
-`squid:UnusedPrivateMethodς".Remove this unused private "lowerBall" method.(ρΪ·‰όÿÿÿÿ8ρθ”½,
+squid:S106Ή"9Replace this use of System.out or System.err by a logger.(°ϋ²τόÿÿÿÿ8²ε½,
+Msquid:S1481ν")Remove this unused "posY" local variable.(ΉΌΥΑύÿÿÿÿ8²ε½,
+{squid:S001160"WRename this field "SQUAREHEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ά§ΤΝϋÿÿÿÿ8²ε½,
+Lsquid:S1068h".Remove this unused "horizontal" private field.(ι†»΅8²ε½,
+xsquid:S00116-"TRename this field "AREAWIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÒΪΈ¥ϋÿÿÿÿ8²ε½,
+`squid:UnusedPrivateMethodς".Remove this unused private "lowerBall" method.(ρΪ·‰όÿÿÿÿ8²ε½,
+osquid:CommentedOutCodeLine«"<This block of commented-out lines of code should be removed.(µÒύ²ϊÿÿÿÿ8²ε½,
+?squid:S1170."!Make this final field static too.(§»ν8²ε½,
+Lsquid:S1604Κ"(Make this anonymous inner class a lambda(τβϋύÿÿÿÿ8²ε½,
+Dsquid:S11705"!Make this final field static too.(ÿΖζ¥ÿÿÿÿÿ8²ε½,
+Dsquid:S1170-"!Make this final field static too.(ÒΪΈ¥ϋÿÿÿÿ8²ε½,
+Jsquid:S1068e"-Remove this unused "gameEnded" private field.(εγ‹|8²ε½,
 W
-squid:S106Μ"9Replace this use of System.out or System.err by a logger.(μ®ΰ®8ρθ”½,
-}squid:S001164"^Rename this field "NRSQUARESHORIZONTAL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†’λπ8ρθ”½,
-Dsquid:S1170-"!Make this final field static too.(ÒΪΈ¥ϋÿÿÿÿ8ρθ”½,
-]squid:UnusedPrivateMethod­"0Remove this unused private "playersTurn" method.(£‹Υ8ρθ”½,
-Lsquid:S1604θ"(Make this anonymous inner class a lambda(τβϋύÿÿÿÿ8ρθ”½,
-\squid:S1854μ"8Remove this useless assignment to local variable "posX".(…Ν“ηύÿÿÿÿ8ρθ”½,
-Lsquid:S1604ÿ"(Make this anonymous inner class a lambda(τβϋύÿÿÿÿ8ρθ”½,
-Gsquid:S1148‡"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8ρθ”½,
-Lsquid:S1604Ά"(Make this anonymous inner class a lambda(τβϋύÿÿÿÿ8ρθ”½,
-jsquid:CommentedOutCodeLine‹"<This block of commented-out lines of code should be removed.(ή›Ο‘8ρθ”½,
-Jsquid:S1068e"-Remove this unused "gameEnded" private field.(εγ‹|8ρθ”½,
-osquid:CommentedOutCodeLine£"<This block of commented-out lines of code should be removed.(εΏ„ώωÿÿÿÿ8ρθ”½,
-„"squid:ClassVariableVisibilityCheck)"PMake ball a static final constant or non-public and provide accessors if needed.(βÒ―\8ρθ”½,
-Lsquid:S1604³"(Make this anonymous inner class a lambda(τβϋύÿÿÿÿ8ρθ”½,
-Dsquid:S1170/"!Make this final field static too.(ΐώΤώÿÿÿÿ8ρθ”½,
-tsquid:S00116."URename this field "AREAHEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§»ν8ρθ”½,
-zsquid:S001161"VRename this field "BUTTONWIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ζ«¦›ύÿÿÿÿ8ρθ”½,
-{squid:S001160"WRename this field "SQUAREHEIGHT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ά§ΤΝϋÿÿÿÿ8ρθ”½,
-msquid:S1192¥"IDefine a constant instead of duplicating this literal "\'s grid" 3 times.(Ώ¥όΒϋÿÿÿÿ8ρθ”½,
-Dsquid:S11700"!Make this final field static too.(ά§ΤΝϋÿÿÿÿ8ρθ”½,
- squid:S1186ξ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(“–ύώ8ρθ”½,
-^squid:S1161Ò":Add the "@Override" annotation above this method signature(’Λ·ιύÿÿÿÿ8ρθ”½,
-Dsquid:S11705"!Make this final field static too.(ÿΖζ¥ÿÿÿÿÿ8ρθ”½,
-ysquid:S00116,"URename this field "BORDERSIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Β¦Τψÿÿÿÿ8ρθ”½,
-Lsquid:S1604Κ"(Make this anonymous inner class a lambda(τβϋύÿÿÿÿ8ρθ”½,
-Ysquid:S1161»":Add the "@Override" annotation above this method signature(„η8ρθ”½,
-jsquid:CommentedOutCodeLineΘ"<This block of commented-out lines of code should be removed.(γόςς8ρθ”½,
-Msquid:S1481μ")Remove this unused "posX" local variable.(…Ν“ηύÿÿÿÿ8ρθ”½,
- squid:S1186Τ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(»ίΥ8ρθ”½,
-€squid:S001165"\Rename this field "NRSQUARESVERTICAL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿΖζ¥ÿÿÿÿÿ8ρθ”½,
-Ksquid:S1172•",Remove this unused method parameter "event".(΅Òμ8ρθ”½,
-Dsquid:S11701"!Make this final field static too.(Ζ«¦›ύÿÿÿÿ8ρθ”½,
-?squid:S1170."!Make this final field static too.(§»ν8ρθ”½,
-?squid:S11704"!Make this final field static too.(†’λπ8ρθ”½,
+squid:S106Μ"9Replace this use of System.out or System.err by a logger.(μ®ΰ®8²ε½,
+]squid:UnusedPrivateMethod­"0Remove this unused private "playersTurn" method.(£‹Υ8²ε½,
+zsquid:S00116/"VRename this field "SQUAREWIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΐώΤώÿÿÿÿ8²ε½,
+ysquid:S00116,"URename this field "BORDERSIZE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Β¦Τψÿÿÿÿ8²ε½,
+„"squid:ClassVariableVisibilityCheck)"PMake ball a static final constant or non-public and provide accessors if needed.(βÒ―\8²ε½,
+Msquid:S1481μ")Remove this unused "posX" local variable.(…Ν“ηύÿÿÿÿ8²ε½,
+{squid:S1450N"XRemove the "oceanArea" field and declare it as a local variable in the relevant methods.(―Τ…Βωÿÿÿÿ8²ε½,
+vsquid:S1192γ"RDefine a constant instead of duplicating this literal "Select square in " 3 times.(Όβÿϋÿÿÿÿ8²ε½,
+\squid:S1854ν"8Remove this useless assignment to local variable "posY".(ΉΌΥΑύÿÿÿÿ8²ε½,
+€squid:S001165"\Rename this field "NRSQUARESVERTICAL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿΖζ¥ÿÿÿÿÿ8²ε½,
+Lsquid:S1604Ά"(Make this anonymous inner class a lambda(τβϋύÿÿÿÿ8²ε½,
+^squid:S1161Ò":Add the "@Override" annotation above this method signature(’Λ·ιύÿÿÿÿ8²ε½,
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(‹―·­8²ε½,
+zsquid:S001161"VRename this field "BUTTONWIDTH" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ζ«¦›ύÿÿÿÿ8²ε½,
+?squid:S11704"!Make this final field static too.(†’λπ8²ε½,
+Gsquid:S1148‡"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8²ε½,
+Dsquid:S1170,"!Make this final field static too.(Β¦Τψÿÿÿÿ8²ε½,
+osquid:CommentedOutCodeLineΛ"<This block of commented-out lines of code should be removed.(ιΨ»Ϊϋÿÿÿÿ8²ε½,
+osquid:CommentedOutCodeLine£"<This block of commented-out lines of code should be removed.(εΏ„ώωÿÿÿÿ8²ε½,
+ squid:S1186Τ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(»ίΥ8²ε½,
+Dsquid:S1170/"!Make this final field static too.(ΐώΤώÿÿÿÿ8²ε½,
+\squid:S1854μ"8Remove this useless assignment to local variable "posX".(…Ν“ηύÿÿÿÿ8²ε½,
+jsquid:CommentedOutCodeLineΘ"<This block of commented-out lines of code should be removed.(γόςς8²ε½,
+msquid:S1192¥"IDefine a constant instead of duplicating this literal "\'s grid" 3 times.(Ώ¥όΒϋÿÿÿÿ8²ε½,

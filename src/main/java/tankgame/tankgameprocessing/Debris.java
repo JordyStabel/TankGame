@@ -4,6 +4,11 @@ import processing.core.*;
 
 public class Debris extends PApplet implements TestGame.PhysicsObj, TestGame.RenderObj {
 
+    private TestGame testGame;
+    private Level level;
+    private Renderer _renderer;
+    private Physics physics;
+
     // Position
     private float x;
     private float y;
@@ -52,7 +57,7 @@ public class Debris extends PApplet implements TestGame.PhysicsObj, TestGame.Ren
     // CheckConstraints, also implemented as a PhysicsObj
     public void checkConstraints() {
         // Find if there's a collision between the current and last points
-        int[] collision = rayCast((int)lastX, (int)lastY, (int)x, (int)y);
+        int[] collision = testGame.rayCast((int)lastX, (int)lastY, (int)x, (int)y);
         if (collision.length > 0)
             collide(collision[0], collision[1], collision[2], collision[3]);
 
@@ -61,7 +66,7 @@ public class Debris extends PApplet implements TestGame.PhysicsObj, TestGame.Ren
         lastY = y;
 
         // Boundary constraints... only remove the pixel if it exits the sides or bottom of the map
-        if (x > terrain.width() || x < 0 || y > terrain.height()) {
+        if (x > level.width() || x < 0 || y > level.height()) {
             _renderer.remove(this);
             physics.remove(this);
         }
@@ -75,7 +80,7 @@ public class Debris extends PApplet implements TestGame.PhysicsObj, TestGame.Ren
             // draw a rectangle by looping from x to size, and from y to size
             for (int i = 0; i < size; i++) {
                 for (int j = 0; j < size; j++) {
-                    terrain.addPixel(col, thisX+i, thisY+j);
+                    level.addPixel(col, thisX+i, thisY+j);
                 }
             }
             // remove this dynamic pixel
@@ -88,7 +93,7 @@ public class Debris extends PApplet implements TestGame.PhysicsObj, TestGame.Ren
             // to do this, we need to reflect the velocity across the edge normal at the collision point
             // this is done using a 2D vector reflection formula ( http://en.wikipedia.org/wiki/Reflection_(mathematics) )
 
-            float pixelNormal[] = terrain.getNormal((int)thatX, (int)thatY);
+            float pixelNormal[] = level.getNormal((int)thatX, (int)thatY);
 
             float d = 2 * (velX * pixelNormal[0] + velY * pixelNormal[1]);
 

@@ -8,7 +8,7 @@ public class Level extends PApplet {
     private PImage backgroundImage;
 
     // How wide the destructed pixels are
-    private int destructionRes;
+    public int destructionRes;
 
     public Level(PImage pic, int destructionRes) {
 
@@ -27,12 +27,12 @@ public class Level extends PApplet {
         backgroundImage.updatePixels();
     }
 
-    // Render terrain onto the main screen
+    // Render level onto the main screen
     public void draw(float x, float y) {
         image(backgroundImage, x,y);
     }
 
-    // Return the terrain's width and height
+    // Return the level's width and height
 
     public int width() {
         return backgroundImage.width;

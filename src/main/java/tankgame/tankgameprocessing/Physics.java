@@ -64,8 +64,8 @@ public class Physics extends PApplet{
                 obj.setX(obj.getX() + velX * fixedDeltaTimeSeconds);
 
                 // if it's a player, only add y velocity if he's not on the ground.
-                if (obj instanceof TestGame.Player) {
-                    if (!(((TestGame.Player)obj).onGround && velY > 0))
+                if (obj instanceof Player) {
+                    if (!(((Player)obj).onGround && velY > 0))
                         obj.setY(obj.getY() + velY * fixedDeltaTimeSeconds);
                 }
                 else

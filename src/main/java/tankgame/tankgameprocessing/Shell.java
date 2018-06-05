@@ -4,6 +4,11 @@ import processing.core.*;
 
 public class Shell extends PApplet implements IPhysicsObject, IRenderObject {
 
+    private TestGame testGame;
+    private Level level;
+    private Renderer _renderer;
+    private Physics physics;
+
     // Position
     private float x;
     private float y;
@@ -34,11 +39,11 @@ public class Shell extends PApplet implements IPhysicsObject, IRenderObject {
     public void setVY(float vY) { velY = vY; }
 
     public void checkConstraints() {
-        int[] collision = rayCast((int)lastX, (int)lastY, (int)x, (int)y);
+        int[] collision = testGame.rayCast((int)lastX, (int)lastY, (int)x, (int)y);
         if (collision.length > 0) {
-            _renderer.remove(this);
-            physics.remove(this);
-            explode(collision[2], collision[3], 40);
+            _renderer.remove((TestGame.RenderObj) this);
+            physics.remove((TestGame.PhysicsObj) this);
+            testGame.explode(collision[2], collision[3], 40);
         }
         lastX = x;
         lastY = y;

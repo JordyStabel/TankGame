@@ -1,15 +1,15 @@
 
-isquid:S2142;"FEither re-interrupt this method or rethrow the "InterruptedException".(²ύ…¦ϋÿÿÿÿ8ρθ”½,
+~squid:S1217F"`Call the method Thread.start() to execute the content of the run() method in a dedicated thread.(—ϊχΪ8²ε½,
+Fsquid:S1148<"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8²ε½,
+isquid:S2142;"FEither re-interrupt this method or rethrow the "InterruptedException".(²ύ…¦ϋÿÿÿÿ8²ε½,
+Dsquid:S1170"!Make this final field static too.(ίω²΄ψÿÿÿÿ8²ε½,
+squid:S1186M"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(’›ÿ8²ε½,
+rsquid:S1450"URemove the "thread" field and declare it as a local variable in the relevant methods.(β£48²ε½,
+isquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(ο²ψÿ8²ε½,
 [
-squid:S1060"9Replace this use of System.out or System.err by a logger.(²—™νψÿÿÿÿ8ρθ”½,
-isquid:CommentedOutCodeLine*"<This block of commented-out lines of code should be removed.(ο²ψÿ8ρθ”½,
-Dsquid:S1170"!Make this final field static too.(ίω²΄ψÿÿÿÿ8ρθ”½,
-squid:S1186M"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(’›ÿ8ρθ”½,
+squid:S1060"9Replace this use of System.out or System.err by a logger.(²—™νψÿÿÿÿ8²ε½,
+{squid:S00116"WRename this field "UPDATE_LIMIT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ίω²΄ψÿÿÿÿ8²ε½,
 [
-squid:S106"9Replace this use of System.out or System.err by a logger.(΄ψ•†ώÿÿÿÿ8ρθ”½,
-{squid:S00116"WRename this field "UPDATE_LIMIT" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ίω²΄ψÿÿÿÿ8ρθ”½,
-~squid:S1217F"`Call the method Thread.start() to execute the content of the run() method in a dedicated thread.(—ϊχΪ8ρθ”½,
-usquid:S1450"XRemove the "isRunning" field and declare it as a local variable in the relevant methods.(—§κ>8ρθ”½,
-¤squid:S1186I"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ΐ–®»ÿÿÿÿÿ8ρθ”½,
-rsquid:S1450"URemove the "thread" field and declare it as a local variable in the relevant methods.(β£48ρθ”½,
-Fsquid:S1148<"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8ρθ”½,
+squid:S106"9Replace this use of System.out or System.err by a logger.(΄ψ•†ώÿÿÿÿ8²ε½,
+usquid:S1450"XRemove the "isRunning" field and declare it as a local variable in the relevant methods.(—§κ>8²ε½,
+¤squid:S1186I"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ΐ–®»ÿÿÿÿÿ8²ε½,

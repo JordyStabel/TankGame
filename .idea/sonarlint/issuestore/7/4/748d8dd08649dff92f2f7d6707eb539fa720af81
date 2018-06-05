@@ -1,19 +1,19 @@
 
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¯¦´‡øÿÿÿÿ8ñè”½,
-jsquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(ÆºüÕ8ñè”½,
-[squid:UnusedPrivateMethod˜".Remove this unused private "startGrid" method.(êÔ³8ñè”½,
-vsquid:S1450%"SRemove the "grid" field and declare it as a local variable in the relevant methods.(Š¤ûŸÿÿÿÿÿ8ñè”½,
-Ksquid:S1068%"(Remove this unused "grid" private field.(Š¤ûŸÿÿÿÿÿ8ñè”½,
-isquid:CommentedOutCodeLine`"<This block of commented-out lines of code should be removed.(ŸÕº‹8ñè”½,
-Isquid:S1068"+Remove this unused "player2" private field.(„á¨È8ñè”½,
-5squid:S1700"Rename field "tankGame"(Žå°•8ñè”½,
-isquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(×žÜŸ8ñè”½,
-isquid:CommentedOutCodeLineu"<This block of commented-out lines of code should be removed.(¡ú¥‘8ñè”½,
-isquid:CommentedOutCodeLinei"<This block of commented-out lines of code should be removed.(€ÙÉî8ñè”½,
-nsquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(Ô¦çÑýÿÿÿÿ8ñè”½,
-isquid:CommentedOutCodeLinep"<This block of commented-out lines of code should be removed.(î”„8ñè”½,
-Zsquid:UnusedPrivateMethod".Remove this unused private "placeTank" method.(ž÷­8ñè”½,
-osquid:CommentedOutCodeLine†"<This block of commented-out lines of code should be removed.(Ñ¢è¹ùÿÿÿÿ8ñè”½,
-nsquid:CommentedOutCodeLineb"<This block of commented-out lines of code should be removed.(Ö¬Äöûÿÿÿÿ8ñè”½,
-nsquid:CommentedOutCodeLines"<This block of commented-out lines of code should be removed.(¬Ôãþÿÿÿÿ8ñè”½,
-Tsquid:S1068"1Remove this unused "currentPlayer" private field.(ðƒÎŸÿÿÿÿÿ8ñè”½,
+Zsquid:UnusedPrivateMethod".Remove this unused private "placeTank" method.(ž÷­8²åŒ½,
+Ksquid:S1068%"(Remove this unused "grid" private field.(Š¤ûŸÿÿÿÿÿ8²åŒ½,
+osquid:CommentedOutCodeLine†"<This block of commented-out lines of code should be removed.(Ñ¢è¹ùÿÿÿÿ8²åŒ½,
+5squid:S1700"Rename field "tankGame"(Žå°•8²åŒ½,
+nsquid:CommentedOutCodeLineb"<This block of commented-out lines of code should be removed.(Ö¬Äöûÿÿÿÿ8²åŒ½,
+nsquid:CommentedOutCodeLines"<This block of commented-out lines of code should be removed.(¬Ôãþÿÿÿÿ8²åŒ½,
+nsquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(Ô¦çÑýÿÿÿÿ8²åŒ½,
+Isquid:S1068"+Remove this unused "player2" private field.(„á¨È8²åŒ½,
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¯¦´‡øÿÿÿÿ8²åŒ½,
+vsquid:S1450%"SRemove the "grid" field and declare it as a local variable in the relevant methods.(Š¤ûŸÿÿÿÿÿ8²åŒ½,
+isquid:CommentedOutCodeLinei"<This block of commented-out lines of code should be removed.(€ÙÉî8²åŒ½,
+[squid:UnusedPrivateMethod˜".Remove this unused private "startGrid" method.(êÔ³8²åŒ½,
+isquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(×žÜŸ8²åŒ½,
+Tsquid:S1068"1Remove this unused "currentPlayer" private field.(ðƒÎŸÿÿÿÿÿ8²åŒ½,
+jsquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(ÆºüÕ8²åŒ½,
+isquid:CommentedOutCodeLine`"<This block of commented-out lines of code should be removed.(ŸÕº‹8²åŒ½,
+isquid:CommentedOutCodeLinep"<This block of commented-out lines of code should be removed.(î”„8²åŒ½,
+isquid:CommentedOutCodeLineu"<This block of commented-out lines of code should be removed.(¡ú¥‘8²åŒ½,

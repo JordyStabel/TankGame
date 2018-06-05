@@ -1,7 +1,6 @@
 package tankgame.tankgameprocessing;
 
 import processing.core.*;
-
 import java.util.*;
 
 public class TestGame extends PApplet {
@@ -31,7 +30,7 @@ public class TestGame extends PApplet {
         // FPS limit
         frameRate(60);
 
-        terrain = new Terrain(loadImage("images/test.png"), 2); // new Terrain(image, destructionRes)
+        terrain = new Terrain(loadImage("images/test_2.png"), 5); // new Level(image, destructionRes)
 
         // initialize the physics and rendering engines
         physics = new Physics();
@@ -769,7 +768,7 @@ public class TestGame extends PApplet {
             }
         }
     }
-    /* Terrain */
+    /* Level */
 // Provides methods for determining solid/empty pixels, and for removing/adding solid pixels
     class Terrain {
         PImage img; // the terrain image

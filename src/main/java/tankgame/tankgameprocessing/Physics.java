@@ -31,7 +31,7 @@ public class Physics extends PApplet{
         // The amount of time elapsed since last update is split up into units of 16 ms
         // any left over is pushed over to the next update
         // we take those units of 16 ms and update the simulation that many times.
-        // a fixed timestep will make collision detection and handling (in the Player class, esp.) a lot simpler
+        // a fixed timestep will make collision detection and handling (in the PlayerObject class, esp.) a lot simpler
         // A low framerate will not compromise any collision detections, while it'll still run at a consistent speed.
 
         currentTime = millis();
@@ -63,9 +63,9 @@ public class Physics extends PApplet{
                 // Always add x velocity
                 obj.setX(obj.getX() + velX * fixedDeltaTimeSeconds);
 
-                // if it's a player, only add y velocity if he's not on the ground.
-                if (obj instanceof Player) {
-                    if (!(((Player)obj).onGround && velY > 0))
+                // if it's a playerObject, only add y velocity if he's not on the ground.
+                if (obj instanceof PlayerObject) {
+                    if (!(((PlayerObject)obj).onGround && velY > 0))
                         obj.setY(obj.getY() + velY * fixedDeltaTimeSeconds);
                 }
                 else

@@ -2,8 +2,9 @@ package tankgame.tankgameprocessing;
 
 import processing.core.*;
 
-// TODO: Change testgame. with actual classes
-public class Player extends PApplet implements TestGame.PhysicsObj, TestGame.RenderObj {
+public class PlayerObject extends PApplet implements TestGame.PhysicsObj, TestGame.RenderObj {
+
+    PApplet parent;
 
     private TestGame testGame;
     private Level level;
@@ -32,20 +33,22 @@ public class Player extends PApplet implements TestGame.PhysicsObj, TestGame.Ren
     public boolean onGround; // are we allowed to jump?
     private boolean topBlocked;
 
-    // Player size
+    // PlayerObject size
     private int playerWidth;
     private int playerHeight;
 
     // Constructor
-    Player(int positionX, int positionY) {
+    PlayerObject(PApplet pApplet, int positionX, int positionY) {
         this.posX = positionX;
         this.posY = positionY;
+
+        parent = pApplet;
 
         // Start out standing still
         velX = 0;
         velY = 0;
 
-        // initialize the player as a 15x15 px box
+        // initialize the playerObject as a 15x15 px box
         playerWidth = 15;
         playerHeight = 15;
     }
@@ -93,10 +96,10 @@ public class Player extends PApplet implements TestGame.PhysicsObj, TestGame.Ren
     }
 
     // draw - implemented as a RenderObj
-    public void draw() {
-        stroke(0);
-        fill(255);
-        rect(posX - playerWidth / 2, posY - playerHeight / 2, playerWidth, playerHeight);
+    public void display() {
+        parent.stroke(0);
+        parent.fill(255);
+        parent.rect(posX - playerWidth / 2, posY - playerHeight / 2, playerWidth, playerHeight);
     }
 
     @Override
@@ -147,7 +150,7 @@ public class Player extends PApplet implements TestGame.PhysicsObj, TestGame.Ren
         if (shooting || shootingAlt) {
             // Primary fire happens every 200 ms, alternate fire happens every 25 ms.
             if (!(shooting && millis() - lastShot < 150) && !(shootingAlt && millis() - lastShot < 15)) {
-                // Create a vector between the player and the mouse, then normalize that vector (to change its length to 1)
+                // Create a vector between the playerObject and the mouse, then normalize that vector (to change its length to 1)
                 // after multiplying by the desired bullet speed, we get how fast along each axis we want the bullet to be traveling
                 float diffX = testGame.getMouseX() - posX;
                 float diffY = testGame.getMouseY() - posY;
@@ -161,12 +164,12 @@ public class Player extends PApplet implements TestGame.PhysicsObj, TestGame.Ren
                     // Change our color from RGB to HSB so we can cycle through hues
                     colorMode(HSB, 255);
                     for (int i = 0; i < 150; i++) { // create 150 particles
-                        Debris debris = new Debris(new PApplet(), color((int) (((millis() / 5000f) * 255f) % 255), 255, 255), // color
+                        DebrisObject debrisObject = new DebrisObject(new PApplet(), color((int) (((millis() / 5000f) * 255f) % 255), 255, 255), // color
                                 this.posX, this.posY, // position
                                 random(-50, 50) + random(1500, 2500) * diffX / len, random(-50, 50) + random(1500, 2500) * diffY / len, // speed
                                 level.destructionRes); // size
-                        physics.add(debris);
-                        _renderer.add(debris);
+                        physics.add(debrisObject);
+                        _renderer.add(debrisObject);
                     }
                     colorMode(RGB, 255);
                 }
@@ -222,7 +225,7 @@ public class Player extends PApplet implements TestGame.PhysicsObj, TestGame.Ren
         if (velX < 0) {
             for (int leftY = (int) posY - playerHeight / 2; leftY <= (int) posY + playerHeight / 2; leftY++) {
                 if (level.isPixelSolid((int) posX - playerWidth / 2, leftY)) {
-                    // next move from the edge to the right, inside the box (stop it at 1/4th the player width)
+                    // next move from the edge to the right, inside the box (stop it at 1/4th the playerObject width)
                     for (int xCheck = (int) posX - playerWidth / 4; xCheck < (int) posX - playerWidth / 2; xCheck--) {
                         if (level.isPixelSolid(xCheck, leftY)) {
                             posX = xCheck + playerWidth / 2; // push the block over

@@ -1,11 +1,9 @@
 package tankgame.tankgameprocessing;
 
 import processing.core.*;
-
 import static java.sql.DriverManager.println;
 
-public class Debris implements TestGame.PhysicsObj, TestGame.RenderObj {
-
+public class DebrisObject implements TestGame.PhysicsObj, TestGame.RenderObj {
 
     private PApplet parent;
 
@@ -33,7 +31,7 @@ public class Debris implements TestGame.PhysicsObj, TestGame.RenderObj {
 
     private int size = 1; // width and height of the pixel
 
-    Debris(PApplet pApplet, int c, float x, float y, float vX, float vY, int size) {
+    DebrisObject(PApplet pApplet, int c, float x, float y, float vX, float vY, int size) {
         col = c;
         this.x = x; this.y = y;
         lastX = x; lastY = y;
@@ -44,7 +42,7 @@ public class Debris implements TestGame.PhysicsObj, TestGame.RenderObj {
         this.size = size;
     }
 
-    // Test
+    // Drawing on the screen
     public void display(){
         parent.fill(col);
         parent.noStroke();

@@ -4,7 +4,7 @@ public class Player {
 
     private String playerName;
 
-    // Constructor for Player
+    // Constructor for PlayerObject
     Player(String playerName){
         this.playerName = playerName;
     }

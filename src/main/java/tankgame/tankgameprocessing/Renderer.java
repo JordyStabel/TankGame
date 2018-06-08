@@ -9,25 +9,25 @@ import java.util.List;
 // Holds a list of all "RenderObj"s, anything with a draw() method.
 public class Renderer {
 
-    private List<TestGame.RenderObj> objects;
+    private List<TankGameApplication.RenderObj> objects;
 
     private PApplet parent;
 
     Renderer(PApplet pApplet) {
         parent = pApplet;
-        objects = new ArrayList<TestGame.RenderObj>();
+        objects = new ArrayList<TankGameApplication.RenderObj>();
     }
 
     public void draw() {
-        for (TestGame.RenderObj obj : objects){
+        for (TankGameApplication.RenderObj obj : objects){
             obj.display();
         }
     }
 
-    public void add(TestGame.RenderObj obj) {
+    public void add(TankGameApplication.RenderObj obj) {
         objects.add(obj);
     }
-    public void remove(TestGame.RenderObj obj) {
+    public void remove(TankGameApplication.RenderObj obj) {
         objects.remove(obj);
     }
 }

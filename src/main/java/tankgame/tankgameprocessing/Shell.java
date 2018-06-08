@@ -4,7 +4,7 @@ import processing.core.*;
 
 public class Shell implements IPhysicsObject, IRenderObject {
 
-    private TestGame testGame;
+    private TankGameApplication tankGameApplication;
     private Level level;
     private Renderer _renderer;
     private Physics physics;
@@ -43,11 +43,11 @@ public class Shell implements IPhysicsObject, IRenderObject {
     public void setVY(float vY) { velY = vY; }
 
     public void checkConstraints() {
-        int[] collision = testGame.rayCast((int)lastX, (int)lastY, (int)x, (int)y);
+        int[] collision = tankGameApplication.rayCast((int)lastX, (int)lastY, (int)x, (int)y);
         if (collision.length > 0) {
-            _renderer.remove((TestGame.RenderObj) this);
-            physics.remove((TestGame.PhysicsObj) this);
-            testGame.explode(collision[2], collision[3], 40);
+            _renderer.remove((TankGameApplication.RenderObj) this);
+            physics.remove((TankGameApplication.PhysicsObj) this);
+            tankGameApplication.explode(collision[2], collision[3], 40);
         }
         lastX = x;
         lastY = y;

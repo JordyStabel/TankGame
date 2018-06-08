@@ -2,7 +2,7 @@ package tankgame.tankgameprocessing;
 
 import processing.core.*;
 
-public class TestGame extends PApplet {
+public class TankGameApplication extends PApplet {
 
     /* global variables */
 
@@ -71,15 +71,12 @@ public class TestGame extends PApplet {
         // draw the level
         level.update();
 
-        // show level normals
-        showNormals();
-
         // draw everything else
         _renderer.draw();
 
         // FPS counter
-//        fill(0,255,0);
-//        text(frameRate, 10,600);
+        fill(0,255,0);
+        text(frameRate, 10,600);
 
         // Added with the new class/object system
         //playerObject.display();
@@ -288,36 +285,12 @@ public class TestGame extends PApplet {
     /* Renderer */
 // Holds a list of all "RenderObj"s, anything with a draw() method.
 
-    public void showNormals() {
-        stroke(0);
-        // Scan the level in a gridlike pattern, and only draw normals at pixels that have a range of solid pixels surrounding them
-        for (int x = 0; x < level.width(); x += 10) {
-            for (int y = 0; y < level.height(); y += 10) {
-                int solidCount = 0;
-                // scan solid pixels around this pixel
-                for (int i = -5; i <= 5; i++) {
-                    for (int j = -5; j <= 5; j++) {
-                        if (level.isPixelSolid(x+i,y+j)) {
-                            solidCount++;
-                        }
-                    }
-                }
-                // if there's too many solid pixels, then it's probably underground, and not a surface
-                // if there's not enough solid pixels, then it's probably in the air, and not a surface
-                if (solidCount < 110 && solidCount > 30) {
-                    float[] pixelNormal = level.getNormal(x,y);
-                    if (pixelNormal.length > 0 && !Float.isNaN(pixelNormal[0]) && !Float.isNaN(pixelNormal[1]))
-                        line(x,y, x + 10 * pixelNormal[0], y + 10 * pixelNormal[1]);
-                }
-            }
-        }
-    }
     /* Level */
 // Provides methods for determining solid/empty pixels, and for removing/adding solid pixels
     //public int sketchWidth() { return 600; }
     //public int sketchHeight() { return 450; }
     //public String sketchRenderer() { return JAVA2D; }
     static public void main(String args[]) {
-        PApplet.main(new String[] { "tankgame.tankgameprocessing.TestGame" });
+        PApplet.main(new String[] { "tankgame.tankgameprocessing.TankGameApplication" });
     }
 }

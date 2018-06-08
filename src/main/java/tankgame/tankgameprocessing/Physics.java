@@ -13,18 +13,18 @@ public class Physics {
 
     private PApplet parent;
 
-    private List<TestGame.PhysicsObj> objects;
+    private List<TankGameApplication.PhysicsObj> objects;
 
     // Constructor
     Physics(PApplet pApplet) {
         parent = pApplet;
-        objects = new ArrayList<TestGame.PhysicsObj>();
+        objects = new ArrayList<TankGameApplication.PhysicsObj>();
     }
 
-    public void add(TestGame.PhysicsObj obj) {
+    public void add(TankGameApplication.PhysicsObj obj) {
         objects.add((int)parent.random(objects.size()),obj);
     }
-    public void remove(TestGame.PhysicsObj obj) {
+    public void remove(TankGameApplication.PhysicsObj obj) {
         objects.remove(obj);
     }
 
@@ -54,7 +54,7 @@ public class Physics {
         for (int iteration = 1; iteration <= timeStepAmt; iteration++) {
             for (int i = 0; i < objects.size(); i++) { // loop through every PhysicsObj
 
-                TestGame.PhysicsObj obj = objects.get(i);
+                TankGameApplication.PhysicsObj obj = objects.get(i);
                 // get their velocity
                 float velX = obj.getVX();
                 float velY = obj.getVY();

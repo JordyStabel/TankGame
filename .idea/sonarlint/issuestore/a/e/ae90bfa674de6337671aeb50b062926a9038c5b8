@@ -1,3 +1,3 @@
 
-Xsquid:S1161":Add the "@Override" annotation above this method signature(ÄÿÍ¤8²åŒ½,
-vsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ĞÜº8²åŒ½,
+wsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ø¨ùÎ8²åŒ½,
+Hsquid:S1068"*Remove this unused "parent" private field.(ò´ªè8ôè‚¾,

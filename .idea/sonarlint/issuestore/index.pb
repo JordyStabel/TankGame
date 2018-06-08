@@ -97,3 +97,9 @@ m
 =src/main/java/tankgame/tankgameprocessing/IPhysicsObject.java,8\6\86ffc5c757bb6181421eb98d10d45864d2c7ff98
 l
 <src/main/java/tankgame/tankgameprocessing/IRenderObject.java,4\c\4ceb45c56f208b3ff4157c31270b21d71c5003a3
+k
+;src/main/java/tankgame/tankgameprocessing/PlayerObject.java,9\8\98b8a34feb71d3a27290ba3277af959e089df63b
+k
+;src/main/java/tankgame/tankgameprocessing/DebrisObject.java,1\5\1506cfde8abf6ff59398b2afad91b9894d0c8549
+r
+Bsrc/main/java/tankgame/tankgameprocessing/TankGameApplication.java,2\1\21c74251dc2d575a39b1d4e585ea94b84266c720

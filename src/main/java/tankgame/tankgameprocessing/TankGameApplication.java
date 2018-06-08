@@ -1,10 +1,14 @@
 package tankgame.tankgameprocessing;
 
-import processing.core.*;
+import processing.core.PApplet;
+import processing.core.PImage;
+
+import javax.swing.*;
 
 public class TankGameApplication extends PApplet {
 
     /* global variables */
+    private String playerName = null;
 
     // the level contains the bitmap for all the static pixels
     Level level;
@@ -23,6 +27,7 @@ public class TankGameApplication extends PApplet {
 
     // setup(), called before any looping is done
     public void setup() {
+
         // load our images for level and background
         bg = loadImage("images/sky-blurry.png");
 
@@ -285,12 +290,46 @@ public class TankGameApplication extends PApplet {
     /* Renderer */
 // Holds a list of all "RenderObj"s, anything with a draw() method.
 
+//    private void registerPlayer() throws Exception {
+//        playerName = textFieldPlayerName.getText();
+//        if ("".equals(playerName) || playerName == null) {
+//            showMessage("Enter your name before registering");
+//        } else {
+//            labelPlayerName.setText(playerName + "\'s grid");
+//            playerNr = game.registerPlayer(playerName, (ISeaBattleGUI) this, singlePlayerMode);
+//            if (playerNr != -1) {
+//
+//                showMessage("player " + playerName + " registered");
+//            } else {
+//                showMessage("Name already defined");
+//            }
+//        }
+//    }
+
     /* Level */
 // Provides methods for determining solid/empty pixels, and for removing/adding solid pixels
     //public int sketchWidth() { return 600; }
     //public int sketchHeight() { return 450; }
     //public String sketchRenderer() { return JAVA2D; }
     static public void main(String args[]) {
+
+        String input;
+        boolean registered = false;
+
+        public void checkInput(){
+
+        }
+
+        String input = JOptionPane.showInputDialog(null, "Username", "Please Enter Your Username", JOptionPane.PLAIN_MESSAGE);
+
+        try {
+            if (input.equals("")){
+                input = JOptionPane.showInputDialog(null, "Username", "Please Enter Your Username", JOptionPane.PLAIN_MESSAGE);
+            }
+        }catch (NullPointerException e){
+            System.exit(0);
+        }
+
         PApplet.main(new String[] { "tankgame.tankgameprocessing.TankGameApplication" });
     }
 }

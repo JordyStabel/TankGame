@@ -3,13 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="9a4891c9-ecfb-48f1-b730-30af862df4ca" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/DebrisObject.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/DebrisObject.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Physics.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Physics.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/PlayerObject.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/PlayerObject.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Renderer.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Renderer.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Shell.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Shell.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/TestGame.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/TestGame.class" afterPath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/TestGame.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/TankGameApplication.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/TankGameApplication.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/DebrisObject.class" afterPath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/DebrisObject.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/Physics.class" afterPath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/Physics.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/PlayerObject.class" afterPath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/PlayerObject.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/Renderer.class" afterPath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/Renderer.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/Shell.class" afterPath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/Shell.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/TestGame$PhysicsObj.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/TestGame$RenderObj.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/TestGame.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,23 +67,18 @@
       <file leaf-file-name="TankGameApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/TankGameApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="368">
+              <caret line="320" column="9" lean-forward="true" selection-start-line="320" selection-start-column="9" selection-end-line="320" selection-end-column="9" />
               <folding>
-                <element signature="e#1384#1385#0" expanded="true" />
-                <element signature="e#1420#1421#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#1483#1484#0" expanded="true" />
+                <element signature="e#1519#1520#0" expanded="true" />
+                <element signature="e#3447#3448#0" expanded="true" />
+                <element signature="e#3489#3490#0" expanded="true" />
+                <element signature="e#3520#3521#0" expanded="true" />
+                <element signature="e#3562#3563#0" expanded="true" />
                 <element signature="class#PhysicsObj#0;class#TankGameApplication#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PGraphics.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/processing/core/3.3.7/core-3.3.7-sources.jar!/processing/core/PGraphics.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="3769" column="0" lean-forward="false" selection-start-line="3769" selection-start-column="0" selection-end-line="3769" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -128,10 +125,9 @@
       <file leaf-file-name="PlayerObject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/PlayerObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-681">
-              <caret line="106" column="13" lean-forward="true" selection-start-line="106" selection-start-column="13" selection-end-line="107" selection-end-column="25" />
+            <state relative-caret-position="-4626">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#1505#1506#0" expanded="true" />
                 <element signature="e#1537#1538#0" expanded="true" />
                 <element signature="e#1665#1666#0" expanded="true" />
@@ -738,12 +734,12 @@
       <workItem from="1528216912803" duration="13668000" />
       <workItem from="1528284041999" duration="4771000" />
       <workItem from="1528360718192" duration="39000" />
-      <workItem from="1528463961523" duration="14221000" />
+      <workItem from="1528463961523" duration="18083000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103993000" />
+    <option name="totallyTimeSpent" value="107855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -766,10 +762,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32464713" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3213898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32681867" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -805,11 +801,11 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32464713" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3213898" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32681867" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -825,7 +821,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="18" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1271,10 +1267,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/PlayerObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-681">
-          <caret line="106" column="13" lean-forward="true" selection-start-line="106" selection-start-column="13" selection-end-line="107" selection-end-column="25" />
+        <state relative-caret-position="-4626">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#1505#1506#0" expanded="true" />
             <element signature="e#1537#1538#0" expanded="true" />
             <element signature="e#1665#1666#0" expanded="true" />
@@ -1309,11 +1304,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/TankGameApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="368">
+          <caret line="320" column="9" lean-forward="true" selection-start-line="320" selection-start-column="9" selection-end-line="320" selection-end-column="9" />
           <folding>
-            <element signature="e#1384#1385#0" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1483#1484#0" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#3447#3448#0" expanded="true" />
+            <element signature="e#3489#3490#0" expanded="true" />
+            <element signature="e#3520#3521#0" expanded="true" />
+            <element signature="e#3562#3563#0" expanded="true" />
             <element signature="class#PhysicsObj#0;class#TankGameApplication#0" expanded="false" />
           </folding>
         </state>

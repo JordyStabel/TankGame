@@ -13,10 +13,10 @@ public class TestGame extends PApplet {
     PImage bg;
 
     // physics and rendering engines
-    Physics physics; // has a list of all physics objects, and uses their velocity to move them
-    Renderer _renderer; // has a list of all renderable objects, and calls their draw() method
+    //Physics physics; // has a list of all physics objects, and uses their velocity to move them
+    //Renderer _renderer; // has a list of all renderable objects, and calls their draw() method
 
-    PlayerObject playerObject;
+    //PlayerObject playerObject;
 
     // translation, used to keep track of where the camera is
     int translateX;
@@ -30,16 +30,17 @@ public class TestGame extends PApplet {
         // FPS limit
         frameRate(60);
 
-        level = new Level(loadImage("images/test_2.png"), 5); // new Level(image, destructionRes)
+        // new Level(image, destructionRes)
+        level = new Level(this, loadImage("images/test_2.png"), 5);
 
-        // initialize the physics and rendering engines
-        physics = new Physics();
-        _renderer = new Renderer();
-
-        // create the playerObject
-        playerObject = new PlayerObject(this,100,100);
-        physics.add(playerObject);
-        _renderer.add(playerObject);
+//        // initialize the physics and rendering engines
+//        physics = new Physics();
+//        _renderer = new Renderer();
+//
+//        // create the playerObject
+//        playerObject = new PlayerObject(this,100,100);
+//        physics.add(playerObject);
+//        _renderer.add(playerObject);
     }
 
     public void settings() {
@@ -50,7 +51,7 @@ public class TestGame extends PApplet {
     public void draw() {
 
         // update physics
-        physics.update();
+        //physics.update();
 
         // load changes into the level
         level.update();
@@ -58,62 +59,62 @@ public class TestGame extends PApplet {
 
         /* Rendering */
         // first move our perspective to where the playerObject is
-        translateX = (int)constrain(width/2 - playerObject.getX(), width - level.width(), 0);
-        translateY = (int)constrain(height/2 - playerObject.getY(), height - level.height(), 0);
-        translate(translateX,
-                translateY);
-
-        // render the background
-        background(255);
-        image(bg,translateX * -0.8f,
-                translateY * -0.8f);
+//        translateX = (int)constrain(width/2 - playerObject.getX(), width - level.width(), 0);
+//        translateY = (int)constrain(height/2 - playerObject.getY(), height - level.height(), 0);
+//        translate(translateX,
+//                translateY);
+//
+//        // render the background
+//        background(255);
+//        image(bg,translateX * -0.8f,
+//                translateY * -0.8f);
 
         // draw the level
-        level.draw(0,0);
+        level.update();
 
         // show level normals
         //showNormals();
 
         // draw everything else
-        _renderer.draw();
+        //_renderer.draw();
 
         // FPS counter
         fill(0,255,0);
         text(frameRate, 10,600);
 
         // Added with the new class/object system
-        playerObject.display();
+        //playerObject.display();
     }
     /* Bullet */
 // Acts similarly to PhysicsPixel
     /* Controls */
-    public void keyPressed() {
-        if (key == 'w' || key == 'W')
-            playerObject.jump();
-        if (key == 'a' || key == 'A')
-            playerObject.moveLeft();
-        if (key == 'd' || key == 'D')
-            playerObject.moveRight();
-        println(key);
-    }
-    public void keyReleased() {
-        if (key == 'a' || key == 'A')
-            playerObject.stopLeft();
-        if (key == 'd' || key == 'D')
-            playerObject.stopRight();
-    }
-    public void mousePressed() {
-        if (mouseButton == LEFT)
-            playerObject.shoot();
-        else if (mouseButton == RIGHT)
-            playerObject.shootAlt();
-    }
-    public void mouseReleased() {
-        if (mouseButton == LEFT)
-            playerObject.stopShooting();
-        else if (mouseButton == RIGHT)
-            playerObject.stopShootingAlt();
-    }
+//    public void keyPressed() {
+//        if (key == 'w' || key == 'W')
+//            playerObject.jump();
+//        if (key == 'a' || key == 'A')
+//            playerObject.moveLeft();
+//        if (key == 'd' || key == 'D')
+//            playerObject.moveRight();
+//        println(key);
+//    }
+//    public void keyReleased() {
+//        if (key == 'a' || key == 'A')
+//            playerObject.stopLeft();
+//        if (key == 'd' || key == 'D')
+//            playerObject.stopRight();
+//    }
+//    public void mousePressed() {
+//        if (mouseButton == LEFT)
+//            playerObject.shoot();
+//        else if (mouseButton == RIGHT)
+//            playerObject.shootAlt();
+//    }
+//    public void mouseReleased() {
+//        if (mouseButton == LEFT)
+//            playerObject.stopShooting();
+//        else if (mouseButton == RIGHT)
+//            playerObject.stopShootingAlt();
+//    }
     public float getMouseX() {
         return mouseX - translateX;
     }
@@ -172,8 +173,8 @@ public class TestGame extends PApplet {
 
                                 // create the dynamic pixel
                                 DebrisObject debrisObject = new DebrisObject(this, level.getColor(solidX, solidY), x,y, velX, velY, level.destructionRes);
-                                physics.add(debrisObject);
-                                _renderer.add(debrisObject);
+                                //physics.add(debrisObject);
+                                //_renderer.add(debrisObject);
 
                                 // remove the static pixels
                                 for (int i = 0; i < level.destructionRes; i++) {

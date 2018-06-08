@@ -4,27 +4,36 @@ import processing.core.*;
 
 public class Level extends PApplet {
 
+    PApplet parent;
+
     // Background for the level
-    private PImage backgroundImage;
+    PImage backgroundImage;
 
     // How wide the destructed pixels are
     public int destructionRes;
 
-    public Level(PImage pic, int destructionRes) {
+    public Level(PApplet pApplet, PImage pic, int destructionRes) {
 
         this.destructionRes = destructionRes;
+        parent = pApplet;
 
         // Copy pic over to backgroundImage, replacing all pink (RGB: 255,0,255) pixels with transparent pixels
         backgroundImage = createImage(pic.width, pic.height, ARGB);
         backgroundImage.loadPixels();
         pic.loadPixels();
-        for (int i = 0; i < backgroundImage.width * backgroundImage.height; i++) {
-            if (red(pic.pixels[i]) == 255 && green(pic.pixels[i]) == 0 && blue(pic.pixels[i]) == 255)
-                backgroundImage.pixels[i] = color(0,0);
-            else
-                backgroundImage.pixels[i] = pic.pixels[i];
-        }
+        try{
+            for (int i = 0; i < backgroundImage.width * backgroundImage.height; i++) {
+                if (red(pic.pixels[i]) == 255 && green(pic.pixels[i]) == 0 && blue(pic.pixels[i]) == 255)
+                    backgroundImage.pixels[i] = color(0,0);
+                else
+                    backgroundImage.pixels[i] = pic.pixels[i];
+            }
+        }catch (NullPointerException e){println(e);}
         backgroundImage.updatePixels();
+    }
+
+    public void display(){
+        parent.image(backgroundImage, 0,0);
     }
 
     // Render level onto the main screen

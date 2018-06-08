@@ -1,4 +1,4 @@
 
-¢squid:S1845%"Rename method "width" to prevent any misunderstanding/clash with field "width" defined in superclass "processing.core.PApplet".(´¸¥ğıÿÿÿÿ8²åŒ½,
 ¥squid:S1845("Rename method "height" to prevent any misunderstanding/clash with field "height" defined in superclass "processing.core.PApplet".(Ğ­º¶üÿÿÿÿ8²åŒ½,
 ”"squid:ClassVariableVisibilityCheck"ZMake destructionRes a static final constant or non-public and provide accessors if needed.(Ô“¢üÿÿÿÿ8²åŒ½,
+¢squid:S1845%"Rename method "width" to prevent any misunderstanding/clash with field "width" defined in superclass "processing.core.PApplet".(´¸¥ğıÿÿÿÿ8²åŒ½,

@@ -161,7 +161,7 @@ public class Player extends PApplet implements TestGame.PhysicsObj, TestGame.Ren
                     // Change our color from RGB to HSB so we can cycle through hues
                     colorMode(HSB, 255);
                     for (int i = 0; i < 150; i++) { // create 150 particles
-                        Debris debris = new Debris(color((int) (((millis() / 5000f) * 255f) % 255), 255, 255), // color
+                        Debris debris = new Debris(new PApplet(), color((int) (((millis() / 5000f) * 255f) % 255), 255, 255), // color
                                 this.posX, this.posY, // position
                                 random(-50, 50) + random(1500, 2500) * diffX / len, random(-50, 50) + random(1500, 2500) * diffY / len, // speed
                                 level.destructionRes); // size

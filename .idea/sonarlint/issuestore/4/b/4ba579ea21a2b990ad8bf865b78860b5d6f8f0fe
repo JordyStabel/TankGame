@@ -1,5 +1,5 @@
 
 |squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ùœúéÿÿÿÿÿ8²åŒ½,
+}squid:S1450	"ZRemove the "currentTime" field and declare it as a local variable in the relevant methods.(û‹ÿ¿øÿÿÿÿ8²åŒ½,
 ?squid:S1170
 "!Make this final field static too.(ÂŒ„8²åŒ½,
-}squid:S1450	"ZRemove the "currentTime" field and declare it as a local variable in the relevant methods.(û‹ÿ¿øÿÿÿÿ8²åŒ½,

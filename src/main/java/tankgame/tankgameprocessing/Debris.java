@@ -2,7 +2,12 @@ package tankgame.tankgameprocessing;
 
 import processing.core.*;
 
-public class Debris extends PApplet implements TestGame.PhysicsObj, TestGame.RenderObj {
+import static java.sql.DriverManager.println;
+
+public class Debris implements TestGame.PhysicsObj, TestGame.RenderObj {
+
+
+    private PApplet parent;
 
     private TestGame testGame;
     private Level level;
@@ -28,20 +33,29 @@ public class Debris extends PApplet implements TestGame.PhysicsObj, TestGame.Ren
 
     private int size = 1; // width and height of the pixel
 
-    Debris(int c, float x, float y, float vX, float vY, int size) {
+    Debris(PApplet pApplet, int c, float x, float y, float vX, float vY, int size) {
         col = c;
         this.x = x; this.y = y;
         lastX = x; lastY = y;
         velX = vX; velY = vY;
 
+        parent = pApplet;
+
         this.size = size;
     }
 
+    // Test
+    public void display(){
+        parent.fill(col);
+        parent.noStroke();
+        parent.rect(x, y, size, size);
+        println("Display");
+    }
+
+
     // Render the pixel (method implemented as a RenderObj)
     public void draw() {
-        fill(col);
-        noStroke();
-        rect(x,y, size, size);
+        println("Draw in debris");
     }
 
     // Methods implemented as a PhysicsObj

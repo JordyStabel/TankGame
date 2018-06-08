@@ -168,7 +168,7 @@ public class TestGame extends PApplet {
                                 float velY = speed * (yDiff + random(-10,10)) / distance;
 
                                 // create the dynamic pixel
-                                Debris debris = new Debris(level.getColor(solidX, solidY), x,y, velX, velY, level.destructionRes);
+                                Debris debris = new Debris(this, level.getColor(solidX, solidY), x,y, velX, velY, level.destructionRes);
                                 physics.add(debris);
                                 _renderer.add(debris);
 

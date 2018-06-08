@@ -2,12 +2,14 @@ package tankgame.tankgameprocessing;
 
 import processing.core.*;
 
-public class Shell extends PApplet implements IPhysicsObject, IRenderObject {
+public class Shell implements IPhysicsObject, IRenderObject {
 
     private TestGame testGame;
     private Level level;
     private Renderer _renderer;
     private Physics physics;
+
+    private PApplet sketch;
 
     // Position
     private float x;
@@ -22,10 +24,12 @@ public class Shell extends PApplet implements IPhysicsObject, IRenderObject {
     private float velY;
 
     // Constructor
-    Shell(float x, float y, float vX, float vY) {
+    Shell(float x, float y, float vX, float vY, PApplet sketch) {
         this.x = x; this.y = y;
         lastX = x; lastY = y;
         velX = vX; velY = vY;
+
+        this.sketch = sketch;
     }
 
     // methods implemented as a PhysicsObj
@@ -50,7 +54,7 @@ public class Shell extends PApplet implements IPhysicsObject, IRenderObject {
     }
 
     public void draw() {
-        fill(0);
-        rect(x,y,30,30);
+        sketch.fill(0);
+        sketch.rect(x,y,30,30);
     }
 }

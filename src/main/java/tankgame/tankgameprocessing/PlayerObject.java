@@ -2,7 +2,9 @@ package tankgame.tankgameprocessing;
 
 import processing.core.*;
 
-public class PlayerObject extends PApplet implements TestGame.PhysicsObj, TestGame.RenderObj {
+import static java.sql.DriverManager.println;
+
+public class PlayerObject implements TestGame.RenderObj, TestGame.PhysicsObj {
 
     PApplet parent;
 
@@ -38,11 +40,12 @@ public class PlayerObject extends PApplet implements TestGame.PhysicsObj, TestGa
     private int playerHeight;
 
     // Constructor
-    PlayerObject(PApplet pApplet, int positionX, int positionY) {
+    PlayerObject(PApplet pApplet, Level level, int positionX, int positionY) {
         this.posX = positionX;
         this.posY = positionY;
 
         parent = pApplet;
+        this.level = level;
 
         // Start out standing still
         velX = 0;
@@ -99,47 +102,48 @@ public class PlayerObject extends PApplet implements TestGame.PhysicsObj, TestGa
     public void display() {
         parent.stroke(0);
         parent.fill(255);
-        parent.rect(posX - playerWidth / 2, posY - playerHeight / 2, playerWidth, playerHeight);
+        parent.rect(posX - (float)playerWidth / 2, posY - (float)playerHeight / 2, playerWidth, playerHeight);
+        System.out.println(velX);
     }
 
     @Override
     public float getX() {
-        return 0;
+        return posX;
     }
 
     @Override
     public float getY() {
-        return 0;
+        return posY;
     }
 
     @Override
     public float getVX() {
-        return 0;
+        return velX;
     }
 
     @Override
     public float getVY() {
-        return 0;
+        return velY;
     }
 
     @Override
     public void setX(float pX) {
-
+        posX = pX;
     }
 
     @Override
     public void setY(float pY) {
-
+        posY = pY;
     }
 
     @Override
     public void setVX(float vX) {
-
+        velX = vX;
     }
 
     @Override
     public void setVY(float vY) {
-
+        velY = vY;
     }
 
     // checkConstraints - implemented as a PhysicsObj
@@ -149,32 +153,32 @@ public class PlayerObject extends PApplet implements TestGame.PhysicsObj, TestGa
         // shooting
         if (shooting || shootingAlt) {
             // Primary fire happens every 200 ms, alternate fire happens every 25 ms.
-            if (!(shooting && millis() - lastShot < 150) && !(shootingAlt && millis() - lastShot < 15)) {
+            if (!(shooting && parent.millis() - lastShot < 150) && !(shootingAlt && parent.millis() - lastShot < 15)) {
                 // Create a vector between the playerObject and the mouse, then normalize that vector (to change its length to 1)
                 // after multiplying by the desired bullet speed, we get how fast along each axis we want the bullet to be traveling
                 float diffX = testGame.getMouseX() - posX;
                 float diffY = testGame.getMouseY() - posY;
-                float len = sqrt(diffX * diffX + diffY * diffY);
+                float len = parent.sqrt(diffX * diffX + diffY * diffY);
                 if (shooting) {
                     // create the bullet at 2000 px/sec, and add it to our Physics and Rendering lists
-                    Shell shell = new Shell(posX, posY, 2000 * diffX / len, 2000 * diffY / len);
+                    Shell shell = new Shell(posX, posY, 2000 * diffX / len, 2000 * diffY / len, parent);
                     physics.add((TestGame.PhysicsObj) shell);
                     _renderer.add((TestGame.RenderObj) shell);
                 } else {
                     // Change our color from RGB to HSB so we can cycle through hues
-                    colorMode(HSB, 255);
+                    parent.colorMode(parent.HSB, 255);
                     for (int i = 0; i < 150; i++) { // create 150 particles
-                        DebrisObject debrisObject = new DebrisObject(new PApplet(), color((int) (((millis() / 5000f) * 255f) % 255), 255, 255), // color
+                        DebrisObject debrisObject = new DebrisObject(new PApplet(), parent.color((int) (((parent.millis() / 5000f) * 255f) % 255), 255, 255), // color
                                 this.posX, this.posY, // position
-                                random(-50, 50) + random(1500, 2500) * diffX / len, random(-50, 50) + random(1500, 2500) * diffY / len, // speed
+                                parent.random(-50, 50) + parent.random(1500, 2500) * diffX / len, parent.random(-50, 50) + parent.random(1500, 2500) * diffY / len, // speed
                                 level.destructionRes); // size
                         physics.add(debrisObject);
                         _renderer.add(debrisObject);
                     }
-                    colorMode(RGB, 255);
+                    parent.colorMode(parent.RGB, 255);
                 }
                 // reset lastShot
-                lastShot = millis();
+                lastShot = parent.millis();
             }
         }
 

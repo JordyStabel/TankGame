@@ -2,7 +2,10 @@ package tankgame.tankgameprocessing;
 
 import processing.core.*;
 
-public class Level extends PApplet {
+import static com.jogamp.opengl.math.FloatUtil.sqrt;
+import static jdk.nashorn.internal.objects.Global.println;
+
+public class Level {
 
     PApplet parent;
 
@@ -18,13 +21,13 @@ public class Level extends PApplet {
         parent = pApplet;
 
         // Copy pic over to backgroundImage, replacing all pink (RGB: 255,0,255) pixels with transparent pixels
-        backgroundImage = createImage(pic.width, pic.height, ARGB);
+        backgroundImage = parent.createImage(pic.width, pic.height, parent.ARGB);
         backgroundImage.loadPixels();
         pic.loadPixels();
         try{
             for (int i = 0; i < backgroundImage.width * backgroundImage.height; i++) {
-                if (red(pic.pixels[i]) == 255 && green(pic.pixels[i]) == 0 && blue(pic.pixels[i]) == 255)
-                    backgroundImage.pixels[i] = color(0,0);
+                if (parent.red(pic.pixels[i]) == 255 && parent.green(pic.pixels[i]) == 0 && parent.blue(pic.pixels[i]) == 255)
+                    backgroundImage.pixels[i] = parent.color(0,0);
                 else
                     backgroundImage.pixels[i] = pic.pixels[i];
             }
@@ -38,7 +41,7 @@ public class Level extends PApplet {
 
     // Render level onto the main screen
     public void draw(float x, float y) {
-        image(backgroundImage, x,y);
+        parent.image(backgroundImage, x,y);
     }
 
     // Return the level's width and height
@@ -58,7 +61,7 @@ public class Level extends PApplet {
     // Determine if a pixel is solid based on whether or not it's transparent
     public boolean isPixelSolid(int x, int y) {
         if (x > 0 && x < backgroundImage.width && y > 0 && y < backgroundImage.height)
-            return backgroundImage.pixels[x + y * backgroundImage.width] != color(0,0);
+            return backgroundImage.pixels[x + y * backgroundImage.width] != parent.color(0,0);
         return false; // border is not solid
     }
 
@@ -70,7 +73,7 @@ public class Level extends PApplet {
     // Make a pixel solid
     public void removePixel(int x, int y) {
         if (x > 0 && x < backgroundImage.width && y > 0 && y < backgroundImage.height)
-            backgroundImage.pixels[x + y * backgroundImage.width] = color(0,0);
+            backgroundImage.pixels[x + y * backgroundImage.width] = parent.color(0,0);
     }
     // Get a pixel's color
     public int getColor(int x, int y) {

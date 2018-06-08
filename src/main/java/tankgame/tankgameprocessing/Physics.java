@@ -4,22 +4,25 @@ import processing.core.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Physics extends PApplet{
+public class Physics {
     private long previousTime;
     private long currentTime;
     private final int fixedDeltaTime = 16;
     private float fixedDeltaTimeSeconds = (float)fixedDeltaTime / 1000.0f;
     private int leftOverDeltaTime = 0;
 
+    private PApplet parent;
+
     private List<TestGame.PhysicsObj> objects;
 
     // Constructor
-    Physics() {
+    Physics(PApplet pApplet) {
+        parent = pApplet;
         objects = new ArrayList<TestGame.PhysicsObj>();
     }
 
     public void add(TestGame.PhysicsObj obj) {
-        objects.add((int)random(objects.size()),obj);
+        objects.add((int)parent.random(objects.size()),obj);
     }
     public void remove(TestGame.PhysicsObj obj) {
         objects.remove(obj);
@@ -34,7 +37,7 @@ public class Physics extends PApplet{
         // a fixed timestep will make collision detection and handling (in the PlayerObject class, esp.) a lot simpler
         // A low framerate will not compromise any collision detections, while it'll still run at a consistent speed.
 
-        currentTime = millis();
+        currentTime = parent.millis();
         long deltaTimeMS = currentTime - previousTime; // how much time has elapsed since the last update
 
         previousTime = currentTime; // reset previousTime
@@ -43,7 +46,7 @@ public class Physics extends PApplet{
         int timeStepAmt = (int)((float)(deltaTimeMS + leftOverDeltaTime) / (float)fixedDeltaTime);
 
         // Limit the timestep amount to prevent freezing
-        timeStepAmt = min(timeStepAmt, 1);
+        timeStepAmt = parent.min(timeStepAmt, 1);
 
         // store left over time for the next frame
         leftOverDeltaTime = (int)deltaTimeMS - (timeStepAmt * fixedDeltaTime);

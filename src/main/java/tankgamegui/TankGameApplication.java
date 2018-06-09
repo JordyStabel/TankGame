@@ -39,8 +39,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
     public void setup() {
 
         game = new TankGame();
-        String test = this.args[1];
-        println(test);
+        //String test = this.args[1];
         try {
             registerPlayer(this.args[0]);
         } catch (Exception e) {
@@ -373,6 +372,6 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
     /* Level */
 // Provides methods for determining solid/empty pixels, and for removing/adding solid pixels
     static public void main(String args[]) {
-        PApplet.main(new String[] { "tankgamegui.TankGameApplication", args[0], args[1] } );
+        PApplet.main(new String[] { "tankgamegui.TankGameApplication", args[0] } );
     }
 }

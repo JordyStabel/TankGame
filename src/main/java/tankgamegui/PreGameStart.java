@@ -12,7 +12,7 @@ public class PreGameStart {
 
     private Scanner inputScanner = new Scanner(System.in);
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws Throwable {
         PreGameStart menu = new PreGameStart();
         menu.runMenu();
     }
@@ -75,9 +75,8 @@ public class PreGameStart {
 
     private void start(){
         if (selfName != null && opponentName != null){
-            String[] playerNames = new String[] {selfName, opponentName};
-            TankGameApplication.main(playerNames);
-            TankGameApplication.main(playerNames);
+            TankGameApplication.main(new String[] {selfName});
+            TankGameApplication.main(new String[] {opponentName});
         }
         else{
             println("Give Both Players A Name First");

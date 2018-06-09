@@ -39,7 +39,13 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
     public void setup() {
 
         game = new TankGame();
-        //registerPlayer();
+        String test = this.args[1];
+        println(test);
+        try {
+            registerPlayer(this.args[0]);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         // load our images for level and background
         bg = loadImage("images/sky-blurry.png");
@@ -111,13 +117,6 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
             playerObject.moveLeft();
         if (key == 'd' || key == 'D')
             playerObject.moveRight();
-        if (key == 'y' || key == 'Y') {
-            try {
-                registerPlayer();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
     }
     public void keyReleased() {
         if (key == 'a' || key == 'A')
@@ -345,8 +344,8 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         public void display();
     }
 
-    private void registerPlayer() throws Exception {
-        playerName = "";//textFieldPlayerName.getText();
+    private void registerPlayer(String name) throws Exception {
+        playerName = name;
         if ("".equals(playerName) || playerName == null) {
             println("Enter your name before continuing");
         } else {
@@ -374,6 +373,6 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
     /* Level */
 // Provides methods for determining solid/empty pixels, and for removing/adding solid pixels
     static public void main(String args[]) {
-        PApplet.main(new String[] { "tankgamegui.TankGameApplication", args[1], args[2] } );
+        PApplet.main(new String[] { "tankgamegui.TankGameApplication", args[0], args[1] } );
     }
 }

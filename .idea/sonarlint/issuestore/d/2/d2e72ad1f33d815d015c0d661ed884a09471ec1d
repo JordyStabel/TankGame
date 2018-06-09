@@ -1,7 +1,9 @@
 
-Åsquid:S1488!"cImmediately return this expression instead of assigning it to the temporary variable "returnValue".(ëı£ú8¢ﬁå·∫,
-esquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(±ù«ﬁ8¢ﬁå·∫,
-©%squid:RedundantThrowsDeclarationCheck"qRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from constructor's body.(±ù«ﬁ8¢ﬁå·∫,
-nsquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(–” ƒ˙ˇˇˇˇ8¢ﬁå·∫,
-qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ãØ∑≠8¢ﬁå·∫,
-Msquid:S1068"/Remove this unused "tankGameGUI" private field.(Æ‘ﬁò8¢ﬁå·∫,
+Msquid:S1068"/Remove this unused "tankGameGUI" private field.(Æ‘ﬁò8¢ﬁå·∫,
+qsquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ãØ∑≠8¢ﬁå·∫,
+nsquid:CommentedOutCodeLine!"<This block of commented-out lines of code should be removed.(–” ƒ˙ˇˇˇˇ8¢ﬁå·∫,
+Åsquid:S1488 "cImmediately return this expression instead of assigning it to the temporary variable "returnValue".(ëı£ú8¢ﬁå·∫,
+§squid:S1186L"ÄAdd a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ãï¨Ô˛ˇˇˇˇ8ÍºÎßæ,
+esquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(±ù«ﬁ8¢ﬁå·∫,
+§squid:S1186G"ÄAdd a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Æ¬˙Ÿ˙ˇˇˇˇ8ÍºÎßæ,
+©%squid:RedundantThrowsDeclarationCheck"qRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from constructor's body.(±ù«ﬁ8Ö°ıßæ,

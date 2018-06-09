@@ -1,19 +1,8 @@
 
-Zsquid:UnusedPrivateMethod".Remove this unused private "placeTank" method.(÷­8²åŒ½,
-Ksquid:S1068%"(Remove this unused "grid" private field.(Š¤ûŸÿÿÿÿÿ8²åŒ½,
-osquid:CommentedOutCodeLine†"<This block of commented-out lines of code should be removed.(Ñ¢è¹ùÿÿÿÿ8²åŒ½,
-5squid:S1700"Rename field "tankGame"(å°•8²åŒ½,
-nsquid:CommentedOutCodeLineb"<This block of commented-out lines of code should be removed.(Ö¬Äöûÿÿÿÿ8²åŒ½,
-nsquid:CommentedOutCodeLines"<This block of commented-out lines of code should be removed.(¬Ôãşÿÿÿÿ8²åŒ½,
-nsquid:CommentedOutCodeLine/"<This block of commented-out lines of code should be removed.(Ô¦çÑıÿÿÿÿ8²åŒ½,
-Isquid:S1068"+Remove this unused "player2" private field.(„á¨È8²åŒ½,
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¯¦´‡øÿÿÿÿ8²åŒ½,
-vsquid:S1450%"SRemove the "grid" field and declare it as a local variable in the relevant methods.(Š¤ûŸÿÿÿÿÿ8²åŒ½,
-isquid:CommentedOutCodeLinei"<This block of commented-out lines of code should be removed.(€ÙÉî8²åŒ½,
-[squid:UnusedPrivateMethod˜".Remove this unused private "startGrid" method.(êÔ³8²åŒ½,
-isquid:CommentedOutCodeLined"<This block of commented-out lines of code should be removed.(×ÜŸ8²åŒ½,
-Tsquid:S1068"1Remove this unused "currentPlayer" private field.(ğƒÎŸÿÿÿÿÿ8²åŒ½,
-jsquid:CommentedOutCodeLineˆ"<This block of commented-out lines of code should be removed.(ÆºüÕ8²åŒ½,
-isquid:CommentedOutCodeLine`"<This block of commented-out lines of code should be removed.(ŸÕº‹8²åŒ½,
-isquid:CommentedOutCodeLinep"<This block of commented-out lines of code should be removed.(î”„8²åŒ½,
-isquid:CommentedOutCodeLineu"<This block of commented-out lines of code should be removed.(¡ú¥‘8²åŒ½,
+¤squid:S1186I"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®ÂúÙúÿÿÿÿ8„¹€¨¾,
+osquid:CommentedOutCodeLineÂ"<This block of commented-out lines of code should be removed.(¾¡üŒøÿÿÿÿ8„¹€¨¾,
+Fsquid:S11486"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ëçß¨¾,
+Ssquid:S1066"/Merge this if statement with the enclosing one.(Ú àøşÿÿÿÿ8Ñ”Ü¨¾,
+[squid:UnusedPrivateMethod¾".Remove this unused private "startGrid" method.(êÔ³8„¹€¨¾,
+Tsquid:S1068"1Remove this unused "currentPlayer" private field.(ğƒÎŸÿÿÿÿÿ8„¹€¨¾,
+¤squid:S1186N"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹•¬ïşÿÿÿÿ8„¹€¨¾,

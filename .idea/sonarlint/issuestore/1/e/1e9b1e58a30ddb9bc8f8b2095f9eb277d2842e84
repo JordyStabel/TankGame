@@ -1,3 +1,4 @@
 
 Usquid:S1135T"2Complete the task associated to this TODO comment.(¼âšæşÿÿÿÿ8†ô–¸¸,
 squid:S1319F"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(·âø®8À†…¸¸,
+tsquid:S2159N"VRemove this call to "equals"; comparisons between unrelated types always return false.(ñÀ’8…¡õ§¾,

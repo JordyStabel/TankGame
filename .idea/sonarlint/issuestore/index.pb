@@ -35,10 +35,6 @@ R
 "src/main/java/tankgame/ai/IAi.java,b\f\bfbeab50f73360004be13fa5355ed1ecc7901785
 Y
 )src/main/java/tankgame/player/Player.java,9\1\91796499ad2c5e5ae59e657e2fd45e7f77c9d469
-Z
-*src/main/java/tankgame/player/Player1.java,f\7\f70e58bb9d164f8f5f88ece32ed3920d09defa49
-Z
-*src/main/java/tankgame/player/Player2.java,f\5\f5b3098d5588a18adc3fc8bdf5a8afb7378b414f
 U
 %src/main/java/tankgame/map/IGrid.java,b\f\bf3e2738989428923dbc80bbb167b0e105864842
 \
@@ -81,8 +77,6 @@ a
 0src/main/java/tankgameclient/TankGameClient.java,d\2\d2e72ad1f33d815d015c0d661ed884a09471ec1d
 U
 %src/main/java/tankgame/URLReader.java,b\1\b1e46759b5048f369c2b6215138b6d046cf0e1ea
-V
-&src/main/java/tankgame/GameEngine.java,c\a\ca515f2faf769d2b339eb2243ad0984c334c3fd1
 g
 7src/main/java/tankgame/tankgameprocessing/Renderer.java,a\e\ae90bfa674de6337671aeb50b062926a9038c5b8
 d
@@ -99,5 +93,9 @@ k
 ;src/main/java/tankgame/tankgameprocessing/PlayerObject.java,9\8\98b8a34feb71d3a27290ba3277af959e089df63b
 k
 ;src/main/java/tankgame/tankgameprocessing/DebrisObject.java,1\5\1506cfde8abf6ff59398b2afad91b9894d0c8549
-r
-Bsrc/main/java/tankgame/tankgameprocessing/TankGameApplication.java,2\1\21c74251dc2d575a39b1d4e585ea94b84266c720
+[
++src/main/java/tankgame/player/Opponent.java,8\a\8ac9e0d84017d442911a12474810e573bdaa007c
+W
+'src/main/java/tankgame/player/Self.java,7\5\75e046d505a98fb65371710d16f789386dec8a4e
+[
++src/main/java/tankgamegui/PreGameStart.java,8\e\8e19555b0c683f2e330d335e128c9f5e2c9353fd

@@ -384,23 +384,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
     //public String sketchRenderer() { return JAVA2D; }
     static public void main(String args[]) {
 
-//        String input;
-//        boolean registered = false;
-//
-//        public void checkInput(){
-//
-//        }
-//
-//        String input = JOptionPane.showInputDialog(null, "Username", "Please Enter Your Username", JOptionPane.PLAIN_MESSAGE);
-//
-//        try {
-//            if (input.equals("")){
-//                input = JOptionPane.showInputDialog(null, "Username", "Please Enter Your Username", JOptionPane.PLAIN_MESSAGE);
-//            }
-//        }catch (NullPointerException e){
-//            System.exit(0);
-//        }
-
+        PApplet.main(new String[] { "tankgamegui.TankGameApplication" });
         PApplet.main(new String[] { "tankgamegui.TankGameApplication" });
     }
 }

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Ai {
+public class Ai implements IAi {
 
     private Random rand = new Random();
     private List<Coordinates> fireCoordinates = new ArrayList<>();
@@ -37,6 +37,11 @@ public class Ai {
         catch (Exception e) {
             return false;
         }
+    }
+
+    @Override
+    public boolean aiInit() {
+        return false;
     }
 
     // TODO: Make this more complicated

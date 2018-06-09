@@ -1,6 +1,5 @@
 
-?squid:S1170
-"!Make this final field static too.(ÂŒ„8Àç¯ı½,
-Xsquid:S22091"5Change this instance-reference to a static reference.(Ç˜ø•úÿÿÿÿ8ŒãÉ‚¾,
-}squid:S1450	"ZRemove the "currentTime" field and declare it as a local variable in the relevant methods.(û‹ÿ¿øÿÿÿÿ8Àç¯ı½,
-wsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(€¸Æ8íëÈ‚¾,
+usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(€¸Æ8Ò¢§¾,
+Vsquid:S2209"5Change this instance-reference to a static reference.(Ç˜ø•úÿÿÿÿ8Ò¢§¾,
+{squid:S1450"ZRemove the "currentTime" field and declare it as a local variable in the relevant methods.(û‹ÿ¿øÿÿÿÿ8Ò¢§¾,
+=squid:S1170"!Make this final field static too.(ÂŒ„8Ò¢§¾,

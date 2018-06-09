@@ -1,0 +1,33 @@
+
+Osquid:S1068
+",Remove this unused "selfName" private field.(Á•Òúÿÿÿÿ8Şş»©¾,
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(éØ8íÌ¬©¾,
+zsquid:S1450
+"WRemove the "selfName" field and declare it as a local variable in the relevant methods.(Á•Òúÿÿÿÿ8ËÜÊ©¾,
+V
+squid:S106@"9Replace this use of System.out or System.err by a logger.(–£ÎÁ8íÌ¬©¾,
+V
+squid:S106L"9Replace this use of System.out or System.err by a logger.(ßÚ8íÌ¬©¾,
+U
+squid:S106)"9Replace this use of System.out or System.err by a logger.(Äğ­8íÌ¬©¾,
+Nsquid:S1068"0Remove this unused "opponentName" private field.(ªÆÎ€8Şş»©¾,
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ğ™Ñ”úÿÿÿÿ8íÌ¬©¾,
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ğõı8íÌ¬©¾,
+V
+squid:S106 "9Replace this use of System.out or System.err by a logger.(éØ8íÌ¬©¾,
+V
+squid:S106$"9Replace this use of System.out or System.err by a logger.(íÛú8íÌ¬©¾,
+V
+squid:S106%"9Replace this use of System.out or System.err by a logger.(ÿÑ‘8íÌ¬©¾,
+[
+squid:S106&"9Replace this use of System.out or System.err by a logger.(ó½ùÆøÿÿÿÿ8íÌ¬©¾,
+V
+squid:S106*"9Replace this use of System.out or System.err by a logger.(ÖáõÓ8íÌ¬©¾,
+U
+squid:S1066"9Replace this use of System.out or System.err by a logger.(Ñ¶ÎG8íÌ¬©¾,
+ysquid:S1450"[Remove the "opponentName" field and declare it as a local variable in the relevant methods.(ªÆÎ€8ò–Ï©¾,
+V
+squid:S106'"9Replace this use of System.out or System.err by a logger.(şÉ’€8íÌ¬©¾,

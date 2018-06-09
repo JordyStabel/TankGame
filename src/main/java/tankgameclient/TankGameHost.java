@@ -37,7 +37,7 @@ public class TankGameHost implements ITankGameHost {
 
     @Override
     public void setOpponentName(int playerNr, String name) {
-        messageSender("setOpponentName", new Object[]{playerNr, name});
+
     }
 
     @Override

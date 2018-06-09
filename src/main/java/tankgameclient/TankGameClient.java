@@ -64,7 +64,7 @@ public class TankGameClient implements ITankGameClient {
 
     @Override
     public boolean notifyWhenReady(int playerNr) {
-        return ((boolean) messageSender("notifyWhenReady", new Object[]{playerNr}));
+        return false;
     }
 
     @Override

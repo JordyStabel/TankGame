@@ -1,6 +1,8 @@
 package tankgame.tankgameprocessing;
 
 import processing.core.*;
+import tankgamegui.TankGameApplication;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,7 +18,7 @@ public class Physics {
     private List<TankGameApplication.PhysicsObj> objects;
 
     // Constructor
-    Physics(PApplet pApplet) {
+    public Physics(PApplet pApplet) {
         parent = pApplet;
         objects = new ArrayList<TankGameApplication.PhysicsObj>();
     }

@@ -39,13 +39,6 @@ public class Ai {
         }
     }
 
-    // Create the Ai
-    //@Override
-    public boolean aiInit(){
-        tankGame.placeTankAutomatically(AIPlayerNr);
-        return true;
-    }
-
     // TODO: Make this more complicated
     private Coordinates createRandomCoordinates() {
         return new Coordinates(rand.nextInt(10), rand.nextInt(10));

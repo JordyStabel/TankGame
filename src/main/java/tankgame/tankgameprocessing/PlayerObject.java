@@ -1,6 +1,7 @@
 package tankgame.tankgameprocessing;
 
 import processing.core.*;
+import tankgamegui.TankGameApplication;
 
 public class PlayerObject implements TankGameApplication.RenderObj, TankGameApplication.PhysicsObj {
 
@@ -38,7 +39,7 @@ public class PlayerObject implements TankGameApplication.RenderObj, TankGameAppl
     private int playerHeight;
 
     // Constructor
-    PlayerObject(PApplet pApplet, Level level, int positionX, int positionY) {
+    public PlayerObject(PApplet pApplet, Level level, int positionX, int positionY) {
         this.posX = positionX;
         this.posY = positionY;
 

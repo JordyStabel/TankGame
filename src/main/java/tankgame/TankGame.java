@@ -7,9 +7,6 @@ import tankgame.player.Player;
 import tankgame.player.Player1;
 import tankgame.player.Player2;
 import tankgamegui.ITankGameGUI;
-import tankgamegui.enums.BlockType;
-import tankgamegui.enums.ShellType;
-import tankgamegui.enums.TankType;
 
 import java.io.IOException;
 import java.util.Random;
@@ -52,20 +49,6 @@ public class TankGame implements ITankGame {
         return -1;
     }
 
-    @Override
-    public boolean placeTankAutomatically(int playerNr) {
-        return false;
-    }
-
-    @Override
-    public boolean placeTank(int playerNr, TankType tankType, int x, int y) {
-        return false;
-    }
-
-    @Override
-    public boolean removeTanks(int playerNr) {
-        return false;
-    }
 
     @Override
     public boolean notifyWhenReady(int playerNr) {
@@ -73,13 +56,13 @@ public class TankGame implements ITankGame {
     }
 
     @Override
-    public ShellType fireShellAtPlayer(int playerNr, int x, int y) {
-        return null;
+    public void fireShellAtPlayer(int playerNr, int x, int y) {
+
     }
 
     @Override
-    public ShellType fireShellAtOpponent(int playerNr) {
-        return null;
+    public void fireShellAtOpponent(int playerNr) {
+
     }
 
     @Override
@@ -124,11 +107,6 @@ public class TankGame implements ITankGame {
 //        }
 //    }
 
-    private boolean placeTank(TankType tankType, int posX, int posY, IGrid grid) {
-        boolean success;
-        success = grid.placeTank(tankType, posX, posY);
-        return success;
-    }
 
 //    @Override
 //    public boolean startNewGame(int playerNr) throws IOException {
@@ -153,7 +131,7 @@ public class TankGame implements ITankGame {
         grid = new Grid(mapWidth, mapHeight);
         for (int i = 0; i < mapWidth; i++) {
             for (int j = 0; j < mapHeight; j++) {
-                tankGame.showSquarePlayer(playerNr, i, j, BlockType.GROUND);
+                //tankGame.showSquarePlayer(playerNr, i, j, BlockType.GROUND);
             }
         }
     }

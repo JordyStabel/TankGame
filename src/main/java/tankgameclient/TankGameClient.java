@@ -1,9 +1,8 @@
 package tankgameclient;
 
 import tankgamegui.ITankGameGUI;
-import tankgamegui.enums.ShellType;
-import tankgamegui.enums.TankType;
 import websocketshared.Message;
+
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -64,33 +63,18 @@ public class TankGameClient implements ITankGameClient {
     }
 
     @Override
-    public boolean placeTankAutomatically(int playerNr) {
-        return false;
-    }
-
-    @Override
-    public boolean placeTank(int playerNr, TankType tankType, int x, int y) {
-        return false;
-    }
-
-    @Override
-    public boolean removeTanks(int playerNr) {
-        return false;
-    }
-
-    @Override
     public boolean notifyWhenReady(int playerNr) {
         return false;
     }
 
     @Override
-    public ShellType fireShellAtPlayer(int playerNr, int x, int y) {
-        return null;
+    public void fireShellAtPlayer(int playerNr, int x, int y) {
+
     }
 
     @Override
-    public ShellType fireShellAtOpponent(int playerNr) {
-        return null;
+    public void fireShellAtOpponent(int playerNr) {
+
     }
 
     @Override

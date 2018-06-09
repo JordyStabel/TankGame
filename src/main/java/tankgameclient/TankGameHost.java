@@ -1,8 +1,6 @@
 package tankgameclient;
 
 import tankgame.ITankGame;
-import tankgamegui.enums.BlockType;
-import tankgamegui.enums.ShellType;
 import websocketshared.Message;
 
 public class TankGameHost implements ITankGameHost {
@@ -39,21 +37,6 @@ public class TankGameHost implements ITankGameHost {
 
     @Override
     public void setOpponentName(int playerNr, String name) {
-
-    }
-
-    @Override
-    public void opponentFiresShot(int playerNr, ShellType shellType) {
-
-    }
-
-    @Override
-    public void showSquarePlayer(int playerNr, int posX, int posY, BlockType blockType) {
-
-    }
-
-    @Override
-    public void showSquareOpponent(int playerNr, int posX, int posY, BlockType blockType) {
 
     }
 

@@ -1,6 +1,7 @@
 package tankgame.tankgameprocessing;
 
 import processing.core.PApplet;
+import tankgamegui.TankGameApplication;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +14,7 @@ public class Renderer {
 
     private PApplet parent;
 
-    Renderer(PApplet pApplet) {
+    public Renderer(PApplet pApplet) {
         parent = pApplet;
         objects = new ArrayList<TankGameApplication.RenderObj>();
     }

@@ -1,6 +1,8 @@
 package tankgame.tankgameprocessing;
 
 import processing.core.*;
+import tankgamegui.TankGameApplication;
+
 import static java.sql.DriverManager.println;
 
 public class DebrisObject implements TankGameApplication.PhysicsObj, TankGameApplication.RenderObj {
@@ -31,7 +33,7 @@ public class DebrisObject implements TankGameApplication.PhysicsObj, TankGameApp
 
     private int size = 1; // width and height of the pixel
 
-    DebrisObject(PApplet pApplet, int c, float x, float y, float vX, float vY, int size) {
+    public DebrisObject(PApplet pApplet, int c, float x, float y, float vX, float vY, int size) {
         col = c;
         this.x = x; this.y = y;
         lastX = x; lastY = y;

@@ -1,6 +1,7 @@
 package tankgame.tankgameprocessing;
 
 import processing.core.*;
+import tankgamegui.TankGameApplication;
 
 public class Shell implements IPhysicsObject, IRenderObject {
 

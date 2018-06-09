@@ -1,7 +1,5 @@
 package tankgame;
 
-import tankgame.ai.Ai;
-import tankgame.ai.IAi;
 import tankgame.map.Grid;
 import tankgame.map.IGrid;
 import tankgame.player.Opponent;
@@ -21,7 +19,6 @@ public class TankGame implements ITankGame {
     private ITankGameGUI tankGameGUI;
     private Self self;
     private Opponent opponent;
-    private IAi aiOpponent;
     private Player currentPlayer;
 
     private ITankGameHost host;
@@ -101,8 +98,6 @@ public class TankGame implements ITankGame {
     private boolean notifyWhenReadySingleplayer() {
         //if yes then create an AI opponent
 
-        aiOpponent = new Ai(this, 1 - localPlayerNr);
-        aiOpponent.aiInit();
         opponent = new Opponent("AI");
         tankGameGUI.setOpponentName(localPlayerNr, opponent.getPlayerName());
         // and startSocket the game
@@ -115,7 +110,6 @@ public class TankGame implements ITankGame {
             currentPlayer = self;
         } else {
             currentPlayer = opponent;
-            aiOpponent.aiTurn();
         }
     }
 

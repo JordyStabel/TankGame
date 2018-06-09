@@ -17,6 +17,8 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
 
     private ITankGame game;
 
+    private boolean singlePlayerMode = false;
+
     private boolean bothReady = false;
     private boolean gameEnded = false;
 
@@ -46,6 +48,8 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
             e.printStackTrace();
         }
 
+
+
         // load our images for level and background
         bg = loadImage("images/sky-blurry.png");
 
@@ -61,6 +65,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
 //
 //        // create the playerObject
         playerObject = new PlayerObject(this, level,100,100);
+
         physics.add(playerObject);
         _renderer.add(playerObject);
     }
@@ -105,6 +110,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         //playerObject.display();
         level.display();
         playerObject.display();
+        text(playerName, playerObject.getX(), playerObject.getY());
     }
     /* Bullet */
 // Acts similarly to PhysicsPixel
@@ -116,6 +122,8 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
             playerObject.moveLeft();
         if (key == 'd' || key == 'D')
             playerObject.moveRight();
+        if (key == 'r')
+            notifyWhenReady();
     }
     public void keyReleased() {
         if (key == 'a' || key == 'A')
@@ -229,7 +237,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
 
     @Override
     public void setOpponentName(int nr, String name) {
-        if (playerNr != this.playerNr) {
+        if (nr != this.playerNr) {
             println("ERROR: Wrong player number method setOpponentName()");
             return;
         } else {
@@ -351,8 +359,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
             println(playerName + " Has registered!");
             playerNr = game.registerPlayer(playerName, (ITankGameGUI) this, false);
             if (playerNr != -1) {
-
-                println("player " + playerName + " registered");
+                println("player " + playerName + " registered, with playernumber: " + playerNr);
             } else {
                 println("Name already defined");
             }
@@ -365,7 +372,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         if (bothReady) {
             startGame();
         } else {
-            println("Place all ships and then press Ready to play");
+            println("Something needs to get fixed :'(");
         }
     }
 

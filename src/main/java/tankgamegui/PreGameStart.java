@@ -77,6 +77,7 @@ public class PreGameStart {
         if (selfName != null && opponentName != null){
             String[] playerNames = new String[] {selfName, opponentName};
             TankGameApplication.main(playerNames);
+            TankGameApplication.main(playerNames);
         }
         else{
             println("Give Both Players A Name First");

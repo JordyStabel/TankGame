@@ -4,6 +4,7 @@
       <w>opponentname</w>
       <w>selfname</w>
       <w>tankgame</w>
+      <w>tankgamegui</w>
     </words>
   </dictionary>
 </component>

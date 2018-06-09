@@ -39,6 +39,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
     public void setup() {
 
         game = new TankGame();
+        //registerPlayer();
 
         // load our images for level and background
         bg = loadImage("images/sky-blurry.png");
@@ -124,18 +125,18 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         if (key == 'd' || key == 'D')
             playerObject.stopRight();
     }
-    public void mousePressed() {
-        if (mouseButton == LEFT)
-            playerObject.shoot();
-        else if (mouseButton == RIGHT)
-            playerObject.shootAlt();
-    }
-    public void mouseReleased() {
-        if (mouseButton == LEFT)
-            playerObject.stopShooting();
-        else if (mouseButton == RIGHT)
-            playerObject.stopShootingAlt();
-    }
+//    public void mousePressed() {
+//        if (mouseButton == LEFT)
+//            playerObject.shoot();
+//        else if (mouseButton == RIGHT)
+//            playerObject.shootAlt();
+//    }
+//    public void mouseReleased() {
+//        if (mouseButton == LEFT)
+//            playerObject.stopShooting();
+//        else if (mouseButton == RIGHT)
+//            playerObject.stopShootingAlt();
+//    }
     public float getMouseX() {
         return mouseX - translateX;
     }
@@ -370,21 +371,9 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         }
     }
 
-//    private void message(){
-//        JOptionPane pane = new JOptionPane();
-//        JDialog dialog = pane.createDialog("Hi there!");
-//        dialog.setAlwaysOnTop(true);
-//        dialog.show();
-//    }
-
     /* Level */
 // Provides methods for determining solid/empty pixels, and for removing/adding solid pixels
-    //public int sketchWidth() { return 600; }
-    //public int sketchHeight() { return 450; }
-    //public String sketchRenderer() { return JAVA2D; }
     static public void main(String args[]) {
-
-        PApplet.main(new String[] { "tankgamegui.TankGameApplication" });
-        PApplet.main(new String[] { "tankgamegui.TankGameApplication" });
+        PApplet.main(new String[] { "tankgamegui.TankGameApplication", args[1], args[2] } );
     }
 }

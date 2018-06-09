@@ -1,14 +1,20 @@
 package tankgame.tankgameprocessing;
 
+import javafx.application.Platform;
 import processing.core.PApplet;
 import processing.core.PImage;
 
-import javax.swing.*;
-
-public class TankGameApplication extends PApplet {
+public class TankGameApplication extends PApplet implements ITankGameGUI {
 
     /* global variables */
     private String playerName = null;
+    private String opponentName = null;
+
+    private int playerNr = 0;
+
+    private ITankGameGUI game;
+
+    private boolean gameEnded = false;
 
     // the level contains the bitmap for all the static pixels
     Level level;
@@ -27,6 +33,8 @@ public class TankGameApplication extends PApplet {
 
     // setup(), called before any looping is done
     public void setup() {
+
+        game = new TankGameApplication();
 
         // load our images for level and background
         bg = loadImage("images/sky-blurry.png");
@@ -98,7 +106,13 @@ public class TankGameApplication extends PApplet {
             playerObject.moveLeft();
         if (key == 'd' || key == 'D')
             playerObject.moveRight();
-        println(key);
+        if (key == 'y' || key == 'Y') {
+            try {
+                registerPlayer();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
     }
     public void keyReleased() {
         if (key == 'a' || key == 'A')
@@ -192,6 +206,29 @@ public class TankGameApplication extends PApplet {
             }
         }
     }
+
+    @Override
+    public void setPlayerName(int nr, String name) {
+        if (nr != this.playerNr) {
+            println("ERROR: Wrong player number method setPlayerName()");
+            return;
+        } else {
+            println("player name " + name + " registered");
+        }
+        playerName = name;
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                println(playerName + "'s name has been set");
+            }
+        });
+    }
+
+    @Override
+    public void startGame() {
+
+    }
+
     /* PhysicsObj */
 // Any object that will need motion integrated will implement this
 // these methods allows the Physics class to forward the object's position using its velocity
@@ -286,15 +323,11 @@ public class TankGameApplication extends PApplet {
         public void display();
     }
 
-
-    /* Renderer */
-// Holds a list of all "RenderObj"s, anything with a draw() method.
-
-//    private void registerPlayer() throws Exception {
-//        playerName = textFieldPlayerName.getText();
-//        if ("".equals(playerName) || playerName == null) {
-//            showMessage("Enter your name before registering");
-//        } else {
+    private void registerPlayer() throws Exception {
+        playerName = "";//textFieldPlayerName.getText();
+        if ("".equals(playerName) || playerName == null) {
+            println("Enter your name before continuing");
+        } else {
 //            labelPlayerName.setText(playerName + "\'s grid");
 //            playerNr = game.registerPlayer(playerName, (ISeaBattleGUI) this, singlePlayerMode);
 //            if (playerNr != -1) {
@@ -303,7 +336,14 @@ public class TankGameApplication extends PApplet {
 //            } else {
 //                showMessage("Name already defined");
 //            }
-//        }
+        }
+    }
+
+//    private void message(){
+//        JOptionPane pane = new JOptionPane();
+//        JDialog dialog = pane.createDialog("Hi there!");
+//        dialog.setAlwaysOnTop(true);
+//        dialog.show();
 //    }
 
     /* Level */
@@ -313,22 +353,22 @@ public class TankGameApplication extends PApplet {
     //public String sketchRenderer() { return JAVA2D; }
     static public void main(String args[]) {
 
-        String input;
-        boolean registered = false;
-
-        public void checkInput(){
-
-        }
-
-        String input = JOptionPane.showInputDialog(null, "Username", "Please Enter Your Username", JOptionPane.PLAIN_MESSAGE);
-
-        try {
-            if (input.equals("")){
-                input = JOptionPane.showInputDialog(null, "Username", "Please Enter Your Username", JOptionPane.PLAIN_MESSAGE);
-            }
-        }catch (NullPointerException e){
-            System.exit(0);
-        }
+//        String input;
+//        boolean registered = false;
+//
+//        public void checkInput(){
+//
+//        }
+//
+//        String input = JOptionPane.showInputDialog(null, "Username", "Please Enter Your Username", JOptionPane.PLAIN_MESSAGE);
+//
+//        try {
+//            if (input.equals("")){
+//                input = JOptionPane.showInputDialog(null, "Username", "Please Enter Your Username", JOptionPane.PLAIN_MESSAGE);
+//            }
+//        }catch (NullPointerException e){
+//            System.exit(0);
+//        }
 
         PApplet.main(new String[] { "tankgame.tankgameprocessing.TankGameApplication" });
     }

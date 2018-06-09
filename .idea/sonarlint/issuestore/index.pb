@@ -85,8 +85,6 @@ V
 &src/main/java/tankgame/GameEngine.java,c\a\ca515f2faf769d2b339eb2243ad0984c334c3fd1
 g
 7src/main/java/tankgame/tankgameprocessing/Renderer.java,a\e\ae90bfa674de6337671aeb50b062926a9038c5b8
-g
-7src/main/java/tankgame/tankgameprocessing/TestGame.java,0\c\0caa3ace51c3717641c49e449d9acadf9ae81e47
 d
 4src/main/java/tankgame/tankgameprocessing/Shell.java,5\1\516288231c0e6a48f09a613f3aa4205245b465d4
 f

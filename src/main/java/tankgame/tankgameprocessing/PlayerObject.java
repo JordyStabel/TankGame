@@ -101,7 +101,6 @@ public class PlayerObject implements TankGameApplication.RenderObj, TankGameAppl
         parent.stroke(0);
         parent.fill(255);
         parent.rect(posX - (float)playerWidth / 2, posY - (float)playerHeight / 2, playerWidth, playerHeight);
-        System.out.println(velX);
     }
 
     @Override

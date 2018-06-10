@@ -99,3 +99,5 @@ W
 'src/main/java/tankgame/player/Self.java,7\5\75e046d505a98fb65371710d16f789386dec8a4e
 [
 +src/main/java/tankgamegui/PreGameStart.java,8\e\8e19555b0c683f2e330d335e128c9f5e2c9353fd
+\
+,src/main/java/tankgamegui/enums/Methods.java,6\f\6ff087661638b6600d08c24e93551ef372a918e4

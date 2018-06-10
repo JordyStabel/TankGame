@@ -1,8 +1,8 @@
 
-Lsquid:S1068")Remove this unused "tanks" private field.(à¢¤¡úÿÿÿÿ8öÍºÈ¸,
-[
-squid:S106%"9Replace this use of System.out or System.err by a logger.(îØµüıÿÿÿÿ8öÍºÈ¸,
-msquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼î½˜8…¡õ§¾,
-squid:S1319:"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(„çÒÎ8öÍºÈ¸,
-Isquid:S1168;"+Return an empty collection instead of null.(¥¹ï8öÍºÈ¸,
-Msquid:S1068"/Remove this unused "tankCreator" private field.(ÊÙÊí8öÍºÈ¸,
+Ksquid:S1068"/Remove this unused "tankCreator" private field.(ÊÙÊí8öÍºÈ¸,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(îØµüıÿÿÿÿ8öÍºÈ¸,
+Jsquid:S1068")Remove this unused "tanks" private field.(à¢¤¡úÿÿÿÿ8öÍºÈ¸,
+Œsquid:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(„çÒÎ8öÍºÈ¸,
+ksquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼î½˜8…¡õ§¾,
+Gsquid:S1168"+Return an empty collection instead of null.(¥¹ï8öÍºÈ¸,

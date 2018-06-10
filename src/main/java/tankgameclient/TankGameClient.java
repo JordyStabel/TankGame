@@ -73,6 +73,10 @@ public class TankGameClient implements ITankGameClient {
         return false;
     }
 
+    public void startGame() {
+        tankGameGUI.startGame();
+    }
+
     public void setPlayerName(int playerNr, String name) {
         tankGameGUI.setPlayerName(playerNr, name);
     }

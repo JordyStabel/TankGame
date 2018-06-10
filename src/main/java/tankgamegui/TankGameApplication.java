@@ -20,6 +20,8 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
     private boolean singlePlayerMode = false;
 
     private boolean bothReady = false;
+
+    private boolean isInProgress = false;
     private boolean gameEnded = false;
 
     // the level contains the bitmap for all the static pixels
@@ -260,7 +262,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
 
     @Override
     public void startGame() {
-        this.start();
+        isInProgress = true;
     }
 
     /* PhysicsObj */

@@ -1,10 +1,10 @@
 
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(˜ÚÐÑ8åú×Üº,
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(€¥‘¶øÿÿÿÿ8åú×Üº,
-Y
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ú”Éóþÿÿÿÿ8åú×Üº,
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(Ð‘ Û8åú×Üº,
-?squid:S1148"#Use a logger to log this exception.(Ç’Çê8åú×Üº,
+Asquid:S1148e"#Use a logger to log this exception.(Ç’Çê8ýøÇÐ¾,
+V
+squid:S106("9Replace this use of System.out or System.err by a logger.(˜ÚÐÑ8ýøÇÐ¾,
+[
+squid:S106a"9Replace this use of System.out or System.err by a logger.(€¥‘¶øÿÿÿÿ8ýøÇÐ¾,
+V
+squid:S106U"9Replace this use of System.out or System.err by a logger.(Ð‘ Û8ýøÇÐ¾,
+[
+squid:S1060"9Replace this use of System.out or System.err by a logger.(Ú”Éóþÿÿÿÿ8ýøÇÐ¾,

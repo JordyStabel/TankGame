@@ -1,8 +1,10 @@
 
-¤squid:S1186I"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®ÂúÙúÿÿÿÿ8„¹€¨¾,
-osquid:CommentedOutCodeLineÂ"<This block of commented-out lines of code should be removed.(¾¡üŒøÿÿÿÿ8„¹€¨¾,
-Fsquid:S11486"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ëçß¨¾,
-Ssquid:S1066"/Merge this if statement with the enclosing one.(Ú àøþÿÿÿÿ8Ñ”Ü¨¾,
-[squid:UnusedPrivateMethod¾".Remove this unused private "startGrid" method.(êÔ³8„¹€¨¾,
-Tsquid:S1068"1Remove this unused "currentPlayer" private field.(ðƒÎŸÿÿÿÿÿ8„¹€¨¾,
-¤squid:S1186N"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹•¬ïþÿÿÿÿ8„¹€¨¾,
+Fsquid:S1148/"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ýøÇÐ¾,
+hsquid:S2583"DChange this condition so that it does not always evaluate to "false"(Ú àøþÿÿÿÿ8–ê³Ñ¾,
+Tsquid:S1068"1Remove this unused "currentPlayer" private field.(ðƒÎŸÿÿÿÿÿ8ýøÇÐ¾,
+jsquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(¬å™á8ýøÇÐ¾,
+hsquid:S2583"DChange this condition so that it does not always evaluate to "false"(ºçŽËÿÿÿÿÿ8¶À´Ñ¾,
+Ssquid:S1066"/Merge this if statement with the enclosing one.(Ú àøþÿÿÿÿ8ýøÇÐ¾,
+¤squid:S1186N"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹•¬ïþÿÿÿÿ8ýøÇÐ¾,
+¤squid:S1186I"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®ÂúÙúÿÿÿÿ8ýøÇÐ¾,
+jsquid:CommentedOutCodeLine²"<This block of commented-out lines of code should be removed.(¬å™á8ýøÇÐ¾,

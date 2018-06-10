@@ -21,7 +21,7 @@ public class TankGameHost implements ITankGameHost {
 
     private void returnMessage(Object object) {
         Message message = new Message();
-        message.setMessageType("responds"); // "return"
+        message.setMessageType("return");
         message.setResponds(object);
         communicator.broadcastMessage(message);
     }
@@ -46,6 +46,6 @@ public class TankGameHost implements ITankGameHost {
 
     @Override
     public void startGame() {
-
+        messageSender("startGame", new Object[]{});
     }
 }

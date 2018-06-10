@@ -1,25 +1,19 @@
 package tankgameclient;
 
 import tankgamegui.ITankGameGUI;
-import tankgamegui.enums.BlockType;
-import tankgamegui.enums.ShellType;
 import websocketshared.Message;
 
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import static java.lang.Thread.sleep;
 
 public class TankGameClient implements ITankGameClient {
 
-    private final static Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
-
     private ITankGameGUI tankGameGUI;
     private final ICommunicator communicator;
 
-    public TankGameClient(ITankGameGUI tankGameGUI) throws Exception{
-        this.tankGameGUI = tankGameGUI;
+    public TankGameClient(ITankGameGUI tankgameGUI) throws Exception{
+        this.tankGameGUI = tankgameGUI;
         communicator = ClientSocket.getInstance();
         communicator.setController(this);
         communicator.startSocket("ws://localhost:8095/tankgame");
@@ -32,18 +26,6 @@ public class TankGameClient implements ITankGameClient {
         message.setParameters(parameters);
         message = sendWait(message);
         Object responds = message.getResponds();
-        for (BlockType c : BlockType.values()) {
-            if (c.name().equals(responds)) {
-                responds = c;
-                return responds;
-            }
-        }
-        for (ShellType c : ShellType.values()) {
-            if (c.name().equals(responds)) {
-                responds=c;
-                return responds;
-            }
-        }
         return responds;
     }
 
@@ -53,7 +35,7 @@ public class TankGameClient implements ITankGameClient {
             sleep(300);
         }
         catch (InterruptedException e){
-            LOGGER.log(Level.INFO, "Failed to wait", e);
+            e.printStackTrace();
             Thread.currentThread().interrupt();
         }
         message = communicator.getLastMessage();
@@ -84,5 +66,13 @@ public class TankGameClient implements ITankGameClient {
     @Override
     public boolean startNewGame(int playerNr) throws IOException {
         return false;
+    }
+
+    public void setPlayerName(int playerNr, String name) {
+        tankGameGUI.setPlayerName(playerNr, name);
+    }
+
+    public void setOpponentName(int playerNr, String name) {
+        tankGameGUI.setPlayerName(playerNr, name);
     }
 }

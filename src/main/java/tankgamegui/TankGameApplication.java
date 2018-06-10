@@ -43,12 +43,11 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         game = new TankGame();
         //String test = this.args[1];
 
-//
-//        try {
-//            registerPlayer("Jordy + " + random(0, 100)); // this.args[0];
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+        try {
+            registerPlayer(); // this.args[0];
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         // load our images for level and background
         bg = loadImage("images/sky-blurry.png");
@@ -102,15 +101,16 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         // draw everything else
         _renderer.draw();
 
-        // FPS counter
-        fill(0,255,0);
-        text(frameRate, 10,600);
-
         // Added with the new class/object system
         //playerObject.display();
         level.display();
         playerObject.display();
         text(playerName, playerObject.getX(), playerObject.getY());
+        text(opponentName + "test", playerObject.getX(), playerObject.getY() - 20);
+
+        // FPS counter
+        fill(0,255,0);
+        text(frameRate, 10,600);
     }
     /* Bullet */
 // Acts similarly to PhysicsPixel
@@ -244,12 +244,6 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
             println("Your opponent is " + name);
         }
         opponentName = name;
-        Platform.runLater(new Runnable() {
-            @Override
-            public void run() {
-                println(opponentName + "'s name has been set");
-            }
-        });
     }
 
     @Override
@@ -351,13 +345,13 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         public void display();
     }
 
-    private void registerPlayer(String name) throws Exception {
-        playerName = name;
+    private void registerPlayer() throws Exception {
+        playerName = "Jordy + " + random(0,100);
         if ("".equals(playerName) || playerName == null) {
             println("Enter your name before continuing");
         } else {
             println(playerName + " Has registered!");
-            playerNr = game.registerPlayer(playerName, (ITankGameGUI) this, false);
+            playerNr = game.registerPlayer(playerName, this, singlePlayerMode);
             if (playerNr != -1) {
                 println("player " + playerName + " registered, with playernumber: " + playerNr);
             } else {

@@ -69,7 +69,7 @@ public class ClientSocket implements ICommunicator{
         lastMessage = message;
         if (message.getMessageType().equalsIgnoreCase("command")) {
             methodCaller.reflectiveMethodCaller(message, controller);
-        } else if (message.getMessageType().equalsIgnoreCase("responds")) {
+        } else if (message.getMessageType().equalsIgnoreCase("return")) {
             //Implement unlocking mechanism here
         }
 

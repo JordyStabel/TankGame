@@ -2,8 +2,6 @@ package tankgame;
 
 import tankgame.ai.Ai;
 import tankgame.ai.IAi;
-import tankgame.map.Grid;
-import tankgame.map.IGrid;
 import tankgame.player.Opponent;
 import tankgame.player.Player;
 import tankgame.player.Self;
@@ -32,11 +30,6 @@ public class TankGame implements ITankGame {
     private boolean clientReady = false;
 
     private int localPlayerNr;
-
-    private int mapWidth = 100;
-    private int mapHeight = 10;
-
-    private IGrid grid = new Grid(mapWidth, mapHeight);
 
     @Override
     public int registerPlayer(String playerName, ITankGameGUI application, boolean singlePlayerMode) {
@@ -164,19 +157,21 @@ public class TankGame implements ITankGame {
     }
 
     private boolean notifyWhenReadyMultiClient() {
-        //if opponent player readies in multi, set client to ready
-        if (grid.tankPlaced()) {
-            clientReady = true;
-        } else return true;
-        return false;
+//        //if opponent player readies in multi, set client to ready
+//        if (grid.tankPlaced()) {
+//            clientReady = true;
+//        } else return true;
+//        return false;
+        return true;
     }
 
     private boolean notifyWhenReadyMultiLocal() {
-        //if local player readies in multi, set local to ready
-        if (grid.tankPlaced()) {
-            localReady = true;
-        } else return true;
-        return false;
+//        //if local player readies in multi, set local to ready
+//        if (grid.tankPlaced()) {
+//            localReady = true;
+//        } else return true;
+//        return false;
+        return true;
     }
 
     private void setStartingPlayer() {
@@ -184,15 +179,6 @@ public class TankGame implements ITankGame {
             currentPlayer = self;
         } else {
             currentPlayer = opponent;
-        }
-    }
-
-    private void startGrid(int mapWidth, int mapHeight){
-        grid = new Grid(mapWidth, mapHeight);
-        for (int i = 0; i < mapWidth; i++) {
-            for (int j = 0; j < mapHeight; j++) {
-                //tankGame.showSquarePlayer(playerNr, i, j, BlockType.GROUND);
-            }
         }
     }
 }

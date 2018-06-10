@@ -244,7 +244,6 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
             println("Your opponent is " + name);
         }
         opponentName = name;
-        println(name + " Is opponent's name");
         Platform.runLater(new Runnable() {
             @Override
             public void run() {
@@ -349,7 +348,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
     // Anything we want drawn should implement this
     public interface RenderObj {
         //public void draw();
-        void display();
+        public void display();
     }
 
     private void registerPlayer(String name) throws Exception {
@@ -358,7 +357,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
             println("Enter your name before continuing");
         } else {
             println(playerName + " Has registered!");
-            playerNr = game.registerPlayer(playerName, (ITankGameGUI) this);
+            playerNr = game.registerPlayer(playerName, (ITankGameGUI) this, false);
             if (playerNr != -1) {
                 println("player " + playerName + " registered, with playernumber: " + playerNr);
             } else {

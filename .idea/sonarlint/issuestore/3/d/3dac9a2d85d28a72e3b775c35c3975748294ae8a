@@ -1,7 +1,7 @@
 
-hsquid:UnusedPrivateMethod0"<Remove this unused private "createRandomCoordinates" method.(‘¶÷â8 ¾¤¹¸,
-usquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò–î¥ÿÿÿÿÿ8®ÁÜ¸¸,
-Psquid:S1135/"2Complete the task associated to this TODO comment.(õé…æ8üŒ¦¹¸,
-Usquid:S1135"2Complete the task associated to this TODO comment.(ýÐøøÿÿÿÿ8¹·è¸¸,
-ysquid:S00116"URename this field "AIPlayerNr" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥€£Þüÿÿÿÿ8ìŽÚ¸¸,
 Tsquid:S2589"7Remove this expression which always evaluates to "true"(²õÓO8Ó—¹¸,
+Usquid:S1135"2Complete the task associated to this TODO comment.(ýÐøøÿÿÿÿ8¹·è¸¸,
+usquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò–î¥ÿÿÿÿÿ8®ÁÜ¸¸,
+hsquid:UnusedPrivateMethod0"<Remove this unused private "createRandomCoordinates" method.(‘¶÷â8 ¾¤¹¸,
+Psquid:S1135/"2Complete the task associated to this TODO comment.(õé…æ8üŒ¦¹¸,
+ysquid:S00116"URename this field "AIPlayerNr" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥€£Þüÿÿÿÿ8ìŽÚ¸¸,

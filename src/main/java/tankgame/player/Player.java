@@ -1,8 +1,11 @@
 package tankgame.player;
 
+import tankgame.tankgameprocessing.PlayerObject;
+
 public class Player {
 
     private String playerName;
+    private PlayerObject playerObject;
 
     // Constructor for PlayerObject
     Player(String playerName){
@@ -15,5 +18,13 @@ public class Player {
 
     public void setPlayerName(String playerName){
         this.playerName = playerName;
+    }
+
+    public PlayerObject getPlayerObject(){
+        return playerObject;
+    }
+
+    public void setPlayerObject(PlayerObject playerObject){
+        this.playerObject = playerObject;
     }
 }

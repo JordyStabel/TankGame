@@ -1,10 +1,14 @@
 
-Fsquid:S1148/"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ıøÇĞ¾,
-hsquid:S2583"DChange this condition so that it does not always evaluate to "false"(Ú àøşÿÿÿÿ8–ê³Ñ¾,
-Tsquid:S1068"1Remove this unused "currentPlayer" private field.(ğƒÎŸÿÿÿÿÿ8ıøÇĞ¾,
-jsquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(¬å™á8ıøÇĞ¾,
-hsquid:S2583"DChange this condition so that it does not always evaluate to "false"(ºçËÿÿÿÿÿ8¶À´Ñ¾,
-Ssquid:S1066"/Merge this if statement with the enclosing one.(Ú àøşÿÿÿÿ8ıøÇĞ¾,
-¤squid:S1186N"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹•¬ïşÿÿÿÿ8ıøÇĞ¾,
-¤squid:S1186I"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®ÂúÙúÿÿÿÿ8ıøÇĞ¾,
-jsquid:CommentedOutCodeLine²"<This block of commented-out lines of code should be removed.(¬å™á8ıøÇĞ¾,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬å™á8–‹êÖ¾,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8–‹êÖ¾,
+esquid:S2583"DChange this condition so that it does not always evaluate to "false"(Ú àøşÿÿÿÿ8–‹êÖ¾,
+esquid:S2583"DChange this condition so that it does not always evaluate to "false"(ºçËÿÿÿÿÿ8–‹êÖ¾,
+Y
+squid:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8–‹êÖ¾,
+Rsquid:S1068"1Remove this unused "currentPlayer" private field.(ğƒÎŸÿÿÿÿÿ8–‹êÖ¾,
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(ôÇîˆ8–‹êÖ¾,
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹•¬ïşÿÿÿÿ8–‹êÖ¾,
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®ÂúÙúÿÿÿÿ8–‹êÖ¾,
+Psquid:S1066"/Merge this if statement with the enclosing one.(Ú àøşÿÿÿÿ8–‹êÖ¾,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¬å™á8–‹êÖ¾,

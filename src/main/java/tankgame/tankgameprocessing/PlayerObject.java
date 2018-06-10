@@ -12,6 +12,16 @@ public class PlayerObject implements TankGameApplication.RenderObj, TankGameAppl
     private Renderer _renderer;
     private Physics physics;
 
+    public int getPlayerNr() {
+        return playerNr;
+    }
+
+    public void setPlayerNr(int playerNr) {
+        this.playerNr = playerNr;
+    }
+
+    private int playerNr;
+
     // Position
     private float posX;
     private float posY;

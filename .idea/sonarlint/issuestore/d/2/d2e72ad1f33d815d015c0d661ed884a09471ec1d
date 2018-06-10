@@ -1,7 +1,8 @@
 
-¤squid:S1186C"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹•¬ïşÿÿÿÿ8ıøÇĞ¾,
-Fsquid:S1148&"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ıøÇĞ¾,
-~squid:S1488"`Immediately return this expression instead of assigning it to the temporary variable "responds".(ÇÒöü8ıøÇĞ¾,
-®%squid:RedundantThrowsDeclarationCheck"qRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from constructor's body.(·ëçøıÿÿÿÿ8ıøÇĞ¾,
-jsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(·ëçøıÿÿÿÿ8ıøÇĞ¾,
-¤squid:S1186>"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®ÂúÙúÿÿÿÿ8ıøÇĞ¾,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8—‹êÖ¾,
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹•¬ïşÿÿÿÿ8—‹êÖ¾,
+|squid:S1488"`Immediately return this expression instead of assigning it to the temporary variable "responds".(ÇÒöü8—‹êÖ¾,
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(®ÂúÙúÿÿÿÿ8—‹êÖ¾,
+¬%squid:RedundantThrowsDeclarationCheck"qRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from constructor's body.(·ëçøıÿÿÿÿ8—‹êÖ¾,
+hsquid:S00112"FDefine and throw a dedicated exception instead of using a generic one.(·ëçøıÿÿÿÿ8—‹êÖ¾,
+Osquid:UselessParenthesesCheck"!Remove these useless parentheses.(‹è­Û8—‹êÖ¾,

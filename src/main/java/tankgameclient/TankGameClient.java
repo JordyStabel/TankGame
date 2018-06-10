@@ -50,7 +50,7 @@ public class TankGameClient implements ITankGameClient {
 
     @Override
     public boolean jump(int playerNr) {
-        return ((boolean) messageSender("jump", new Object[]{playerNr}));
+        return (((boolean) messageSender("jump", new Object[]{playerNr})));
     }
 
     @Override

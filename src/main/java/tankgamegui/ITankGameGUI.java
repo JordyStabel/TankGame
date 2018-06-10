@@ -6,5 +6,7 @@ public interface ITankGameGUI {
 
     void setOpponentName(int playerNr, String playerName);
 
+    void jump(int playerNr);
+
     void startGame();
 }

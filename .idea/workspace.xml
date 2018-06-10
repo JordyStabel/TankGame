@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9a4891c9-ecfb-48f1-b730-30af862df4ca" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/TankGame.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/TankGame.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/player/Player.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/player/Player.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/PlayerObject.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/PlayerObject.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tankgameclient/TankGameClient.java" afterPath="$PROJECT_DIR$/src/main/java/tankgameclient/TankGameClient.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tankgamegui/ITankGameGUI.java" afterPath="$PROJECT_DIR$/src/main/java/tankgamegui/ITankGameGUI.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tankgamegui/TankGameApplication.java" afterPath="$PROJECT_DIR$/src/main/java/tankgamegui/TankGameApplication.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tankgameclient/TankGameClient.class" afterPath="$PROJECT_DIR$/target/classes/tankgameclient/TankGameClient.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tankgame/TankGame.class" afterPath="$PROJECT_DIR$/target/classes/tankgame/TankGame.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tankgame/player/Player.class" afterPath="$PROJECT_DIR$/target/classes/tankgame/player/Player.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/PlayerObject.class" afterPath="$PROJECT_DIR$/target/classes/tankgame/tankgameprocessing/PlayerObject.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/tankgamegui/ITankGameGUI.class" afterPath="$PROJECT_DIR$/target/classes/tankgamegui/ITankGameGUI.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/tankgamegui/TankGameApplication$1.class" afterPath="$PROJECT_DIR$/target/classes/tankgamegui/TankGameApplication$1.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/tankgamegui/TankGameApplication.class" afterPath="$PROJECT_DIR$/target/classes/tankgamegui/TankGameApplication.class" />
     </list>
@@ -31,89 +38,58 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TankGameApplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TankGameApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tankgamegui/TankGameApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="87" column="38" lean-forward="true" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+            <state relative-caret-position="-880">
+              <caret line="122" column="32" lean-forward="false" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2247#2248#0" expanded="true" />
-                <element signature="e#2283#2284#0" expanded="true" />
-                <element signature="e#4579#4580#0" expanded="true" />
-                <element signature="e#4621#4622#0" expanded="true" />
-                <element signature="e#4652#4653#0" expanded="true" />
-                <element signature="e#4694#4695#0" expanded="true" />
-                <element signature="e#9139#9140#0" expanded="true" />
-                <element signature="e#9174#9175#0" expanded="true" />
+                <element signature="e#2286#2287#0" expanded="true" />
+                <element signature="e#2321#2322#0" expanded="true" />
+                <element signature="e#4618#4619#0" expanded="true" />
+                <element signature="e#4660#4661#0" expanded="true" />
+                <element signature="e#4691#4692#0" expanded="true" />
+                <element signature="e#4733#4734#0" expanded="true" />
+                <element signature="method#explode#0;class#TankGameApplication#0" expanded="false" />
+                <element signature="e#8727#8728#0" expanded="true" />
+                <element signature="e#8803#8804#0" expanded="true" />
+                <element signature="e#9185#9186#0" expanded="true" />
+                <element signature="e#9222#9223#0" expanded="true" />
+                <element signature="e#9267#9268#0" expanded="true" />
+                <element signature="e#9302#9303#0" expanded="true" />
                 <element signature="method#rayCast#0;class#TankGameApplication#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TankGameClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tankgameclient/TankGameClient.java">
+      <file leaf-file-name="TankGameServer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1591#1592#0" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-                <element signature="e#2129#2130#0" expanded="true" />
-                <element signature="e#2168#2169#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientSocket.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tankgameclient/ClientSocket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding>
-                <element signature="e#2096#2097#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsrAsyncRemote.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.2.7.v20150116/javax-websocket-client-impl-9.2.7.v20150116-sources.jar!/org/eclipse/jetty/websocket/jsr356/JsrAsyncRemote.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-              <folding>
-                <element signature="e#2935#2936#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsrSession.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.2.7.v20150116/javax-websocket-client-impl-9.2.7.v20150116-sources.jar!/org/eclipse/jetty/websocket/jsr356/JsrSession.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+            <state relative-caret-position="462">
+              <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/websocketshared/Message.java">
+      <file leaf-file-name="ITankGameGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tankgamegui/ITankGameGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="e#448#449#0" expanded="true" />
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#649#650#0" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
-                <element signature="e#816#817#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="176">
+              <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TankCreator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/tank/TankCreator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="22" selection-end-column="36" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,11 +104,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TankGame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/TankGame.java">
+      <file leaf-file-name="TankGameClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tankgameclient/TankGameClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="342">
+              <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1591#1592#0" expanded="true" />
+                <element signature="e#1673#1674#0" expanded="true" />
+                <element signature="e#2131#2132#0" expanded="true" />
+                <element signature="e#2170#2171#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TankGameHost.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tankgameclient/TankGameHost.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -141,20 +133,28 @@
       <file leaf-file-name="MethodCaller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/websocketshared/MethodCaller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="462">
+              <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TankGameServerWebSocket.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServerWebSocket.java">
+      <file leaf-file-name="ITankGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/ITankGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+            <state relative-caret-position="220">
+              <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TankGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/TankGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -176,9 +176,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>goleft</find>
-      <find>con</find>
-      <find>renderer</find>
       <find>player</find>
       <find>render</find>
       <find>renderO</find>
@@ -203,9 +200,12 @@
       <find>opponentname</find>
       <find>playername</find>
       <find>logg</find>
-      <find>jump</find>
       <find>register</find>
       <find>fix</find>
+      <find>jump</find>
+      <find>opponentName</find>
+      <find>self</find>
+      <find>title</find>
     </findStrings>
     <replaceStrings>
       <replace>level</replace>
@@ -222,8 +222,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/websocketshared/MessageDecoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/websocketshared/MessageEncoder.java" />
         <option value="$PROJECT_DIR$/src/main/java/Log.java" />
         <option value="$PROJECT_DIR$/src/main/java/other/Log.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServerWebSocket.java" />
@@ -244,11 +242,9 @@
         <option value="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/TestGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/ITankGameGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/TankGameApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tankgamegui/ITankGameGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Physics.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Renderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/DebrisObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/PlayerObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgamegui/enums/ShellType.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgamegui/enums/BlockType.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgamegui/enums/TankType.java" />
@@ -260,18 +256,22 @@
         <option value="$PROJECT_DIR$/src/main/java/tankgame/block/BlockContext.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/map/Grid.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/map/IGrid.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tankgame/player/Opponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/ai/Ai.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/tankgamegui/PreGameStart.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgameclient/ClientSocket.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tankgame/ITankGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgamegui/enums/Methods.java" />
         <option value="$PROJECT_DIR$/src/main/java/websocketshared/MethodCaller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tankgame/player/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tankgame/player/Opponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tankgame/player/Self.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/PlayerObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgameclient/TankGameHost.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/TankGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tankgame/ITankGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgameclient/TankGameClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tankgamegui/ITankGameGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgamegui/TankGameApplication.java" />
       </list>
     </option>
@@ -393,9 +393,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -528,6 +527,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -536,7 +536,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Worms_Like_Game" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Sketch-it/Sketch-It-master" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -778,10 +778,10 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.TankGameServer" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PreGameStart" />
-        <item index="2" class="java.lang.String" itemvalue="Application.FullGame" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TankGameBackUp" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Level" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Level" />
+        <item index="2" class="java.lang.String" itemvalue="Application.PreGameStart" />
+        <item index="3" class="java.lang.String" itemvalue="Application.FullGame" />
+        <item index="4" class="java.lang.String" itemvalue="Application.TankGameBackUp" />
       </list>
     </recent_temporary>
   </component>
@@ -819,11 +819,12 @@
       <workItem from="1528559515815" duration="623000" />
       <workItem from="1528561711245" duration="11943000" />
       <workItem from="1528625573131" duration="17626000" />
+      <workItem from="1528647522653" duration="7543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148139000" />
+    <option name="totallyTimeSpent" value="155682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -845,9 +846,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32681867" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330076" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776618" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16614583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -861,6 +861,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776618" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -871,69 +872,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/websocketshared/MethodCaller.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="49" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="112" column="41" lean-forward="true" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgamegui/ITankGameGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/player/Self.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#95#96#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/ai/Ai.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#1053#1054#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.2.7.v20150116/javax-websocket-client-impl-9.2.7.v20150116.jar!/org/eclipse/jetty/websocket/jsr356/JsrSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.2.7.v20150116/javax-websocket-client-impl-9.2.7.v20150116.jar!/org/eclipse/jetty/websocket/jsr356/JsrAsyncRemote.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServerService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -946,7 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
           <caret line="25" column="16" lean-forward="true" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,7 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -970,7 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -978,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2301">
           <caret line="818" column="72" lean-forward="true" selection-start-line="818" selection-start-column="72" selection-end-line="818" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,7 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2125">
           <caret line="272" column="0" lean-forward="false" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,15 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="4599" column="0" lean-forward="false" selection-start-line="4599" selection-start-column="0" selection-end-line="4599" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="55" column="34" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,7 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,7 +954,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,19 +965,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/PlayerObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/jetty-util/9.2.3.v20140905/jetty-util-9.2.3.v20140905.jar!/org/eclipse/jetty/util/log/StdErrLog.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="237" column="0" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,7 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1066,7 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1074,7 +990,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,7 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="201" column="0" lean-forward="false" selection-start-line="201" selection-start-column="0" selection-end-line="201" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,7 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="379" column="0" lean-forward="false" selection-start-line="379" selection-start-column="0" selection-end-line="379" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1098,7 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,7 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="542">
           <caret line="377" column="0" lean-forward="true" selection-start-line="377" selection-start-column="0" selection-end-line="377" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1169,40 +1080,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/player/Opponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#136#137#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/player/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="e#146#147#0" expanded="false" />
-            <element signature="e#190#191#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/ITankGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_161/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="2129" column="0" lean-forward="false" selection-start-line="2129" selection-start-column="0" selection-end-line="2129" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServerWebSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.2.7.v20150116/javax-websocket-client-impl-9.2.7.v20150116-sources.jar!/org/eclipse/jetty/websocket/jsr356/JsrSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.2.7.v20150116/javax-websocket-client-impl-9.2.7.v20150116-sources.jar!/org/eclipse/jetty/websocket/jsr356/JsrAsyncRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="e#2935#2936#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websocketshared/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding>
+            <element signature="e#448#449#0" expanded="false" />
+            <element signature="e#488#489#0" expanded="false" />
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#649#650#0" expanded="false" />
+            <element signature="e#774#775#0" expanded="false" />
+            <element signature="e#816#817#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/player/Self.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <element signature="e#95#96#0" expanded="false" />
+            <element signature="e#128#129#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/PlayerObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#397#398#0" expanded="false" />
+            <element signature="e#428#429#0" expanded="false" />
+            <element signature="e#473#474#0" expanded="false" />
+            <element signature="e#513#514#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1214,23 +1161,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgameclient/TankGameHost.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgameclient/ClientSocket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="1606">
+          <caret line="92" column="32" lean-forward="true" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
           <folding>
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#2036#2037#0" expanded="false" />
+            <element signature="e#2096#2097#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServerWebSocket.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/Coordinates.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        <state relative-caret-position="44">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/player/Opponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding>
+            <element signature="e#103#104#0" expanded="false" />
+            <element signature="e#136#137#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/player/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding>
+            <element signature="e#235#236#0" expanded="false" />
+            <element signature="e#279#280#0" expanded="false" />
+            <element signature="e#315#316#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="false" />
+            <element signature="e#399#400#0" expanded="false" />
+            <element signature="e#443#444#0" expanded="false" />
+            <element signature="e#487#488#0" expanded="false" />
+            <element signature="e#522#523#0" expanded="false" />
+            <element signature="e#583#584#0" expanded="false" />
+            <element signature="e#631#632#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/tank/NormalTank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/tank/ITankCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/tank/TankCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="22" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1243,96 +1242,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/websocketshared/MethodCaller.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/ITankGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="220">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgamegui/ITankGameGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/TankGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="175">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/websocketshared/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/websocketshared/MethodCaller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="462">
+          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgamegui/TankGameApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-880">
+          <caret line="122" column="32" lean-forward="false" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
           <folding>
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#2286#2287#0" expanded="true" />
+            <element signature="e#2321#2322#0" expanded="true" />
+            <element signature="e#4618#4619#0" expanded="true" />
+            <element signature="e#4660#4661#0" expanded="true" />
+            <element signature="e#4691#4692#0" expanded="true" />
+            <element signature="e#4733#4734#0" expanded="true" />
+            <element signature="method#explode#0;class#TankGameApplication#0" expanded="false" />
+            <element signature="e#8727#8728#0" expanded="true" />
+            <element signature="e#8803#8804#0" expanded="true" />
+            <element signature="e#9185#9186#0" expanded="true" />
+            <element signature="e#9222#9223#0" expanded="true" />
+            <element signature="e#9267#9268#0" expanded="true" />
+            <element signature="e#9302#9303#0" expanded="true" />
+            <element signature="method#rayCast#0;class#TankGameApplication#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tankgameclient/TankGameClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="342">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1591#1592#0" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#2129#2130#0" expanded="true" />
-            <element signature="e#2168#2169#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+            <element signature="e#2170#2171#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.2.7.v20150116/javax-websocket-client-impl-9.2.7.v20150116-sources.jar!/org/eclipse/jetty/websocket/jsr356/JsrSession.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgameclient/TankGameHost.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+        <state relative-caret-position="432">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgameclient/ClientSocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding>
-            <element signature="e#2096#2097#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/eclipse/jetty/websocket/javax-websocket-client-impl/9.2.7.v20150116/javax-websocket-client-impl-9.2.7.v20150116-sources.jar!/org/eclipse/jetty/websocket/jsr356/JsrAsyncRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding>
-            <element signature="e#2935#2936#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgamegui/TankGameApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="87" column="38" lean-forward="true" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2247#2248#0" expanded="true" />
-            <element signature="e#2283#2284#0" expanded="true" />
-            <element signature="e#4579#4580#0" expanded="true" />
-            <element signature="e#4621#4622#0" expanded="true" />
-            <element signature="e#4652#4653#0" expanded="true" />
-            <element signature="e#4694#4695#0" expanded="true" />
-            <element signature="e#9139#9140#0" expanded="true" />
-            <element signature="e#9174#9175#0" expanded="true" />
-            <element signature="method#rayCast#0;class#TankGameApplication#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>

@@ -52,6 +52,8 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
             e.printStackTrace();
         }
 
+        surface.setTitle(playerName);
+
         // load our images for level and background
         bg = loadImage("images/sky-blurry.png");
 
@@ -76,7 +78,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
     }
 
     public void settings() {
-        size(1280, 720, P2D);
+        size(800, 600, P2D);
     }
 
     // Draw loop
@@ -145,6 +147,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         if (key == 'd' || key == 'D')
             playerObject.stopRight();
     }
+
 //    public void mousePressed() {
 //        if (mouseButton == LEFT)
 //            playerObject.shoot();
@@ -261,6 +264,11 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
     }
 
     @Override
+    public void jump(int playerNr) {
+        opponentObject.jump();
+    }
+
+    @Override
     public void startGame() {
         isInProgress = true;
     }
@@ -269,15 +277,15 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
 // Any object that will need motion integrated will implement this
 // these methods allows the Physics class to forward the object's position using its velocity
     public interface PhysicsObj {
-        public float getX();
-        public float getY();
-        public float getVX();
-        public float getVY();
-        public void setX(float pX);
-        public void setY(float pY);
-        public void setVX(float vX);
-        public void setVY(float vY);
-        public void checkConstraints();
+        float getX();
+        float getY();
+        float getVX();
+        float getVY();
+        void setX(float pX);
+        void setY(float pY);
+        void setVX(float vX);
+        void setVY(float vY);
+        void checkConstraints();
     }
     /* Physics */
     /* RayCast */

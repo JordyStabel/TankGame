@@ -56,8 +56,11 @@ public class TankGame implements ITankGame {
     @Override
     public boolean jump(int playerNr) {
         if (client != null) {
-            return client.jump(playerNr);
+            boolean result = client.jump(playerNr);
+            System.out.println(result);
+            return result;
         }
+        System.out.println(playerNr + " Tried to jump");
         return false;
     }
 

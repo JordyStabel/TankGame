@@ -349,7 +349,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
             println("Enter your name before continuing");
         } else {
             println(playerName + " Has registered!");
-            playerNr = game.registerPlayer(playerName, (ITankGameGUI) this, false);
+            playerNr = game.registerPlayer(playerName, (ITankGameGUI) this);
             if (playerNr != -1) {
 
                 println("player " + playerName + " registered");

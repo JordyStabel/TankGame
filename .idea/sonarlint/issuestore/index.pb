@@ -27,12 +27,8 @@ U
 %src/main/java/tankgame/tank/Tank.java,1\e\1e9b1e58a30ddb9bc8f8b2095f9eb277d2842e84
 ^
 .src/main/java/tankgamegui/enums/BlockType.java,3\7\3709199c9975c74e52266ff1e936449e3fa95a5d
-Q
-!src/main/java/tankgame/ai/Ai.java,3\d\3dac9a2d85d28a72e3b775c35c3975748294ae8a
 [
 +src/main/java/tankgamegui/ITankGameGUI.java,0\1\012c77757e7d6ce6f78463b152187407055b8341
-R
-"src/main/java/tankgame/ai/IAi.java,b\f\bfbeab50f73360004be13fa5355ed1ecc7901785
 Y
 )src/main/java/tankgame/player/Player.java,9\1\91796499ad2c5e5ae59e657e2fd45e7f77c9d469
 U

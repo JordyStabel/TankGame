@@ -7,7 +7,7 @@ import java.io.IOException;
 public interface ITankGame {
 
     // Register a player and the selected game mode
-    int registerPlayer(String name, ITankGameGUI application, boolean singlePlayerMode) throws Exception;
+    int registerPlayer(String name, ITankGameGUI application) throws Exception;
 
 
     // Notify when player is done placing the tank(s)

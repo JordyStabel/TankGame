@@ -36,22 +36,19 @@ public class TankGame implements ITankGame {
     private IGrid grid = new Grid(mapWidth, mapHeight);
 
     @Override
-    public int registerPlayer(String playerName, ITankGameGUI application, boolean singlePlayerMode) {
+    public int registerPlayer(String playerName, ITankGameGUI application) {
         if (application != null){
             tankGameGUI = application;
         }
-        if (self == null && singlePlayerMode){
-            return registerLocalPlayer(playerName);
-        }
-        else if (!singlePlayerMode && self == null){
+        if (self == null){
             try {
-                return registerSelfForMultiplayer(playerName, application, singlePlayerMode);
+                return registerSelfForMultiplayer(playerName, application);
             }
             catch (Exception e){
                 e.printStackTrace();
                 return -1;
             }
-        } else if (host != null && opponent == null && !singlePlayerMode) {
+        } else if (host != null && opponent == null) {
             return registerOpponentForMulti(playerName);
         }
         return -1;
@@ -113,7 +110,7 @@ public class TankGame implements ITankGame {
         }
     }
 
-    private int registerSelfForMultiplayer(String name, ITankGameGUI application, boolean singlePlayerMode) throws Exception {
+    private int registerSelfForMultiplayer(String name, ITankGameGUI application) throws Exception {
         // If it's multi and no users are registered, register self as:
         if (Boolean.parseBoolean(urlReader.readUrl("http://localhost:8090/rest/needhost"))) {
             //the host if there are no multiplayer games available
@@ -124,7 +121,7 @@ public class TankGame implements ITankGame {
             //the client on an already existing multiplayer game or
             client = new TankGameClient(tankGameGUI);
             multi = true;
-            return client.registerPlayer(name, application, singlePlayerMode);
+            return client.registerPlayer(name, application);
         }
     }
 

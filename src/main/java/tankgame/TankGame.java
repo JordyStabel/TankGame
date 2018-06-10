@@ -1,5 +1,7 @@
 package tankgame;
 
+import tankgame.ai.Ai;
+import tankgame.ai.IAi;
 import tankgame.map.Grid;
 import tankgame.map.IGrid;
 import tankgame.player.Opponent;
@@ -19,6 +21,7 @@ public class TankGame implements ITankGame {
     private ITankGameGUI tankGameGUI;
     private Self self;
     private Opponent opponent;
+    private IAi aiOpponent;
     private Player currentPlayer;
 
     private ITankGameHost host;
@@ -36,19 +39,22 @@ public class TankGame implements ITankGame {
     private IGrid grid = new Grid(mapWidth, mapHeight);
 
     @Override
-    public int registerPlayer(String playerName, ITankGameGUI application) {
+    public int registerPlayer(String playerName, ITankGameGUI application, boolean singlePlayerMode) {
         if (application != null){
             tankGameGUI = application;
         }
-        if (self == null){
+        if (self == null && singlePlayerMode){
+            return registerLocalPlayer(playerName);
+        }
+        else if (!singlePlayerMode && self == null){
             try {
-                return registerSelfForMultiplayer(playerName, application);
+                return registerSelfForMultiplayer(playerName, application, singlePlayerMode);
             }
             catch (Exception e){
                 e.printStackTrace();
                 return -1;
             }
-        } else if (host != null && opponent == null) {
+        } else if (host != null && opponent == null && !singlePlayerMode) {
             return registerOpponentForMulti(playerName);
         }
         return -1;
@@ -95,6 +101,8 @@ public class TankGame implements ITankGame {
     private boolean notifyWhenReadySingleplayer() {
         //if yes then create an AI opponent
 
+        aiOpponent = new Ai(this, 1 - localPlayerNr);
+        aiOpponent.aiInit();
         opponent = new Opponent("AI");
         tankGameGUI.setOpponentName(localPlayerNr, opponent.getPlayerName());
         // and startSocket the game
@@ -107,10 +115,11 @@ public class TankGame implements ITankGame {
             currentPlayer = self;
         } else {
             currentPlayer = opponent;
+            aiOpponent.aiTurn();
         }
     }
 
-    private int registerSelfForMultiplayer(String name, ITankGameGUI application) throws Exception {
+    private int registerSelfForMultiplayer(String name, ITankGameGUI application, boolean singlePlayerMode) throws Exception {
         // If it's multi and no users are registered, register self as:
         if (Boolean.parseBoolean(urlReader.readUrl("http://localhost:8090/rest/needhost"))) {
             //the host if there are no multiplayer games available
@@ -121,7 +130,7 @@ public class TankGame implements ITankGame {
             //the client on an already existing multiplayer game or
             client = new TankGameClient(tankGameGUI);
             multi = true;
-            return client.registerPlayer(name, application);
+            return client.registerPlayer(name, application, singlePlayerMode);
         }
     }
 

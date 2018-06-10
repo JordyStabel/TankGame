@@ -76,6 +76,11 @@ public class PreGameStart {
     private void start(){
         if (selfName != null && opponentName != null){
             TankGameApplication.main(new String[] {selfName});
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             TankGameApplication.main(new String[] {opponentName});
         }
         else{

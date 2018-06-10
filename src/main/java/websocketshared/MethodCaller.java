@@ -1,6 +1,7 @@
 package websocketshared;
 
 import tankgamegui.enums.BlockType;
+import tankgamegui.enums.Methods;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
@@ -65,5 +66,6 @@ public class MethodCaller {
 
     static {
         enumMap.put("WATER", BlockType.WATER);
+        enumMap.put("JUMP", Methods.JUMP);
     }
 }

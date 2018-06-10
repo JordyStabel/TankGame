@@ -53,6 +53,13 @@ public class TankGame implements ITankGame {
         return -1;
     }
 
+    @Override
+    public boolean jump(int playerNr) {
+        if (client != null) {
+            return client.jump(playerNr);
+        }
+        return false;
+    }
 
     @Override
     public boolean notifyWhenReady(int playerNr) {
@@ -162,7 +169,8 @@ public class TankGame implements ITankGame {
 //            clientReady = true;
 //        } else return true;
 //        return false;
-        return true;
+        clientReady = true;
+        return false;
     }
 
     private boolean notifyWhenReadyMultiLocal() {
@@ -171,7 +179,8 @@ public class TankGame implements ITankGame {
 //            localReady = true;
 //        } else return true;
 //        return false;
-        return true;
+        localReady = true;
+        return false;
     }
 
     private void setStartingPlayer() {

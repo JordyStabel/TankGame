@@ -32,6 +32,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
     Renderer _renderer; // has a list of all renderable objects, and calls their draw() method
 
     PlayerObject playerObject;
+    PlayerObject opponentObject;
 
     // translation, used to keep track of where the camera is
     int translateX = 0; // don't instantiate
@@ -53,7 +54,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         bg = loadImage("images/sky-blurry.png");
 
         // FPS limit
-        frameRate(60);
+        frameRate(30);
 
         // new Level(image, destructionRes)
         level = new Level(this, loadImage("images/tree.png"), 5);
@@ -64,9 +65,12 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
 //
 //        // create the playerObject
         playerObject = new PlayerObject(this, level,100,100);
+        opponentObject = new PlayerObject(this, level, 150, 150);
 
         physics.add(playerObject);
+        physics.add(opponentObject);
         _renderer.add(playerObject);
+        _renderer.add(opponentObject);
     }
 
     public void settings() {
@@ -108,6 +112,8 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         text(playerName, playerObject.getX(), playerObject.getY());
         text(opponentName + "test", playerObject.getX(), playerObject.getY() - 20);
 
+        opponentObject.display();
+
         // FPS counter
         fill(0,255,0);
         text(frameRate, 10,600);
@@ -117,7 +123,13 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
     /* Controls */
     public void keyPressed() {
         if (key == 'w' || key == 'W')
+        {
             playerObject.jump();
+            if (game.jump(playerNr))
+            {
+                opponentObject.jump();
+            }
+        }
         if (key == 'a' || key == 'A')
             playerObject.moveLeft();
         if (key == 'd' || key == 'D')
@@ -342,7 +354,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
     // Anything we want drawn should implement this
     public interface RenderObj {
         //public void draw();
-        public void display();
+        void display();
     }
 
     private void registerPlayer() throws Exception {
@@ -366,7 +378,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         if (bothReady) {
             startGame();
         } else {
-            println("Something needs to get fixed :'(");
+            println("Wait for the other player to ready up");
         }
     }
 

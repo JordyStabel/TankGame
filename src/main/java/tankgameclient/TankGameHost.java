@@ -19,6 +19,14 @@ public class TankGameHost implements ITankGameHost {
         returnMessage(tankGame.registerPlayer(name, null, singlePlayerMode));
     }
 
+    public void jump(int playerNr){
+        returnMessage(tankGame.jump(playerNr));
+    }
+
+    public void notifyWhenReady(int playerNr) {
+        returnMessage(tankGame.notifyWhenReady(playerNr));
+    }
+
     private void returnMessage(Object object) {
         Message message = new Message();
         message.setMessageType("return");
@@ -48,4 +56,6 @@ public class TankGameHost implements ITankGameHost {
     public void startGame() {
         messageSender("startGame", new Object[]{});
     }
+
+
 }

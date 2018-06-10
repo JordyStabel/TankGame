@@ -9,6 +9,8 @@ public interface ITankGame {
     // Register a player and the selected game mode
     int registerPlayer(String name, ITankGameGUI application, boolean singlePlayerMode) throws Exception;
 
+    // Lets player jump
+    boolean jump(int playerNr);
 
     // Notify when player is done placing the tank(s)
     boolean notifyWhenReady(int playerNr);

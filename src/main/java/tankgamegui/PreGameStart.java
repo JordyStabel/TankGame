@@ -80,6 +80,7 @@ public class PreGameStart {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
+                println("Sleeping failed");
             }
             TankGameApplication.main(new String[] {opponentName});
         }

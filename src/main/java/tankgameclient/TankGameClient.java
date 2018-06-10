@@ -1,6 +1,8 @@
 package tankgameclient;
 
 import tankgamegui.ITankGameGUI;
+import tankgamegui.enums.BlockType;
+import tankgamegui.enums.ShellType;
 import websocketshared.Message;
 
 import java.io.IOException;
@@ -29,32 +31,34 @@ public class TankGameClient implements ITankGameClient {
         message.setMethodName(methodName);
         message.setParameters(parameters);
         message = sendWait(message);
-        Object returnValue = message.getResponds();
-//        for (SquareState c : SquareState.values()) {
-//            if (c.name().equals(returnValue)) {
-//                returnValue = c;
-//                return returnValue;
-//            }
-//        }
-//        for (ShotType c : ShotType.values()) {
-//            if (c.name().equals(returnValue)) {
-//                returnValue=c;
-//                return returnValue;
-//            }
-//        }
-        return returnValue;
+        Object responds = message.getResponds();
+        for (BlockType c : BlockType.values()) {
+            if (c.name().equals(responds)) {
+                responds = c;
+                return responds;
+            }
+        }
+        for (ShellType c : ShellType.values()) {
+            if (c.name().equals(responds)) {
+                responds=c;
+                return responds;
+            }
+        }
+        return responds;
     }
 
     private Message sendWait(Message message){
         communicator.broadcastMessage(message);
         try{
-            sleep(200);
+            sleep(300);
         }
         catch (InterruptedException e){
             LOGGER.log(Level.INFO, "Failed to wait", e);
             Thread.currentThread().interrupt();
         }
-        return communicator.getLastMessage();
+        message = communicator.getLastMessage();
+
+        return message;
     }
 
     @Override

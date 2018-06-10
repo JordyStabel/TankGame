@@ -15,9 +15,13 @@ public class TankGameHost implements ITankGameHost {
         communicator.startSocket("ws://localhost:8095/tankgame");
     }
 
+    public void registerPlayer(String name, boolean singlePlayerMode) throws Exception {
+        returnMessage(tankGame.registerPlayer(name, null, singlePlayerMode));
+    }
+
     private void returnMessage(Object object) {
         Message message = new Message();
-        message.setMessageType("return");
+        message.setMessageType("responds"); // "return"
         message.setResponds(object);
         communicator.broadcastMessage(message);
     }

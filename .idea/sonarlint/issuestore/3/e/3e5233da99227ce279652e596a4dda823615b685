@@ -1,45 +1,45 @@
 
-gsquid:S2184Y"DCast one of the operands of this subtraction operation to a "float".(ŸÄşÒúÿÿÿÿ8—ÔèÈ¾,
-Hsquid:S1659³"$Declare "numadd" on a separate line.(°ô‹Åùÿÿÿÿ8†Îë§¾,
+qsquid:ModifiersOrderCheckş"EReorder the modifiers to comply with the Java Language Specification.(ØÀ™08†Îë§¾,
+Esquid:S1905Æ"&Remove this unnecessary cast to "int".(µú«œ8†Îë§¾,
 ]squid:S1161)":Add the "@Override" annotation above this method signature(œô«İıÿÿÿÿ8†Îë§¾,
-isquid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(ö›ìª8†Îë§¾,
-Bsquid:S1659¡"#Declare "yinc1" on a separate line.(‚Ğòß8†Îë§¾,
-csquid:S2184“"DCast one of the operands of this subtraction operation to a "float".(ÀëÎ8†Îë§¾,
-Csquid:S1659ª"$Declare "solidY" on a separate line.(¬Ÿ¶ç8†Îë§¾,
-xsquid:S00116 "TRename this field "_renderer" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ¨“¬üÿÿÿÿ8†Îë§¾,
-osquid:CommentedOutCodeLine†"<This block of commented-out lines of code should be removed.(À÷Šêşÿÿÿÿ8ºççÈ¾,
-Esquid:S1905Å"&Remove this unnecessary cast to "int".(µú«œ8†Îë§¾,
-Lsquid:S1604æ"(Make this anonymous inner class a lambda(ôâŠûıÿÿÿÿ8†Îë§¾,
-isquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(îïÉ§8ºççÈ¾,
-Jsquid:S1905Ä"&Remove this unnecessary cast to "int".(”’Ûşÿÿÿÿ8†Îë§¾,
-hsquid:S2184–"DCast one of the operands of this subtraction operation to a "float".(¡”ª¡ÿÿÿÿÿ8†Îë§¾,
-Xsquid:S1161N":Add the "@Override" annotation above this method signature(ÄÿÍ¤8†Îë§¾,
-Bsquid:S1659¡"#Declare "xinc2" on a separate line.(‚Ğòß8†Îë§¾,
-Xsquid:S1161I":Add the "@Override" annotation above this method signature(„ç8†Îë§¾,
-Bsquid:S1659¡"#Declare "yinc2" on a separate line.(‚Ğòß8†Îë§¾,
-Esquid:S1659³"!Declare "num" on a separate line.(°ô‹Åùÿÿÿÿ8†Îë§¾,
-Wsquid:S1068"4Remove this unused "singlePlayerMode" private field.(âÎËÿÿÿÿÿ8ºççÈ¾,
-hsquid:S2184¹"DCast one of the operands of this subtraction operation to a "float".(Ø»€Èşÿÿÿÿ8†Îë§¾,
-bsquid:S2184Z"DCast one of the operands of this subtraction operation to a "float".(åù­Ÿ8—ÔèÈ¾,
-osquid:CommentedOutCodeLineŞ"<This block of commented-out lines of code should be removed.(ìäöñûÿÿÿÿ8†Îë§¾,
-isquid:CommentedOutCodeLinen"<This block of commented-out lines of code should be removed.(Åò•ê8†Îë§¾,
-Psquid:S1481Ë"1Remove this unused "debrisObject" local variable.(ÍÜÑµ8†Îë§¾,
-Fsquid:S11480"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8†Îë§¾,
-hsquid:S2184¸"DCast one of the operands of this subtraction operation to a "float".(Îø•Øúÿÿÿÿ8†Îë§¾,
-qsquid:ModifiersOrderCheckı"EReorder the modifiers to comply with the Java Language Specification.(ØÀ™08†Îë§¾,
-jsquid:CommentedOutCodeLineÌ"<This block of commented-out lines of code should be removed.(¸¡Íœ8†Îë§¾,
-vsquid:S3776›"RRefactor this method to reduce its Cognitive Complexity from 65 to the 15 allowed.(¯©øÈşÿÿÿÿ8†Îë§¾,
-Esquid:S1905Ÿ"&Remove this unnecessary cast to "int".(µ´‚ï8†Îë§¾,
-Jsquid:S1905"&Remove this unnecessary cast to "int".(İŒ±€ıÿÿÿÿ8†Îë§¾,
-^squid:S2184Z"@Cast one of the operands of this integer division to a "double".(åù­Ÿ8—ÔèÈ¾,
-Ksquid:S1659³"'Declare "numpixels" on a separate line.(°ô‹Åùÿÿÿÿ8†Îë§¾,
-Lsquid:S1604÷"(Make this anonymous inner class a lambda(ôâŠûıÿÿÿÿ8†Îë§¾,
-Vsquid:S1197ı"8Move the array designator from the variable to the type.(ØÀ™08†Îë§¾,
-Jsquid:S1905 "&Remove this unnecessary cast to "int".(Œüğàşÿÿÿÿ8†Îë§¾,
 ]squid:S1161v":Add the "@Override" annotation above this method signature(’Ë·éıÿÿÿÿ8†Îë§¾,
-csquid:S2184Y"@Cast one of the operands of this integer division to a "double".(ŸÄşÒúÿÿÿÿ8—ÔèÈ¾,
-Jsquid:S1068"-Remove this unused "gameEnded" private field.(åã‹|8†Îë§¾,
-_squid:S1854Ë"@Remove this useless assignment to local variable "debrisObject".(ÍÜÑµ8†Îë§¾,
-Ysquid:S1161€":Add the "@Override" annotation above this method signature(ÿ‰¦¼8†Îë§¾,
-Jsquid:S1905"&Remove this unnecessary cast to "int".(øêşºûÿÿÿÿ8†Îë§¾,
+Lsquid:S1604æ"(Make this anonymous inner class a lambda(ôâŠûıÿÿÿÿ8†Îë§¾,
 {squid:S1450"XRemove the "bothReady" field and declare it as a local variable in the relevant methods.(–÷×æûÿÿÿÿ8†Îë§¾,
+Jsquid:S1905¡"&Remove this unnecessary cast to "int".(Œüğàşÿÿÿÿ8†Îë§¾,
+Wsquid:S1068"4Remove this unused "singlePlayerMode" private field.(âÎËÿÿÿÿÿ8ºççÈ¾,
+hsquid:S2184–"DCast one of the operands of this subtraction operation to a "float".(¡”ª¡ÿÿÿÿÿ8†Îë§¾,
+Psquid:S1481Ë"1Remove this unused "debrisObject" local variable.(ÍÜÑµ8†Îë§¾,
+Ksquid:S1659´"'Declare "numpixels" on a separate line.(°ô‹Åùÿÿÿÿ8†Îë§¾,
+hsquid:S2184¸"DCast one of the operands of this subtraction operation to a "float".(Îø•Øúÿÿÿÿ8†Îë§¾,
+Lsquid:S1604ø"(Make this anonymous inner class a lambda(ôâŠûıÿÿÿÿ8†Îë§¾,
+xsquid:S00116 "TRename this field "_renderer" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ¨“¬üÿÿÿÿ8†Îë§¾,
+hsquid:S2184¹"DCast one of the operands of this subtraction operation to a "float".(Ø»€Èşÿÿÿÿ8†Îë§¾,
+Xsquid:S1161N":Add the "@Override" annotation above this method signature(ÄÿÍ¤8†Îë§¾,
+jsquid:CommentedOutCodeLineÌ"<This block of commented-out lines of code should be removed.(¸¡Íœ8†Îë§¾,
+gsquid:S2184Y"DCast one of the operands of this subtraction operation to a "float".(ŸÄşÒúÿÿÿÿ8—ÔèÈ¾,
+csquid:S2184Y"@Cast one of the operands of this integer division to a "double".(ŸÄşÒúÿÿÿÿ8—ÔèÈ¾,
+_squid:S1854Ë"@Remove this useless assignment to local variable "debrisObject".(ÍÜÑµ8†Îë§¾,
+Fsquid:S11480"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8†Îë§¾,
+Esquid:S1659´"!Declare "num" on a separate line.(°ô‹Åùÿÿÿÿ8†Îë§¾,
+csquid:S2184“"DCast one of the operands of this subtraction operation to a "float".(ÀëÎ8†Îë§¾,
+Vsquid:S1197ş"8Move the array designator from the variable to the type.(ØÀ™08†Îë§¾,
+Bsquid:S1659¢"#Declare "yinc1" on a separate line.(‚Ğòß8†Îë§¾,
+Jsquid:S1905Å"&Remove this unnecessary cast to "int".(”’Ûşÿÿÿÿ8†Îë§¾,
+isquid:CommentedOutCodeLinen"<This block of commented-out lines of code should be removed.(Åò•ê8†Îë§¾,
+Jsquid:S1905"&Remove this unnecessary cast to "int".(øêşºûÿÿÿÿ8†Îë§¾,
+vsquid:S3776›"RRefactor this method to reduce its Cognitive Complexity from 65 to the 15 allowed.(¯©øÈşÿÿÿÿ8†Îë§¾,
+Bsquid:S1659¢"#Declare "yinc2" on a separate line.(‚Ğòß8†Îë§¾,
+Jsquid:S1905Ÿ"&Remove this unnecessary cast to "int".(İŒ±€ıÿÿÿÿ8†Îë§¾,
+Esquid:S1905 "&Remove this unnecessary cast to "int".(µ´‚ï8†Îë§¾,
+osquid:CommentedOutCodeLine†"<This block of commented-out lines of code should be removed.(À÷Šêşÿÿÿÿ8ºççÈ¾,
+Csquid:S1659ª"$Declare "solidY" on a separate line.(¬Ÿ¶ç8†Îë§¾,
+Hsquid:S1659´"$Declare "numadd" on a separate line.(°ô‹Åùÿÿÿÿ8†Îë§¾,
+Jsquid:S1068"-Remove this unused "gameEnded" private field.(åã‹|8†Îë§¾,
+bsquid:S2184Z"DCast one of the operands of this subtraction operation to a "float".(åù­Ÿ8—ÔèÈ¾,
+isquid:CommentedOutCodeLine_"<This block of commented-out lines of code should be removed.(ö›ìª8†Îë§¾,
+Ysquid:S1161€":Add the "@Override" annotation above this method signature(ÿ‰¦¼8†Îë§¾,
+Bsquid:S1659¢"#Declare "xinc2" on a separate line.(‚Ğòß8†Îë§¾,
+osquid:CommentedOutCodeLineß"<This block of commented-out lines of code should be removed.(ìäöñûÿÿÿÿ8†Îë§¾,
+^squid:S2184Z"@Cast one of the operands of this integer division to a "double".(åù­Ÿ8—ÔèÈ¾,
+isquid:CommentedOutCodeLine,"<This block of commented-out lines of code should be removed.(îïÉ§8ºççÈ¾,
+Xsquid:S1161I":Add the "@Override" annotation above this method signature(„ç8†Îë§¾,

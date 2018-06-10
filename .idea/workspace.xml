@@ -2,187 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a4891c9-ecfb-48f1-b730-30af862df4ca" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Jordy.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Jordy.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_websocket_javax_websocket_api_1_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_annotations_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_annotations_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_2_3_v20140905.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_2_3_v20140905.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_2_3_v20140905.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_2_3_v20140905.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_jndi_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_jndi_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_plus_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_plus_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_security_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_2_3_v20140905.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_server_9_2_3_v20140905.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_servlet_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_2_3_v20140905.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_2_3_v20140905.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_webapp_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_javax_websocket_client_impl_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_javax_websocket_client_impl_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_javax_websocket_server_impl_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_javax_websocket_server_impl_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_server_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_server_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_servlet_9_2_7_v20150116.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_servlet_9_2_7_v20150116.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_2_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_2_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_2_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_2_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_2_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_7.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_7.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_7.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_7.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_7.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_main_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_main_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_android_aarch64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_android_aarch64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_android_armv6_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_android_armv6_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_amd64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_amd64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_armv6_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_armv6_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_armv6hf_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_armv6hf_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_i586_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_linux_i586_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_macosx_universal_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_macosx_universal_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_solaris_amd64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_solaris_amd64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_solaris_i586_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_solaris_i586_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_windows_amd64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_windows_amd64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_windows_i586_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_gluegen_gluegen_rt_natives_windows_i586_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_main_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_main_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_android_aarch64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_android_aarch64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_android_armv6_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_android_armv6_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_amd64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_amd64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_armv6_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_armv6_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_armv6hf_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_armv6hf_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_i586_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_linux_i586_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_macosx_universal_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_macosx_universal_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_solaris_amd64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_solaris_amd64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_solaris_i586_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_solaris_i586_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_windows_amd64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_windows_amd64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_windows_i586_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_jogl_all_natives_windows_i586_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_main_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_main_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_android_aarch64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_android_aarch64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_android_armv6_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_android_armv6_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_linux_amd64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_linux_amd64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_linux_armv6_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_linux_armv6_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_linux_armv6hf_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_linux_armv6hf_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_linux_i586_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_linux_i586_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_macosx_universal_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_macosx_universal_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_solaris_amd64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_solaris_amd64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_solaris_i586_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_solaris_i586_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_windows_amd64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_windows_amd64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_windows_i586_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_natives_windows_i586_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_os_osx_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_os_osx_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_os_win_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_os_win_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_os_x11_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_nativewindow_os_x11_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_android_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_android_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_bcm_old_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_bcm_old_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_bcm_vc_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_bcm_vc_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_intelgdl_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_intelgdl_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_kd_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_kd_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_linux_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_linux_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_osx_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_osx_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_win_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_win_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_x11_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_driver_x11_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_event_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_event_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_main_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_main_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_android_aarch64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_android_aarch64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_android_armv6_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_android_armv6_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_linux_amd64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_linux_amd64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_linux_armv6_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_linux_armv6_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_linux_armv6hf_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_linux_armv6hf_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_linux_i586_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_linux_i586_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_macosx_universal_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_macosx_universal_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_solaris_amd64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_solaris_amd64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_solaris_i586_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_solaris_i586_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_windows_amd64_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_windows_amd64_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_windows_i586_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_natives_windows_i586_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_ogl_2_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jogamp_jogl_newt_ogl_2_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_2_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_2_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_0.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_5_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_5_0_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_5_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_5_0_1.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_processing_core_3_3_7.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_processing_core_3_3_7.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_5_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_5_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_5_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_5_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_5_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_5_RELEASE.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e5233da99227ce279652e596a4dda823615b685" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e5233da99227ce279652e596a4dda823615b685" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/748d8dd08649dff92f2f7d6707eb539fa720af81" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/748d8dd08649dff92f2f7d6707eb539fa720af81" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/8/7823f82c843a268dda21345fb581623d561ac536" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/8/7823f82c843a268dda21345fb581623d561ac536" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8bfbb144a0d5d7954fba6c91e8ff52e9ebfc6100" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8bfbb144a0d5d7954fba6c91e8ff52e9ebfc6100" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e19555b0c683f2e330d335e128c9f5e2c9353fd" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e19555b0c683f2e330d335e128c9f5e2c9353fd" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b606e09b885c30d98e52bb63d646edd9dbdd9377" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b606e09b885c30d98e52bb63d646edd9dbdd9377" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2e72ad1f33d815d015c0d661ed884a09471ec1d" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/2/d2e72ad1f33d815d015c0d661ed884a09471ec1d" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e60708347a93920b6c8ee4bea223e3cb9c71b388" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e60708347a93920b6c8ee4bea223e3cb9c71b388" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/Coordinates.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/Coordinates.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/ITankGame.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/ITankGame.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/TankGame.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/TankGame.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/URLReader.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/URLReader.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/block/Block.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/block/Block.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/block/BlockContext.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/block/BlockContext.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/block/IBlockContext.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/block/IBlockContext.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/map/Grid.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/map/Grid.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/map/IGrid.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/map/IGrid.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/player/Opponent.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/player/Opponent.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/player/Player.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/player/Player.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/player/Self.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/player/Self.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/shell/Shell.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/shell/Shell.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tank/ITankCreator.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tank/ITankCreator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tank/NormalTank.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tank/NormalTank.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tank/Tank.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tank/Tank.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tank/TankCreator.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tank/TankCreator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/DebrisObject.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/DebrisObject.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/IPhysicsObject.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/IPhysicsObject.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/IRenderObject.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/IRenderObject.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Level.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Level.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Physics.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Physics.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/PlayerObject.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/PlayerObject.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Renderer.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Renderer.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Shell.java" afterPath="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Shell.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgameclient/ClientSocket.java" afterPath="$PROJECT_DIR$/src/main/java/tankgameclient/ClientSocket.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgameclient/ICommunicator.java" afterPath="$PROJECT_DIR$/src/main/java/tankgameclient/ICommunicator.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgameclient/ITankGameClient.java" afterPath="$PROJECT_DIR$/src/main/java/tankgameclient/ITankGameClient.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgameclient/ITankGameHost.java" afterPath="$PROJECT_DIR$/src/main/java/tankgameclient/ITankGameHost.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tankgameclient/TankGameClient.java" afterPath="$PROJECT_DIR$/src/main/java/tankgameclient/TankGameClient.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgameclient/TankGameHost.java" afterPath="$PROJECT_DIR$/src/main/java/tankgameclient/TankGameHost.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgamegui/ITankGameGUI.java" afterPath="$PROJECT_DIR$/src/main/java/tankgamegui/ITankGameGUI.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tankgamegui/PreGameStart.java" afterPath="$PROJECT_DIR$/src/main/java/tankgamegui/PreGameStart.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/tankgamegui/TankGameApplication.java" afterPath="$PROJECT_DIR$/src/main/java/tankgamegui/TankGameApplication.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgamegui/enums/BlockType.java" afterPath="$PROJECT_DIR$/src/main/java/tankgamegui/enums/BlockType.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgamegui/enums/ShellType.java" afterPath="$PROJECT_DIR$/src/main/java/tankgamegui/enums/ShellType.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgamegui/enums/TankType.java" afterPath="$PROJECT_DIR$/src/main/java/tankgamegui/enums/TankType.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServer.java" afterPath="$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServer.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServerService.java" afterPath="$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServerService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServerWebSocket.java" afterPath="$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServerWebSocket.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/websocketshared/Message.java" afterPath="$PROJECT_DIR$/src/main/java/websocketshared/Message.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/websocketshared/MessageDecoder.java" afterPath="$PROJECT_DIR$/src/main/java/websocketshared/MessageDecoder.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/websocketshared/MessageEncoder.java" afterPath="$PROJECT_DIR$/src/main/java/websocketshared/MessageEncoder.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/websocketshared/MethodCaller.java" afterPath="$PROJECT_DIR$/src/main/java/websocketshared/MethodCaller.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tankgame/map/GridTest.java" afterPath="$PROJECT_DIR$/src/test/java/tankgame/map/GridTest.java" />
       <change beforePath="$PROJECT_DIR$/target/classes/tankgame/ITankGame.class" afterPath="$PROJECT_DIR$/target/classes/tankgame/ITankGame.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/tankgame/TankGame.class" afterPath="$PROJECT_DIR$/target/classes/tankgame/TankGame.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/tankgameclient/TankGameClient.class" afterPath="$PROJECT_DIR$/target/classes/tankgameclient/TankGameClient.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tankgameclient/TankGameHost.class" afterPath="$PROJECT_DIR$/target/classes/tankgameclient/TankGameHost.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/tankgamegui/PreGameStart.class" afterPath="$PROJECT_DIR$/target/classes/tankgamegui/PreGameStart.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/tankgamegui/TankGameApplication$1.class" afterPath="$PROJECT_DIR$/target/classes/tankgamegui/TankGameApplication$1.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/tankgamegui/TankGameApplication$2.class" afterPath="$PROJECT_DIR$/target/classes/tankgamegui/TankGameApplication$2.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/tankgamegui/TankGameApplication.class" afterPath="$PROJECT_DIR$/target/classes/tankgamegui/TankGameApplication.class" />
     </list>
@@ -205,23 +34,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TankGameApplication.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TankGameApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/tankgamegui/TankGameApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="244" column="0" lean-forward="false" selection-start-line="244" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
+            <state relative-caret-position="608">
+              <caret line="375" column="55" lean-forward="true" selection-start-line="375" selection-start-column="55" selection-end-line="375" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#rayCast#0;class#TankGameApplication#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TankGame.iml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IAi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/ai/IAi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ai.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/ai/Ai.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TankGame.iml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TankGame.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="13" column="82" lean-forward="true" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -240,8 +90,8 @@
       <file leaf-file-name="TankGameClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tankgameclient/TankGameClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+            <state relative-caret-position="205">
+              <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -250,8 +100,8 @@
       <file leaf-file-name="PreGameStart.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tankgamegui/PreGameStart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1848">
-              <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
+            <state relative-caret-position="645">
+              <caret line="86" column="52" lean-forward="true" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -260,38 +110,18 @@
       <file leaf-file-name="TankGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/TankGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2926">
-              <caret line="154" column="5" lean-forward="false" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
+            <state relative-caret-position="331">
+              <caret line="110" column="33" lean-forward="true" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageEncoder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/websocketshared/MessageEncoder.java">
+      <file leaf-file-name="ITankGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/ITankGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MethodCaller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/websocketshared/MethodCaller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TankGameServerWebSocket.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServerWebSocket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+            <state relative-caret-position="154">
+              <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -323,7 +153,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rect</find>
       <find>g.red</find>
       <find>pla</find>
       <find>IRender</find>
@@ -353,6 +182,7 @@
       <find>define</find>
       <find>re</find>
       <find>run</find>
+      <find>setop</find>
     </findStrings>
     <replaceStrings>
       <replace>level</replace>
@@ -398,7 +228,6 @@
         <option value="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Physics.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/Renderer.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/DebrisObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tankgame/ITankGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/tankgameprocessing/PlayerObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgamegui/enums/ShellType.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgamegui/enums/BlockType.java" />
@@ -413,12 +242,13 @@
         <option value="$PROJECT_DIR$/src/main/java/tankgame/map/IGrid.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/player/Opponent.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgame/ai/Ai.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tankgame/TankGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgameserver/TankGameServer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/tankgameclient/TankGameHost.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tankgame/ITankGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tankgame/TankGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgamegui/PreGameStart.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgamegui/TankGameApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tankgameclient/TankGameHost.java" />
         <option value="$PROJECT_DIR$/src/main/java/tankgameclient/TankGameClient.java" />
       </list>
     </option>
@@ -448,9 +278,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="709" />
+    <option name="y" value="10" />
     <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="height" value="1037" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -540,9 +371,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -666,7 +498,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -957,14 +788,16 @@
       <workItem from="1528559515815" duration="623000" />
       <workItem from="1528561711245" duration="11943000" />
       <workItem from="1528624168239" duration="59000" />
+      <workItem from="1528624298100" duration="1067000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130572000" />
+    <option name="totallyTimeSpent" value="131639000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -989,6 +822,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18645833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -997,14 +831,13 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1013,23 +846,23 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984799" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28990227" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3223684" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3213898" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32456142" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31813246" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3095723" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18645833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267544" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32790446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -1042,14 +875,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/tankgame/TankGame.java</url>
-          <line>56</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
@@ -1232,22 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/ITankGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/ai/IAi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/tank/NormalTank.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1313,22 +1122,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/ai/Ai.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="e#1053#1054#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/player/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1338,7 +1137,7 @@
         <state relative-caret-position="110">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#103#104#0" expanded="true" />
+            <element signature="e#103#104#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1356,9 +1155,9 @@
         <state relative-caret-position="208">
           <caret line="79" column="0" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
           <folding>
-            <element signature="e#2096#2097#0" expanded="true" />
-            <element signature="e#2799#2800#0" expanded="true" />
-            <element signature="e#2843#2844#0" expanded="true" />
+            <element signature="e#2096#2097#0" expanded="false" />
+            <element signature="e#2799#2800#0" expanded="false" />
+            <element signature="e#2843#2844#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1396,11 +1195,11 @@
         <state relative-caret-position="154">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#448#449#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#649#650#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="false" />
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#649#650#0" expanded="false" />
+            <element signature="e#774#775#0" expanded="false" />
+            <element signature="e#816#817#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1445,26 +1244,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgamegui/PreGameStart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1848">
-          <caret line="90" column="13" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_161/javafx-src.zip!/com/sun/javafx/application/PlatformImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="268" column="5" lean-forward="true" selection-start-line="268" selection-start-column="5" selection-end-line="268" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/TankGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2926">
-          <caret line="154" column="5" lean-forward="false" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1476,29 +1259,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TankGame.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="82" lean-forward="true" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/ai/IAi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/ai/Ai.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/ITankGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgamegui/PreGameStart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="86" column="52" lean-forward="true" selection-start-line="86" selection-start-column="52" selection-end-line="86" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tankgameclient/TankGameClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="69" column="13" lean-forward="false" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+        <state relative-caret-position="205">
+          <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tankgame/TankGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="110" column="33" lean-forward="true" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tankgamegui/TankGameApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="244" column="0" lean-forward="false" selection-start-line="244" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
+        <state relative-caret-position="608">
+          <caret line="375" column="55" lean-forward="true" selection-start-line="375" selection-start-column="55" selection-end-line="375" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#rayCast#0;class#TankGameApplication#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TankGame.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

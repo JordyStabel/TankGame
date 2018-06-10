@@ -58,8 +58,8 @@ public class TankGameClient implements ITankGameClient {
     }
 
     @Override
-    public int registerPlayer(String name, ITankGameGUI application, boolean singlePlayerMode) throws Exception {
-        return (((Double) messageSender("registerPlayer", new Object[]{name, singlePlayerMode})).intValue());
+    public int registerPlayer(String name, ITankGameGUI application) throws Exception {
+        return (((Double) messageSender("registerPlayer", new Object[]{name})).intValue());
     }
 
     @Override

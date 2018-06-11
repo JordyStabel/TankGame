@@ -1,20 +1,22 @@
 package client;
 
+import client.connection.ClientEndPointSocket;
 import javafx.application.Platform;
 import processing.core.PApplet;
 import processing.core.PImage;
 import tankgame.ITankGame;
-import tankgame.TankGame;
 import client.game.TankGame;
 import tankgame.tankgameprocessing.*;
 
-import java.awt.*;
+import java.util.logging.Logger;
 
 public class Client extends PApplet {
 
+    private static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+
     private TankGame tankGame;
 
-    private ClientEndpointSocket clientEndpointSocket;
+    private ClientEndPointSocket clientEndpointSocket;
     private boolean info = false;
 
     private int playerNr = 0;
@@ -44,25 +46,35 @@ public class Client extends PApplet {
     int translateX = 0; // don't instantiate
     int translateY = 0; // don't instantiate
 
+    public Client(TankGame tankGame, ClientEndPointSocket clientEndPointSocket) {
+        this.tankGame = tankGame;
+        this.clientEndpointSocket = clientEndPointSocket;
+    }
+
+    public void settings() {
+        size(800, 600, P2D);
+    }
+
     // setup(), called before any looping is done
     public void setup() {
 
-        game = new TankGame();
-        //String test = this.args[1];
+// TODO: Do something with this
+//        game = new TankGame();
+//        //String test = this.args[1];
+//
+//        try {
+//            registerPlayer(); // this.args[0];
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        } //
 
-        try {
-            registerPlayer(); // this.args[0];
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        surface.setTitle(playerName);
+        surface.setTitle("Tank Game");
 
         // load our images for level and background
         bg = loadImage("images/sky-blurry.png");
 
         // FPS limit
-        frameRate(30);
+        frameRate(60);
 
         // new Level(image, destructionRes)
         level = new Level(this, loadImage("images/tree.png"), 5);
@@ -70,8 +82,8 @@ public class Client extends PApplet {
         // initialize the physics and rendering engines
         physics = new Physics(this);
         _renderer = new Renderer(this);
-//
-//        // create the playerObject
+
+        // create the playerObject
         playerObject = new PlayerObject(this, level,100,100);
         opponentObject = new PlayerObject(this, level, 150, 150);
 
@@ -79,10 +91,6 @@ public class Client extends PApplet {
         physics.add(opponentObject);
         _renderer.add(playerObject);
         _renderer.add(opponentObject);
-    }
-
-    public void settings() {
-        size(800, 600, P2D);
     }
 
     // Draw loop

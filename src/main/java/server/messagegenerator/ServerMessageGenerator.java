@@ -1,5 +1,6 @@
 package server.messagegenerator;
 
+import server.actions.GameData;
 import server.actions.Message;
 import server.models.TankGame;
 
@@ -40,7 +41,7 @@ public class ServerMessageGenerator implements IServerMessageGenerator {
 
     @Override
     public void updatePlayers(){
-        GameData gameData = new GameData(tankGame.getPlayers(), tankGame.getApple());
+        GameData gameData = new GameData(tankGame.getPlayers());
         Message message = new Message(Actions.GAMEDATA, gameData);
         serverSocket.broadcast(message);
     }

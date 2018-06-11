@@ -5,6 +5,9 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
+import server.messagegenerator.IServerMessageGenerator;
+import server.messagegenerator.ServerMessageGenerator;
+import server.websocket.EventServerSocket;
 
 import javax.websocket.server.ServerContainer;
 import java.util.logging.Level;
@@ -30,7 +33,7 @@ public class Main {
         server.setHandler(context);
 
 
-        IMessageGenerator iMessageGenerator = new ServerMessageGenerator(EventServerSocket.class);
+        IServerMessageGenerator iMessageGenerator = new ServerMessageGenerator(EventServerSocket.class);
         TankGame game = new TankGame(iMessageGenerator, 50,50);
         iMessageGenerator.setGame(game);
 

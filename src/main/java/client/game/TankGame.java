@@ -1,5 +1,7 @@
 package client.game;
 
+import server.models.Player;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -9,9 +11,9 @@ public class TankGame {
     private int width;
 
     private ArrayList<Player> players;
-    private Apple apple;
+    //private Apple apple;
 
-    public Game(int height, int width) {
+    public TankGame(int height, int width) {
         this.height = height;
         this.width = width;
 
@@ -48,11 +50,11 @@ public class TankGame {
         this.players = players;
     }
 
-    public Apple getApple() {
-        return apple;
-    }
-
-    public void setApple(Apple apple) {
-        this.apple = apple;
-    }
+//    //public Apple getApple() {
+//        return apple;
+//    }
+//
+//    //public void setApple(Apple apple) {
+//        this.apple = apple;
+//    }
 }

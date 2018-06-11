@@ -7,26 +7,26 @@ import server.response.Json;
 
 public class Message implements Json {
 
-    private UserActions action;
+    private Actions action;
     private String content;
     private IAction data;
 
-    public Message(UserActions action) {
+    public Message(Actions action) {
         this.action = action;
     }
 
-    public Message(UserActions action, String content) {
+    public Message(Actions action, String content) {
         this.action = action;
         this.content = content;
     }
 
-    public Message(UserActions action, IAction data) {
+    public Message(Actions action, IAction data) {
         this.action = action;
         Gson gson = new Gson();
         this.content = gson.toJson(data);
     }
 
-    public UserActions getAction() {
+    public Actions getAction() {
         return action;
     }
 

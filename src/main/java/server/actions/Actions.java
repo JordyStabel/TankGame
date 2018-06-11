@@ -1,6 +1,6 @@
 package server.actions;
 
-public enum UserActions {
+public enum Actions {
     REGISTER,
     READY,
     START,
@@ -8,5 +8,6 @@ public enum UserActions {
     LEFT,
     RIGHT,
     SHOOT,
+    GAMEDATA,
     UPDATES;
 }

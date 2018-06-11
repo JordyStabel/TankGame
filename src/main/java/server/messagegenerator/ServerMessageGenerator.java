@@ -2,7 +2,9 @@ package server.messagegenerator;
 
 import server.actions.GameData;
 import server.actions.Message;
+import server.actions.Actions;
 import server.models.TankGame;
+import server.websocket.IServerWebSocket;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -29,7 +31,8 @@ public class ServerMessageGenerator implements IServerMessageGenerator {
         return tankGame;
     }
 
-    public void setTankGame(TankGame tankGame) {
+    @Override
+    public void setGame(TankGame tankGame) {
         this.tankGame = tankGame;
     }
 

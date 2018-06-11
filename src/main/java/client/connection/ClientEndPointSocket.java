@@ -14,7 +14,7 @@ public class ClientEndPointSocket {
 
     private static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-    private IMessageHandler messageHandler;
+    private IClientMessageHandler messageHandler;
     private Session session;
 
     public ClientEndpointSocket() {
@@ -43,7 +43,7 @@ public class ClientEndPointSocket {
     }
 
 
-    public void setMessageHandler(IMessageHandler messageHandler) {
+    public void setMessageHandler(IClientMessageHandler messageHandler) {
         this.messageHandler = messageHandler;
     }
 

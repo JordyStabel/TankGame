@@ -1,6 +1,6 @@
-package client.connection;
+package server.messageHandler;
 
-public interface IMessageHandler {
+public interface IServerMessageHandler {
     void handleMessage(String message, String sessionId);
 
     void disconnected(String sessionId);

@@ -1,15 +1,15 @@
 package client.game.tankgameobjects;
 
+import client.Client;
 import processing.core.PApplet;
-import tankgamegui.TankGameApplication;
 
 import static java.sql.DriverManager.println;
 
-public class DebrisObject implements TankGameApplication.PhysicsObj, TankGameApplication.RenderObj {
+public class DebrisObject implements Client.PhysicsObj, Client.RenderObj {
 
     private PApplet parent;
 
-    private TankGameApplication tankGameApplication;
+    private Client client;
     private Level level;
     private Renderer _renderer;
     private Physics physics;
@@ -71,7 +71,7 @@ public class DebrisObject implements TankGameApplication.PhysicsObj, TankGameApp
     // CheckConstraints, also implemented as a PhysicsObj
     public void checkConstraints() {
         // Find if there's a collision between the current and last points
-        int[] collision = tankGameApplication.rayCast((int)lastX, (int)lastY, (int)x, (int)y);
+        int[] collision = client.rayCast((int)lastX, (int)lastY, (int)x, (int)y);
         if (collision.length > 0)
             collide(collision[0], collision[1], collision[2], collision[3]);
 

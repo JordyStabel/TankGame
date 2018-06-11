@@ -1,6 +1,6 @@
 
-Fsquid:S1148'"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8–‹êÖ¾,
-Fsquid:S1148$"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8–‹êÖ¾,
-qsquid:ModifiersOrderCheckA"EReorder the modifiers to comply with the Java Language Specification.(ö…Àè8–‹êÖ¾,
-Xsquid:S1141!"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8–‹êÖ¾,
-qsquid:ModifiersOrderCheck4"EReorder the modifiers to comply with the Java Language Specification.(Ößà§8–‹êÖ¾,
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(ö…Àè8–‹êÖ¾,
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(Ößà§8–‹êÖ¾,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8–‹êÖ¾,
+Vsquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8–‹êÖ¾,
+Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8–‹êÖ¾,

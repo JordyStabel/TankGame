@@ -1,11 +1,11 @@
 package client.game.tankgameobjects;
 
+import client.Client;
 import processing.core.PApplet;
-import tankgamegui.TankGameApplication;
 
-public class Shell implements IPhysicsObject, IRenderObject {
+public class Shell implements IPhysicsObject, IRenderObject, Client.RenderObj, Client.PhysicsObj {
 
-    private TankGameApplication tankGameApplication;
+    private Client client;
     private Level level;
     private Renderer _renderer;
     private Physics physics;
@@ -25,12 +25,14 @@ public class Shell implements IPhysicsObject, IRenderObject {
     private float velY;
 
     // Constructor
-    Shell(float x, float y, float vX, float vY, PApplet pApplet) {
+    Shell(float x, float y, float vX, float vY, PApplet pApplet, Level level, Client client) {
         this.x = x; this.y = y;
         lastX = x; lastY = y;
         velX = vX; velY = vY;
 
         this.parent = pApplet;
+        this.level = level;
+        this.client = client;
     }
 
     // methods implemented as a PhysicsObj
@@ -44,11 +46,11 @@ public class Shell implements IPhysicsObject, IRenderObject {
     public void setVY(float vY) { velY = vY; }
 
     public void checkConstraints() {
-        int[] collision = tankGameApplication.rayCast((int)lastX, (int)lastY, (int)x, (int)y);
+        int[] collision = client.rayCast((int)lastX, (int)lastY, (int)x, (int)y);
         if (collision.length > 0) {
-            _renderer.remove((TankGameApplication.RenderObj) this);
-            physics.remove((TankGameApplication.PhysicsObj) this);
-            tankGameApplication.explode(collision[2], collision[3], 40);
+            _renderer.remove(this);
+            physics.remove(this);
+            client.explode(collision[2], collision[3], 40);
         }
         lastX = x;
         lastY = y;
@@ -57,5 +59,10 @@ public class Shell implements IPhysicsObject, IRenderObject {
     public void draw() {
         parent.fill(0);
         parent.rect(x,y,30,30);
+    }
+
+    @Override
+    public void display() {
+
     }
 }

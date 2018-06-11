@@ -1,7 +1,7 @@
 package client.game.tankgameobjects;
 
+import client.Client;
 import processing.core.PApplet;
-import tankgamegui.TankGameApplication;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,18 +15,18 @@ public class Physics {
 
     private PApplet parent;
 
-    private List<TankGameApplication.PhysicsObj> objects;
+    private List<Client.PhysicsObj> objects;
 
     // Constructor
     public Physics(PApplet pApplet) {
         parent = pApplet;
-        objects = new ArrayList<TankGameApplication.PhysicsObj>();
+        objects = new ArrayList<Client.PhysicsObj>();
     }
 
-    public void add(TankGameApplication.PhysicsObj obj) {
+    public void add(Client.PhysicsObj obj) {
         objects.add((int)parent.random(objects.size()),obj);
     }
-    public void remove(TankGameApplication.PhysicsObj obj) {
+    public void remove(Client.PhysicsObj obj) {
         objects.remove(obj);
     }
 
@@ -56,7 +56,7 @@ public class Physics {
         for (int iteration = 1; iteration <= timeStepAmt; iteration++) {
             for (int i = 0; i < objects.size(); i++) { // loop through every PhysicsObj
 
-                TankGameApplication.PhysicsObj obj = objects.get(i);
+                Client.PhysicsObj obj = objects.get(i);
                 // get their velocity
                 float velX = obj.getVX();
                 float velY = obj.getVY();

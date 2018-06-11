@@ -1,7 +1,7 @@
 package client.game.tankgameobjects;
 
+import client.Client;
 import processing.core.PApplet;
-import tankgamegui.TankGameApplication;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,25 +10,25 @@ import java.util.List;
 // Holds a list of all "RenderObj"s, anything with a draw() method.
 public class Renderer {
 
-    private List<TankGameApplication.RenderObj> objects;
+    private List<Client.RenderObj> objects;
 
     private PApplet parent;
 
     public Renderer(PApplet pApplet) {
         parent = pApplet;
-        objects = new ArrayList<TankGameApplication.RenderObj>();
+        objects = new ArrayList<Client.RenderObj>();
     }
 
     public void draw() {
-        for (TankGameApplication.RenderObj obj : objects){
+        for (Client.RenderObj obj : objects){
             obj.display();
         }
     }
 
-    public void add(TankGameApplication.RenderObj obj) {
+    public void add(Client.RenderObj obj) {
         objects.add(obj);
     }
-    public void remove(TankGameApplication.RenderObj obj) {
+    public void remove(Client.RenderObj obj) {
         objects.remove(obj);
     }
 }

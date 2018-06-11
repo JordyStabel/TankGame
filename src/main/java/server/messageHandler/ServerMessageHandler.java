@@ -6,6 +6,8 @@ import server.actions.Message;
 import server.models.Player;
 import server.models.TankGame;
 
+import static processing.core.PApplet.println;
+
 public class ServerMessageHandler implements IServerMessageHandler {
 
     private TankGame tankGame;
@@ -20,10 +22,6 @@ public class ServerMessageHandler implements IServerMessageHandler {
         Message message = gson.fromJson(messageString,Message.class);
 
         switch (message.getAction()){
-//            case REGISTER:
-//                Register register = (Register) message.parseData(Register.class);
-//                registerPlayer(register, sessionId);
-//                break;
             case READY:
                 playerReady(sessionId);
                 break;
@@ -55,6 +53,7 @@ public class ServerMessageHandler implements IServerMessageHandler {
                 //player.getSnake().left();
                 break;
             case RIGHT:
+                println("It did something");
                 //player.getSnake().right();
                 break;
             default:

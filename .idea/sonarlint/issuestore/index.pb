@@ -101,3 +101,11 @@ W
 +src/main/java/tankgamegui/PreGameStart.java,8\e\8e19555b0c683f2e330d335e128c9f5e2c9353fd
 \
 ,src/main/java/tankgamegui/enums/Methods.java,6\f\6ff087661638b6600d08c24e93551ef372a918e4
+W
+'src/main/java/server/models/Player.java,3\b\3b4667f5fb80b3e1c995b42108d1d7024d5e6982
+Y
+)src/main/java/server/actions/IAction.java,c\f\cf732161275f3390b3f88f7c6b99554a47a2f8f6
+Y
+)src/main/java/server/actions/Message.java,7\f\7f50be462eb12bbd51e7931fe191505e06ccef1a
+Z
+*src/main/java/server/actions/GameData.java,0\1\01621324aa125c67c9640a4ab784ab8d15a5741e

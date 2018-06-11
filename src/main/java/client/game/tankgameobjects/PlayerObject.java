@@ -1,13 +1,13 @@
 package client.game.tankgameobjects;
 
+import client.Client;
 import processing.core.PApplet;
-import tankgamegui.TankGameApplication;
 
-public class PlayerObject implements TankGameApplication.RenderObj, TankGameApplication.PhysicsObj {
+public class PlayerObject implements Client.RenderObj, Client.PhysicsObj {
 
     PApplet parent;
 
-    private TankGameApplication tankGameApplication;
+    private Client client;
     private Level level;
     private Renderer _renderer;
     private Physics physics;
@@ -49,12 +49,13 @@ public class PlayerObject implements TankGameApplication.RenderObj, TankGameAppl
     private int playerHeight;
 
     // Constructor
-    public PlayerObject(PApplet pApplet, Level level, int positionX, int positionY) {
+    public PlayerObject(PApplet pApplet, Client client, Level level, int positionX, int positionY) {
         this.posX = positionX;
         this.posY = positionY;
 
         parent = pApplet;
         this.level = level;
+        this.client = client;
 
         // Start out standing still
         velX = 0;
@@ -164,14 +165,14 @@ public class PlayerObject implements TankGameApplication.RenderObj, TankGameAppl
             if (!(shooting && parent.millis() - lastShot < 150) && !(shootingAlt && parent.millis() - lastShot < 15)) {
                 // Create a vector between the playerObject and the mouse, then normalize that vector (to change its length to 1)
                 // after multiplying by the desired bullet speed, we get how fast along each axis we want the bullet to be traveling
-                float diffX = tankGameApplication.getMouseX() - posX;
-                float diffY = tankGameApplication.getMouseY() - posY;
+                float diffX = client.getMouseX() - posX;
+                float diffY = client.getMouseY() - posY;
                 float len = parent.sqrt(diffX * diffX + diffY * diffY);
                 if (shooting) {
                     // create the bullet at 2000 px/sec, and add it to our Physics and Rendering lists
-                    Shell shell = new Shell(posX, posY, 2000 * diffX / len, 2000 * diffY / len, parent);
-                    physics.add((TankGameApplication.PhysicsObj) shell);
-                    _renderer.add((TankGameApplication.RenderObj) shell);
+                    Shell shell = new Shell(posX, posY, 2000 * diffX / len, 2000 * diffY / len, parent, level, client);
+                    physics.add(shell);
+                    _renderer.add(shell);
                 } else {
                     // Change our color from RGB to HSB so we can cycle through hues
                     parent.colorMode(parent.HSB, 255);

@@ -101,26 +101,29 @@ public class StartUp {
     }
 
     private static void start(String ip, String firstName, String secondName){
-        TankGame tankGame = new TankGame(50,50);
+        for (int i = 0; i < 2; i++){
+            TankGame tankGame = new TankGame(50,50);
 
-        clientEndPointSocket = new ClientEndPointSocket();
-        ClientSocketResponseHandler clientSocketResponseHandler = new ClientSocketResponseHandler(tankGame);
-        clientEndPointSocket.setMessageHandler(clientSocketResponseHandler);
+            clientEndPointSocket = new ClientEndPointSocket();
+            ClientSocketResponseHandler clientSocketResponseHandler = new ClientSocketResponseHandler(tankGame);
+            clientEndPointSocket.setMessageHandler(clientSocketResponseHandler);
 
-        clientEndPointSocket.connect("localhost:9090/tankgame/");
+            clientEndPointSocket.connect("localhost:9090/tankgame/");
 
-        //Register register = new Register(name, color.getRed(), color.getGreen(), color.getBlue());
-        //Message message = new Message(Actions.REGISTER, register);
-        //clientEndpointSocket.sendMessage(message);
+            // TODO: Remove or implement
+            //Register register = new Register(name, color.getRed(), color.getGreen(), color.getBlue());
+            //Message message = new Message(Actions.REGISTER, register);
+            //clientEndpointSocket.sendMessage(message);
 
-        Client client = new Client(tankGame, clientEndPointSocket);
+            Client client = new Client(tankGame, clientEndPointSocket);
 
-        clientSocketResponseHandler.setClient(client);
+            clientSocketResponseHandler.setClient(client);
 
-        String[] processingArgs = {"TankGame"};
-        PApplet.runSketch(processingArgs, client);
+            String[] processingArgs = {"TankGame"};
+            PApplet.runSketch(processingArgs, client);
 
-        clientEndPointSocket.sendMessage(new Message(Actions.READY));
+            clientEndPointSocket.sendMessage(new Message(Actions.READY));
+        }
     }
 
     private String readInput(String message){

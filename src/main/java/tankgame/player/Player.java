@@ -1,6 +1,6 @@
 package tankgame.player;
 
-import tankgame.tankgameprocessing.PlayerObject;
+import client.game.tankgameobjects.PlayerObject;
 
 public class Player {
 

@@ -1,11 +1,11 @@
 package tankgamegui;
 
+import client.game.tankgameobjects.*;
 import javafx.application.Platform;
 import processing.core.PApplet;
 import processing.core.PImage;
 import tankgame.ITankGame;
 import tankgame.TankGame;
-import tankgame.tankgameprocessing.*;
 
 public class TankGameApplication extends PApplet implements ITankGameGUI {
 
@@ -68,8 +68,8 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         _renderer = new Renderer(this);
 //
 //        // create the playerObject
-        playerObject = new PlayerObject(this, level,100,100);
-        opponentObject = new PlayerObject(this, level, 150, 150);
+        //playerObject = new PlayerObject(this, level,100,100);
+        //opponentObject = new PlayerObject(this, level, 150, 150);
 
         physics.add(playerObject);
         physics.add(opponentObject);

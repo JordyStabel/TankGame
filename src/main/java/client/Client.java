@@ -5,6 +5,9 @@ import client.game.TankGame;
 import client.game.tankgameobjects.*;
 import processing.core.PApplet;
 import processing.core.PImage;
+import server.actions.Actions;
+import server.actions.Message;
+import server.models.Player;
 import tankgame.ITankGame;
 
 import java.util.logging.Logger;
@@ -35,8 +38,8 @@ public class Client extends PApplet {
     PImage bg;
 
     // physics and rendering engines
-    Physics physics; // has a list of all physics objects, and uses their velocity to move them
-    Renderer _renderer; // has a list of all renderable objects, and calls their draw() method
+    public Physics physics; // has a list of all physics objects, and uses their velocity to move them
+    public Renderer _renderer; // has a list of all renderable objects, and calls their draw() method
 
     PlayerObject playerObject;
     PlayerObject opponentObject;
@@ -67,7 +70,9 @@ public class Client extends PApplet {
 //            e.printStackTrace();
 //        } //
 
-        surface.setTitle("Tank Game");
+        Player player = tankGame.getPlayers().get(0);
+
+        surface.setTitle(player.getPlayerName());
 
         // load our images for level and background
         bg = loadImage("images/sky-blurry.png");
@@ -83,8 +88,8 @@ public class Client extends PApplet {
         _renderer = new Renderer(this);
 
         // create the playerObject
-        playerObject = new PlayerObject(this, level,100,100);
-        opponentObject = new PlayerObject(this, level, 150, 150);
+        playerObject = new PlayerObject(this, this, level,100,100);
+        opponentObject = new PlayerObject(this, this, level, 150, 150);
 
         physics.add(playerObject);
         physics.add(opponentObject);
@@ -138,17 +143,14 @@ public class Client extends PApplet {
     /* Controls */
     public void keyPressed() {
         if (key == 'w' || key == 'W')
-        {
             playerObject.jump();
-            if (game.jump(playerNr))
-            {
-                opponentObject.jump();
-            }
-        }
         if (key == 'a' || key == 'A')
             playerObject.moveLeft();
         if (key == 'd' || key == 'D')
+        {
             playerObject.moveRight();
+            clientEndpointSocket.sendMessage(new Message(Actions.RIGHT));
+        }
 //        if (key == 'r')
 //            notifyWhenReady();
     }
@@ -159,18 +161,19 @@ public class Client extends PApplet {
             playerObject.stopRight();
     }
 
-    //    public void mousePressed() {
-//        if (mouseButton == LEFT)
-//            playerObject.shoot();
-//        else if (mouseButton == RIGHT)
-//            playerObject.shootAlt();
-//    }
-//    public void mouseReleased() {
-//        if (mouseButton == LEFT)
-//            playerObject.stopShooting();
-//        else if (mouseButton == RIGHT)
-//            playerObject.stopShootingAlt();
-//    }
+        public void mousePressed() {
+        if (mouseButton == LEFT)
+            playerObject.shoot();
+        else if (mouseButton == RIGHT)
+            playerObject.shootAlt();
+    }
+    public void mouseReleased() {
+        if (mouseButton == LEFT)
+            playerObject.stopShooting();
+        else if (mouseButton == RIGHT)
+            playerObject.stopShootingAlt();
+    }
+
     public float getMouseX() {
         return mouseX - translateX;
     }
@@ -405,7 +408,7 @@ public class Client extends PApplet {
 
     /* Level */
 // Provides methods for determining solid/empty pixels, and for removing/adding solid pixels
-    static public void main(String args[]) {
-        PApplet.main(new String[] { "tankgamegui.TankGameApplication" } ); //, args[0]
-    }
+//    static public void main(String args[]) {
+//        PApplet.main(new String[] { "tankgamegui.TankGameApplication" } ); //, args[0]
+//    }
 }

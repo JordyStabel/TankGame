@@ -1,5 +1,12 @@
 package client;
 
+import client.connection.ClientEndPointSocket;
+import client.connection.ClientSocketResponseHandler;
+import client.game.TankGame;
+import processing.core.PApplet;
+import server.actions.Actions;
+import server.actions.Message;
+
 import java.io.IOException;
 import java.util.Scanner;
 import java.util.logging.FileHandler;
@@ -10,7 +17,7 @@ import static processing.core.PApplet.println;
 
 public class StartUp {
 
-    // private static ClientEndpointSocket clientEndpointSocket;
+    private static ClientEndPointSocket clientEndPointSocket;
 
     private static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
@@ -94,7 +101,26 @@ public class StartUp {
     }
 
     private static void start(String ip, String firstName, String secondName){
-        //TODO: Start a new game
+        TankGame tankGame = new TankGame(50,50);
+
+        clientEndPointSocket = new ClientEndPointSocket();
+        ClientSocketResponseHandler clientSocketResponseHandler = new ClientSocketResponseHandler(tankGame);
+        clientEndPointSocket.setMessageHandler(clientSocketResponseHandler);
+
+        clientEndPointSocket.connect("localhost:9090/tankgame/");
+
+        //Register register = new Register(name, color.getRed(), color.getGreen(), color.getBlue());
+        //Message message = new Message(Actions.REGISTER, register);
+        //clientEndpointSocket.sendMessage(message);
+
+        Client client = new Client(tankGame, clientEndPointSocket);
+
+        clientSocketResponseHandler.setClient(client);
+
+        String[] processingArgs = {"TankGame"};
+        PApplet.runSketch(processingArgs, client);
+
+        clientEndPointSocket.sendMessage(new Message(Actions.READY));
     }
 
     private String readInput(String message){

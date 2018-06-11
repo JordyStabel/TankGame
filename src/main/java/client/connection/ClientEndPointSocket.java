@@ -2,6 +2,7 @@ package client.connection;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import server.actions.Message;
 
 import javax.websocket.*;
 import java.io.IOException;
@@ -17,7 +18,7 @@ public class ClientEndPointSocket {
     private IClientMessageHandler messageHandler;
     private Session session;
 
-    public ClientEndpointSocket() {
+    public ClientEndPointSocket() {
     }
 
     public void connect(String ip) {

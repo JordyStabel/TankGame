@@ -12,8 +12,6 @@ public interface IServerMessageGenerator extends Runnable {
 
     void updatePlayers();
 
-    void ping(String playerID);
-
     @Override
     void run();
 }

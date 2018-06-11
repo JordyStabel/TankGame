@@ -1,6 +1,6 @@
 package server.websocket;
 
-import client.connection.IClientMessageHandler;
+import server.messageHandler.IServerMessageHandler;
 import server.response.Json;
 
 import javax.websocket.*;
@@ -21,13 +21,13 @@ public class EventServerSocket implements IServerWebSocket {
     private static Map<String, Session> map = new HashMap<>();
     private static Map<String, Session> sessions = Collections.synchronizedMap(map);
 
-    private static IClientMessageHandler messageHandler;
+    private static IServerMessageHandler messageHandler;
 
-    public static IClientMessageHandler getMessageHandler() {
+    public static IServerMessageHandler getMessageHandler() {
         return messageHandler;
     }
 
-    public static void setMessageHandler(IClientMessageHandler messageHandler) {
+    public static void setMessageHandler(IServerMessageHandler messageHandler) {
         EventServerSocket.messageHandler = messageHandler;
     }
 

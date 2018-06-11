@@ -50,23 +50,17 @@ public class ServerMessageGenerator implements IServerMessageGenerator {
     }
 
     @Override
-    public void ping(String uuid) {
-        serverSocket.sendTo(uuid, new Message(Actions.PING));
-    }
-
-
-    @Override
     public void run() {
-        Field field = new Field(tankGame.getWidth(), tankGame.getHeight());
-        for (int i = 0; i < tankGame.getPlayers().size(); i++) {
-            Player player = tankGame.getPlayers().get(i);
-            Snake snake = player.getSnake();
-            field.setColor(snake.getX(), snake.getY(), snake.getSnakeColor());
-            for (int j = 0; j < snake.getTail().size(); j++) {
-                Tail tail = snake.getTail().get(i);
-                field.setColor(tail.getX(), tail.getY(), snake.getTailColor());
-            }
-        }
-        serverSocket.broadcast(field);
+//        Field field = new Field(tankGame.getWidth(), tankGame.getHeight());
+//        for (int i = 0; i < tankGame.getPlayers().size(); i++) {
+//            Player player = tankGame.getPlayers().get(i);
+//            Snake snake = player.getSnake();
+//            field.setColor(snake.getX(), snake.getY(), snake.getSnakeColor());
+//            for (int j = 0; j < snake.getTail().size(); j++) {
+//                Tail tail = snake.getTail().get(i);
+//                field.setColor(tail.getX(), tail.getY(), snake.getTailColor());
+//            }
+//        }
+//        serverSocket.broadcast(field);
     }
 }

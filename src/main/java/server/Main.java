@@ -1,10 +1,11 @@
 package server;
 
-import client.game.TankGame;
+import server.models.TankGame;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.websocket.jsr356.server.deploy.WebSocketServerContainerInitializer;
+import server.messageHandler.ServerMessageHandler;
 import server.messagegenerator.IServerMessageGenerator;
 import server.messagegenerator.ServerMessageGenerator;
 import server.websocket.EventServerSocket;
@@ -34,13 +35,13 @@ public class Main {
 
 
         IServerMessageGenerator iMessageGenerator = new ServerMessageGenerator(EventServerSocket.class);
-        TankGame game = new TankGame(iMessageGenerator, 50,50);
-        iMessageGenerator.setGame(game);
+        TankGame tankGame = new TankGame(iMessageGenerator, 50, 50);
+        iMessageGenerator.setGame(tankGame);
 
-        GameMessageHandler messageHandler = new GameMessageHandler(game);
+        ServerMessageHandler serverMessageHandler = new ServerMessageHandler(tankGame);
         try {
             ServerContainer container = WebSocketServerContainerInitializer.configureContext(context);
-            EventServerSocket.setMessageHandler(messageHandler);
+            EventServerSocket.setMessageHandler(serverMessageHandler);
             container.addEndpoint(EventServerSocket.class);
             server.start();
             LOGGER.log(Level.INFO, "Websocket started on: " + server.getURI());

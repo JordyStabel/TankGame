@@ -1,12 +1,11 @@
 package client;
 
 import client.connection.ClientEndPointSocket;
-import javafx.application.Platform;
+import client.game.TankGame;
+import client.game.tankgameobjects.*;
 import processing.core.PApplet;
 import processing.core.PImage;
 import tankgame.ITankGame;
-import client.game.TankGame;
-import tankgame.tankgameprocessing.*;
 
 import java.util.logging.Logger;
 
@@ -125,8 +124,8 @@ public class Client extends PApplet {
         //playerObject.display();
         level.display();
         playerObject.display();
-        text(playerName, playerObject.getX(), playerObject.getY());
-        text(opponentName + "test", playerObject.getX(), playerObject.getY() - 20);
+        //text(playerName, playerObject.getX(), playerObject.getY());
+        //text(opponentName + "test", playerObject.getX(), playerObject.getY() - 20);
 
         opponentObject.display();
 
@@ -150,8 +149,8 @@ public class Client extends PApplet {
             playerObject.moveLeft();
         if (key == 'd' || key == 'D')
             playerObject.moveRight();
-        if (key == 'r')
-            notifyWhenReady();
+//        if (key == 'r')
+//            notifyWhenReady();
     }
     public void keyReleased() {
         if (key == 'a' || key == 'A')
@@ -247,43 +246,43 @@ public class Client extends PApplet {
         }
     }
 
-    @Override
-    public void setPlayerName(int nr, String name) {
-        if (nr != this.playerNr) {
-            println("ERROR: Wrong player number method setPlayerName()");
-            return;
-        } else {
-            println("player name " + name + " registered");
-        }
-        playerName = name;
-        Platform.runLater(new Runnable() {
-            @Override
-            public void run() {
-                println(playerName + "'s name has been set");
-            }
-        });
-    }
+//    @Override
+//    public void setPlayerName(int nr, String name) {
+//        if (nr != this.playerNr) {
+//            println("ERROR: Wrong player number method setPlayerName()");
+//            return;
+//        } else {
+//            println("player name " + name + " registered");
+//        }
+//        playerName = name;
+//        Platform.runLater(new Runnable() {
+//            @Override
+//            public void run() {
+//                println(playerName + "'s name has been set");
+//            }
+//        });
+//    }
 
-    @Override
-    public void setOpponentName(int nr, String name) {
-        if (nr != this.playerNr) {
-            println("ERROR: Wrong player number method setOpponentName()");
-            return;
-        } else {
-            println("Your opponent is " + name);
-        }
-        opponentName = name;
-    }
+//    @Override
+//    public void setOpponentName(int nr, String name) {
+//        if (nr != this.playerNr) {
+//            println("ERROR: Wrong player number method setOpponentName()");
+//            return;
+//        } else {
+//            println("Your opponent is " + name);
+//        }
+//        opponentName = name;
+//    }
 
-    @Override
-    public void jump(int playerNr) {
-        opponentObject.jump();
-    }
-
-    @Override
-    public void startGame() {
-        isInProgress = true;
-    }
+//    @Override
+//    public void jump(int playerNr) {
+//        opponentObject.jump();
+//    }
+//
+//    @Override
+//    public void startGame() {
+//        isInProgress = true;
+//    }
 
     /* PhysicsObj */
 // Any object that will need motion integrated will implement this
@@ -379,30 +378,30 @@ public class Client extends PApplet {
         void display();
     }
 
-    private void registerPlayer() throws Exception {
-        playerName = "Jordy + " + random(0,100);
-        if ("".equals(playerName) || playerName == null) {
-            println("Enter your name before continuing");
-        } else {
-            println(playerName + " Has registered!");
-            playerNr = game.registerPlayer(playerName, this, singlePlayerMode);
-            if (playerNr != -1) {
-                println("player " + playerName + " registered, with playernumber: " + playerNr);
-            } else {
-                println("Name already defined");
-            }
-        }
-    }
+//    private void registerPlayer() throws Exception {
+//        playerName = "Jordy + " + random(0,100);
+//        if ("".equals(playerName) || playerName == null) {
+//            println("Enter your name before continuing");
+//        } else {
+//            println(playerName + " Has registered!");
+//            playerNr = game.registerPlayer(playerName, this, singlePlayerMode);
+//            if (playerNr != -1) {
+//                println("player " + playerName + " registered, with playernumber: " + playerNr);
+//            } else {
+//                println("Name already defined");
+//            }
+//        }
+//    }
 
-    private void notifyWhenReady() {
-        // Notify that the player is ready is startSocket the game.
-        bothReady = game.notifyWhenReady(playerNr);
-        if (bothReady) {
-            startGame();
-        } else {
-            println("Wait for the other player to ready up");
-        }
-    }
+//    private void notifyWhenReady() {
+//        // Notify that the player is ready is startSocket the game.
+//        bothReady = game.notifyWhenReady(playerNr);
+//        if (bothReady) {
+//            startGame();
+//        } else {
+//            println("Wait for the other player to ready up");
+//        }
+//    }
 
     /* Level */
 // Provides methods for determining solid/empty pixels, and for removing/adding solid pixels

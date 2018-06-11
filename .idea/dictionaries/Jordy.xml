@@ -5,6 +5,7 @@
       <w>selfname</w>
       <w>tankgame</w>
       <w>tankgamegui</w>
+      <w>websocket</w>
     </words>
   </dictionary>
 </component>

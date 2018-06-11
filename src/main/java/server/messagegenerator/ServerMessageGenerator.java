@@ -1,0 +1,68 @@
+package server.messagegenerator;
+
+import server.actions.Message;
+import server.models.TankGame;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class ServerMessageGenerator implements IServerMessageGenerator {
+
+    private static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+
+    private IServerWebSocket serverSocket;
+    private TankGame tankGame;
+
+    public ServerMessageGenerator(Class <? extends IServerWebSocket> serverSocket) {
+        try {
+            this.serverSocket = serverSocket.newInstance();
+        } catch (InstantiationException e) {
+            LOGGER.log(Level.SEVERE, "Error: ", e);
+        } catch (IllegalAccessException e) {
+            LOGGER.log(Level.SEVERE, "Error: ", e);
+        }
+    }
+
+    @Override
+    public TankGame getTankGame() {
+        return tankGame;
+    }
+
+    public void setTankGame(TankGame tankGame) {
+        this.tankGame = tankGame;
+    }
+
+    @Override
+    public void updateGame(){
+        Thread thread = new Thread(this);
+        thread.start();
+    }
+
+    @Override
+    public void updatePlayers(){
+        GameData gameData = new GameData(tankGame.getPlayers(), tankGame.getApple());
+        Message message = new Message(Actions.GAMEDATA, gameData);
+        serverSocket.broadcast(message);
+    }
+
+    @Override
+    public void ping(String uuid) {
+        serverSocket.sendTo(uuid, new Message(Actions.PING));
+    }
+
+
+    @Override
+    public void run() {
+        Field field = new Field(tankGame.getWidth(), tankGame.getHeight());
+        for (int i = 0; i < tankGame.getPlayers().size(); i++) {
+            Player player = tankGame.getPlayers().get(i);
+            Snake snake = player.getSnake();
+            field.setColor(snake.getX(), snake.getY(), snake.getSnakeColor());
+            for (int j = 0; j < snake.getTail().size(); j++) {
+                Tail tail = snake.getTail().get(i);
+                field.setColor(tail.getX(), tail.getY(), snake.getTailColor());
+            }
+        }
+        serverSocket.broadcast(field);
+    }
+}

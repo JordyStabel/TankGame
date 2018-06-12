@@ -1,5 +1,6 @@
 package client.game;
 
+import client.Client;
 import server.models.Player;
 
 import java.util.ArrayList;
@@ -9,6 +10,8 @@ import java.util.List;
 public class TankGame {
     private int height;
     private int width;
+
+    private Client client;
 
     private ArrayList<Player> players;
     //private Apple apple;
@@ -48,6 +51,18 @@ public class TankGame {
 
     public void setPlayers(ArrayList<Player> players) {
         this.players = players;
+    }
+
+    public void setClient(Client client){
+        this.client = client;
+    }
+
+    public Client getClient(){
+        return this.client;
+    }
+
+    public void playerMoveRight(){
+        client.opponentMoveRight();
     }
 
 //    //public Apple getApple() {

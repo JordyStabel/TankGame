@@ -3,7 +3,9 @@ package server.messageHandler;
 import com.google.gson.Gson;
 import server.actions.Actions;
 import server.actions.Message;
+import server.actions.Register;
 import server.models.Player;
+import server.models.Tank;
 import server.models.TankGame;
 
 import static processing.core.PApplet.println;
@@ -22,6 +24,10 @@ public class ServerMessageHandler implements IServerMessageHandler {
         Message message = gson.fromJson(messageString,Message.class);
 
         switch (message.getAction()){
+            case REGISTER:
+                Register register = (Register) message.parseData(Register.class);
+                registerPlayer(register, sessionId);
+                break;
             case READY:
                 playerReady(sessionId);
                 break;
@@ -61,18 +67,10 @@ public class ServerMessageHandler implements IServerMessageHandler {
         }
     }
 
-//    private void registerPlayer(Register register, String sessionId){
-//        if(game.findPlayer(sessionId) == null){
-//            Player player = new Player(
-//                    sessionId,
-//                    register.getName(),
-//                    new Snake(
-//                            (int) (Math.random()*game.getWidth()),
-//                            (int) (Math.random()*game.getHeight()),
-//                            register.getColor()));
-//
-//            game.addPlayer(player);
-//        }
-//    }
-
+    private void registerPlayer(Register register, String sessionId){
+        if(tankGame.findPlayer(sessionId) == null){
+            Player player = new Player(sessionId, register.getPlayerName(), new Tank());
+            tankGame.addPlayer(player);
+        }
+    }
 }

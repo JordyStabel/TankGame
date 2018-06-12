@@ -6,6 +6,7 @@ import client.game.TankGame;
 import processing.core.PApplet;
 import server.actions.Actions;
 import server.actions.Message;
+import server.actions.Register;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -26,6 +27,8 @@ public class StartUp {
     private String firstName = null;
     private String secondName = null;
     private String ip = null;
+
+    private String name = null;
 
     private Scanner inputScanner = new Scanner(System.in);
 
@@ -88,7 +91,8 @@ public class StartUp {
                 break;
             case 4:
                 if (firstName != null && secondName != null && ip != null){
-                    start(ip, firstName, secondName);
+                    start(ip, firstName);
+                    start(ip, secondName);
                     exit = true;
                     println("Starting Tank Game!");
                 } else {
@@ -100,30 +104,27 @@ public class StartUp {
         }
     }
 
-    private static void start(String ip, String firstName, String secondName){
-        for (int i = 0; i < 2; i++){
-            TankGame tankGame = new TankGame(50,50);
+    private static void start(String ip, String playerName){
+        TankGame tankGame = new TankGame(50,50);
 
-            clientEndPointSocket = new ClientEndPointSocket();
-            ClientSocketResponseHandler clientSocketResponseHandler = new ClientSocketResponseHandler(tankGame);
-            clientEndPointSocket.setMessageHandler(clientSocketResponseHandler);
+        clientEndPointSocket = new ClientEndPointSocket();
+        ClientSocketResponseHandler clientSocketResponseHandler = new ClientSocketResponseHandler(tankGame);
+        clientEndPointSocket.setMessageHandler(clientSocketResponseHandler);
 
-            clientEndPointSocket.connect("localhost:9090/tankgame/");
+        clientEndPointSocket.connect("localhost:9090/tankgame/");
 
-            // TODO: Remove or implement
-            //Register register = new Register(name, color.getRed(), color.getGreen(), color.getBlue());
-            //Message message = new Message(Actions.REGISTER, register);
-            //clientEndpointSocket.sendMessage(message);
+        Register register = new Register(playerName);
+        Message message = new Message(Actions.REGISTER, register);
+        clientEndPointSocket.sendMessage(message);
 
-            Client client = new Client(tankGame, clientEndPointSocket);
+        Client client = new Client(tankGame, clientEndPointSocket);
 
-            clientSocketResponseHandler.setClient(client);
+        clientSocketResponseHandler.setClient(client);
 
-            String[] processingArgs = {"TankGame"};
-            PApplet.runSketch(processingArgs, client);
+        String[] processingArgs = {"TankGame"};
+        PApplet.runSketch(processingArgs, client);
 
-            clientEndPointSocket.sendMessage(new Message(Actions.READY));
-        }
+        clientEndPointSocket.sendMessage(new Message(Actions.READY));
     }
 
     private String readInput(String message){

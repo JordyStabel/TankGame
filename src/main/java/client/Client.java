@@ -7,7 +7,6 @@ import processing.core.PApplet;
 import processing.core.PImage;
 import server.actions.Actions;
 import server.actions.Message;
-import server.models.Player;
 import tankgame.ITankGame;
 
 import java.util.logging.Logger;
@@ -70,9 +69,9 @@ public class Client extends PApplet {
 //            e.printStackTrace();
 //        } //
 
-        Player player = tankGame.getPlayers().get(0);
+        //Player player = tankGame.getPlayers().get(0);
 
-        surface.setTitle(player.getPlayerName());
+        //surface.setTitle(player.getPlayerName());
 
         // load our images for level and background
         bg = loadImage("images/sky-blurry.png");
@@ -405,6 +404,10 @@ public class Client extends PApplet {
 //            println("Wait for the other player to ready up");
 //        }
 //    }
+
+    public void opponentMoveRight(){
+        opponentObject.moveRight();
+    }
 
     /* Level */
 // Provides methods for determining solid/empty pixels, and for removing/adding solid pixels

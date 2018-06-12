@@ -26,3 +26,75 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 </log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-06-12T14:59:01</date>
+  <millis>1528808341620</millis>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>SEVERE</level>
+  <class>client.connection.ClientEndPointSocket</class>
+  <method>sendMessage</method>
+  <thread>1</thread>
+  <message>Can't send message. </message>
+  <exception>
+    <message>java.io.IOException: Connection output is closed</message>
+    <frame>
+      <class>org.eclipse.jetty.websocket.common.io.IOState</class>
+      <method>assertOutputOpen</method>
+      <line>133</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jetty.websocket.common.WebSocketRemoteEndpoint</class>
+      <method>uncheckedSendFrame</method>
+      <line>303</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jetty.websocket.common.WebSocketRemoteEndpoint</class>
+      <method>blockingWrite</method>
+      <line>106</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jetty.websocket.common.WebSocketRemoteEndpoint</class>
+      <method>sendString</method>
+      <line>387</line>
+    </frame>
+    <frame>
+      <class>org.eclipse.jetty.websocket.jsr356.JsrBasicRemote</class>
+      <method>sendText</method>
+      <line>108</line>
+    </frame>
+    <frame>
+      <class>client.connection.ClientEndPointSocket</class>
+      <method>sendMessage</method>
+      <line>55</line>
+    </frame>
+    <frame>
+      <class>client.StartUp</class>
+      <method>start</method>
+      <line>127</line>
+    </frame>
+    <frame>
+      <class>client.StartUp</class>
+      <method>runOption</method>
+      <line>95</line>
+    </frame>
+    <frame>
+      <class>client.StartUp</class>
+      <method>runMenu</method>
+      <line>45</line>
+    </frame>
+    <frame>
+      <class>client.StartUp</class>
+      <method>main</method>
+      <line>38</line>
+    </frame>
+  </exception>
+</record>
+</log>

@@ -141,6 +141,7 @@ public class TankGame implements Runnable {
         Player player = findPlayer(uuid);
         removePlayer(player);
     }
+
     public void removePlayer(Player player){
         if(player != null) {
             if (player.equals(findPlayer(player.getPlayerID()))) {

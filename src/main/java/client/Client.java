@@ -7,6 +7,7 @@ import processing.core.PApplet;
 import processing.core.PImage;
 import server.actions.Actions;
 import server.actions.Message;
+import server.models.Player;
 import tankgame.ITankGame;
 
 import java.util.logging.Logger;
@@ -17,7 +18,7 @@ public class Client extends PApplet {
 
     private TankGame tankGame;
 
-    private ClientEndPointSocket clientEndpointSocket;
+    private ClientEndPointSocket clientEndPointSocket;
     private boolean info = false;
 
     private int playerNr = 0;
@@ -49,7 +50,7 @@ public class Client extends PApplet {
 
     public Client(TankGame tankGame, ClientEndPointSocket clientEndPointSocket) {
         this.tankGame = tankGame;
-        this.clientEndpointSocket = clientEndPointSocket;
+        this.clientEndPointSocket = clientEndPointSocket;
     }
 
     public void settings() {
@@ -69,9 +70,9 @@ public class Client extends PApplet {
 //            e.printStackTrace();
 //        } //
 
-        //Player player = tankGame.getPlayers().get(0);
+        Player player = tankGame.getPlayers().get(0);
 
-        //surface.setTitle();
+        surface.setTitle(player.getPlayerName());
 
         // load our images for level and background
         bg = loadImage("images/sky-blurry.png");
@@ -144,22 +145,28 @@ public class Client extends PApplet {
         if (key == 'w' || key == 'W')
             playerObject.jump();
         if (key == 'a' || key == 'A')
+        {
             playerObject.moveLeft();
+            clientEndPointSocket.sendMessage(new Message(Actions.LEFT));
+        }
         if (key == 'd' || key == 'D')
         {
             playerObject.moveRight();
-            clientEndpointSocket.sendMessage(new Message(Actions.RIGHT));
+            clientEndPointSocket.sendMessage(new Message(Actions.RIGHT));
         }
 //        if (key == 'r')
 //            notifyWhenReady();
     }
     public void keyReleased() {
         if (key == 'a' || key == 'A')
+        {
             playerObject.stopLeft();
+            clientEndPointSocket.sendMessage(new Message(Actions.STOPLEFT));
+        }
         if (key == 'd' || key == 'D')
         {
             playerObject.stopRight();
-            clientEndpointSocket.sendMessage(new Message(Actions.STOPRIGHT));
+            clientEndPointSocket.sendMessage(new Message(Actions.STOPRIGHT));
         }
     }
 
@@ -407,6 +414,14 @@ public class Client extends PApplet {
 //            println("Wait for the other player to ready up");
 //        }
 //    }
+
+    public void opponentMoveLeft(){
+        opponentObject.moveLeft();
+    }
+
+    public void opponentStopLeft(){
+        opponentObject.stopLeft();
+    }
 
     public void opponentMoveRight(){
         opponentObject.moveRight();

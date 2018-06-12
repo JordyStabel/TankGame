@@ -6,6 +6,7 @@ public enum Actions {
     START,
     STOP,
     LEFT,
+    STOPLEFT,
     RIGHT,
     STOPRIGHT,
     SHOOT,

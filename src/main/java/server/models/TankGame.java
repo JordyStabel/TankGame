@@ -150,6 +150,14 @@ public class TankGame implements Runnable {
         }
     }
 
+    public void moveLeft(){
+        serverMessageGenerator.playerMoveLeft();
+    }
+
+    public void stopLeft(){
+        serverMessageGenerator.playerStopLeft();
+    }
+
     public void moveRight(){
         serverMessageGenerator.playerMoveRight();
     }

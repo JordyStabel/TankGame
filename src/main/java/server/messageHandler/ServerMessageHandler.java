@@ -30,10 +30,16 @@ public class ServerMessageHandler implements IServerMessageHandler {
                 playerReady(sessionId);
                 break;
             case LEFT:
-                moveSnake(Actions.LEFT, sessionId);
+                moveTank(Actions.LEFT, sessionId);
+                break;
+            case STOPLEFT:
+                moveTank(Actions.STOPLEFT, sessionId);
                 break;
             case RIGHT:
-                moveSnake(Actions.RIGHT, sessionId);
+                moveTank(Actions.RIGHT, sessionId);
+                break;
+            case STOPRIGHT:
+                moveTank(Actions.STOPRIGHT, sessionId);
                 break;
         }
     }
@@ -47,13 +53,17 @@ public class ServerMessageHandler implements IServerMessageHandler {
         tankGame.playerReady(sessionId);
     }
 
-    private void moveSnake(Actions action, String sessionId){
+    private void moveTank(Actions action, String sessionId){
         Player player = tankGame.findPlayer(sessionId);
         if(player == null){
             throw new IllegalArgumentException("No player found");
         }
         switch (action) {
             case LEFT:
+                tankGame.moveLeft();
+                break;
+            case STOPLEFT:
+                tankGame.stopLeft();
                 break;
             case RIGHT:
                 tankGame.moveRight();

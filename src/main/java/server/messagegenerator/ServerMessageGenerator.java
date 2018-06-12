@@ -67,6 +67,20 @@ public class ServerMessageGenerator implements IServerMessageGenerator {
     }
 
     @Override
+    public void playerMoveLeft() {
+        Message message = new Message(Actions.LEFT);
+        serverSocket.broadcast(message);
+        println("Move Left");
+    }
+
+    @Override
+    public void playerStopLeft() {
+        Message message = new Message(Actions.STOPLEFT);
+        serverSocket.broadcast(message);
+        println("Stop Left");
+    }
+
+    @Override
     public void playerMoveRight() {
         Message message = new Message(Actions.RIGHT);
         serverSocket.broadcast(message);

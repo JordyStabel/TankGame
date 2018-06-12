@@ -7,19 +7,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import static processing.core.PApplet.println;
+
 public class TankGame {
-    private int height;
-    private int width;
 
     private Client client;
 
     private ArrayList<Player> players;
     //private Apple apple;
 
-    public TankGame(int height, int width) {
-        this.height = height;
-        this.width = width;
-
+    public TankGame() {
         players = new ArrayList<>();
     }
 
@@ -30,23 +27,8 @@ public class TankGame {
     public void addPlayer(Player player) {
         if (player != null) {
             players.add(player);
+            println("Added players: " + player.getPlayerName());
         }
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public void setHeight(int height) {
-        this.height = height;
-    }
-
-    public int getWidth() {
-        return width;
-    }
-
-    public void setWidth(int width) {
-        this.width = width;
     }
 
     public void setPlayers(ArrayList<Player> players) {
@@ -61,13 +43,6 @@ public class TankGame {
         return this.client;
     }
 
-    public void playerMoveRight(){
-        client.opponentMoveRight();
-    }
-
-    public void playerStopRight(){
-        client.opponentStopRight();
-    }
 
 //    //public Apple getApple() {
 //        return apple;

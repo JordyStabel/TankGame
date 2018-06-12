@@ -26,7 +26,6 @@ public class ClientEndPointSocket {
         try {
             WebSocketContainer container = ContainerProvider.getWebSocketContainer();
             session = container.connectToServer(this, uri);
-
         } catch (DeploymentException | IOException e) {
             LOGGER.log(Level.SEVERE, "Can't connect. ", e);
         }

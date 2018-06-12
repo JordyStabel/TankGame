@@ -8,6 +8,8 @@ import server.models.Player;
 import server.models.Tank;
 import server.models.TankGame;
 
+import static processing.core.PApplet.println;
+
 public class ServerMessageHandler implements IServerMessageHandler {
 
     private TankGame tankGame;
@@ -31,9 +33,11 @@ public class ServerMessageHandler implements IServerMessageHandler {
                 break;
             case LEFT:
                 moveTank(Actions.LEFT, sessionId);
+                println(sessionId);
                 break;
             case STOPLEFT:
                 moveTank(Actions.STOPLEFT, sessionId);
+                println(sessionId);
                 break;
             case RIGHT:
                 moveTank(Actions.RIGHT, sessionId);
@@ -60,16 +64,16 @@ public class ServerMessageHandler implements IServerMessageHandler {
         }
         switch (action) {
             case LEFT:
-                tankGame.moveLeft();
+                tankGame.moveLeft(sessionId);
                 break;
             case STOPLEFT:
-                tankGame.stopLeft();
+                tankGame.stopLeft(sessionId);
                 break;
             case RIGHT:
-                tankGame.moveRight();
+                tankGame.moveRight(sessionId);
                 break;
             case STOPRIGHT:
-                tankGame.stopRight();
+                tankGame.stopRight(sessionId);
                 break;
             default:
                 throw new IllegalArgumentException("No direction found");

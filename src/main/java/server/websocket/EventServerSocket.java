@@ -35,7 +35,7 @@ public class EventServerSocket implements IServerWebSocket {
     public void onConnect(Session session) {
         LOGGER.log(Level.INFO,"[Connected] SessionID:" + session.getId());
         String message = String.format("[New client with client side session ID]: %s", session.getId());
-        broadcast(message);
+        broadcast(message, session.getId());
         sessions.put(session.getId(), session);
         String temp = "[#sessions]: " + sessions.size();
         LOGGER.log(Level.INFO, temp);
@@ -72,7 +72,7 @@ public class EventServerSocket implements IServerWebSocket {
         cause.printStackTrace(System.err);
     }
 
-    public void broadcast(String s) {
+    public void broadcast(String s, String session) {
         for (Iterator<Map.Entry<String, Session>> iterator = sessions.entrySet().iterator(); iterator.hasNext(); ) {
             Map.Entry<String, Session> entry = iterator.next();
             sendMessage(s, entry.getValue());
@@ -83,10 +83,13 @@ public class EventServerSocket implements IServerWebSocket {
         if (message == null || session == null) {
             throw new IllegalArgumentException("Message or session can't be null");
         }
-        try {
-            session.getBasicRemote().sendText(message);
-        } catch (IOException e) {
-            e.printStackTrace();
+        if (!message.toLowerCase().contains(session.getId().toLowerCase()))
+        {
+            try {
+                session.getBasicRemote().sendText(message);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -96,8 +99,8 @@ public class EventServerSocket implements IServerWebSocket {
     }
 
     @Override
-    public void broadcast(Json object) {
-        broadcast(object.convertToJson());
+    public void broadcast(Json object, String session) {
+        broadcast(object.convertToJson(), session);
     }
 
     @Override

@@ -18,19 +18,14 @@ public class Client extends PApplet {
 
     private TankGame tankGame;
 
+    private Player player;
+    private Player opponent;
+
     private ClientEndPointSocket clientEndPointSocket;
     private boolean info = false;
 
-    private int playerNr = 0;
-
     private ITankGame game;
 
-    private boolean singlePlayerMode = false;
-
-    private boolean bothReady = false;
-
-    private boolean isInProgress = false;
-    private boolean gameEnded = false;
 
     // the level contains the bitmap for all the static pixels
     Level level;
@@ -152,10 +147,18 @@ public class Client extends PApplet {
         if (key == 'd' || key == 'D')
         {
             playerObject.moveRight();
-            clientEndPointSocket.sendMessage(new Message(Actions.RIGHT));
+            clientEndPointSocket.sendMessage(new Message(Actions.RIGHT, player.getPlayerID()));
         }
-//        if (key == 'r')
-//            notifyWhenReady();
+        if (key == '1')
+        {
+            player = tankGame.getPlayers().get(0);
+            opponent = tankGame.getPlayers().get(1);
+        }
+        if (key == '2')
+        {
+            opponent = tankGame.getPlayers().get(0);
+            player = tankGame.getPlayers().get(1);
+        }
     }
     public void keyReleased() {
         if (key == 'a' || key == 'A')
@@ -415,19 +418,19 @@ public class Client extends PApplet {
 //        }
 //    }
 
-    public void opponentMoveLeft(){
+    public void opponentMoveLeft(String id){
         opponentObject.moveLeft();
     }
 
-    public void opponentStopLeft(){
+    public void opponentStopLeft(String id){
         opponentObject.stopLeft();
     }
 
-    public void opponentMoveRight(){
+    public void opponentMoveRight(String id){
         opponentObject.moveRight();
     }
 
-    public void opponentStopRight(){
+    public void opponentStopRight(String id){
         opponentObject.stopRight();
     }
 

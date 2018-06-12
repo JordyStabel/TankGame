@@ -15,11 +15,11 @@ public interface IServerMessageGenerator extends Runnable {
     @Override
     void run();
 
-    void playerMoveLeft();
+    void playerMoveLeft(String id);
 
-    void playerStopLeft();
+    void playerStopLeft(String id);
 
-    void playerMoveRight();
+    void playerMoveRight(String id);
 
-    void playerStopRight();
+    void playerStopRight(String id);
 }

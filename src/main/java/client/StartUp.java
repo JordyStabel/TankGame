@@ -7,6 +7,7 @@ import processing.core.PApplet;
 import server.actions.Actions;
 import server.actions.Message;
 import server.actions.Register;
+import server.models.Player;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -105,7 +106,8 @@ public class StartUp {
     }
 
     private static void start(String ip, String playerName){
-        TankGame tankGame = new TankGame(50,50);
+
+        TankGame tankGame = new TankGame();
 
         clientEndPointSocket = new ClientEndPointSocket();
         ClientSocketResponseHandler clientSocketResponseHandler = new ClientSocketResponseHandler(tankGame);

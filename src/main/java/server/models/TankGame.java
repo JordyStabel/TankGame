@@ -43,7 +43,7 @@ public class TankGame implements Runnable {
                 }
                 next_game_tick += SKIP_TICKS;
             }
-            serverMessageGenerator.updatePlayers();
+            //serverMessageGenerator.updatePlayers();
         }
     }
 
@@ -150,19 +150,19 @@ public class TankGame implements Runnable {
         }
     }
 
-    public void moveLeft(){
-        serverMessageGenerator.playerMoveLeft();
+    public void moveLeft(String sessionId){
+        serverMessageGenerator.playerMoveLeft(sessionId);
     }
 
-    public void stopLeft(){
-        serverMessageGenerator.playerStopLeft();
+    public void stopLeft(String sessionId){
+        serverMessageGenerator.playerStopLeft(sessionId);
     }
 
-    public void moveRight(){
-        serverMessageGenerator.playerMoveRight();
+    public void moveRight(String sessionId){
+        serverMessageGenerator.playerMoveRight(sessionId);
     }
 
-    public void stopRight(){
-        serverMessageGenerator.playerStopRight();
+    public void stopRight(String sessionId){
+        serverMessageGenerator.playerStopRight(sessionId);
     }
 }

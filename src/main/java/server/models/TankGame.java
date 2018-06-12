@@ -150,6 +150,10 @@ public class TankGame implements Runnable {
         }
     }
 
+    public void jump(String sessionId){
+        serverMessageGenerator.playerJump(sessionId);
+    }
+
     public void moveLeft(String sessionId){
         serverMessageGenerator.playerMoveLeft(sessionId);
     }

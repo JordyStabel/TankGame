@@ -39,6 +39,9 @@ public class ClientSocketResponseHandler implements IClientMessageHandler {
                 GameData gameData = (GameData) message.parseData(GameData.class);
                 updateGame(gameData);
                 break;
+            case JUMP:
+                client.opponentJump(message.getContent());
+                break;
             case LEFT:
                 client.opponentMoveLeft(message.getContent());
                 break;

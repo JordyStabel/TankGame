@@ -1,15 +1,13 @@
 package server.messagegenerator;
 
+import server.actions.Actions;
 import server.actions.GameData;
 import server.actions.Message;
-import server.actions.Actions;
 import server.models.TankGame;
 import server.websocket.IServerWebSocket;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import static processing.core.PApplet.println;
 
 public class ServerMessageGenerator implements IServerMessageGenerator {
 
@@ -67,30 +65,33 @@ public class ServerMessageGenerator implements IServerMessageGenerator {
     }
 
     @Override
+    public void playerJump(String id) {
+        Message message = new Message(Actions.JUMP, id);
+        serverSocket.broadcast(message, id);
+    }
+
+
+    @Override
     public void playerMoveLeft(String id) {
         Message message = new Message(Actions.LEFT, id);
         serverSocket.broadcast(message, id);
-        println("Move Left");
     }
 
     @Override
     public void playerStopLeft(String id) {
         Message message = new Message(Actions.STOPLEFT, id);
         serverSocket.broadcast(message, id);
-        println("Stop Left");
     }
 
     @Override
     public void playerMoveRight(String id) {
         Message message = new Message(Actions.RIGHT, id);
         serverSocket.broadcast(message, id);
-        println("Move Right");
     }
 
     @Override
     public void playerStopRight(String id) {
         Message message = new Message(Actions.STOPRIGHT, id);
         serverSocket.broadcast(message, id);
-        println("Stop Right");
     }
 }

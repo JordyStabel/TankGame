@@ -1,6 +1,6 @@
 package tankgamegui;
 
-import client.game.tankgameobjects.*;
+import tankgame.tankgameprocessing.*;
 import javafx.application.Platform;
 import processing.core.PApplet;
 import processing.core.PImage;
@@ -10,8 +10,7 @@ import tankgame.TankGame;
 public class TankGameApplication extends PApplet implements ITankGameGUI {
 
     /* global variables */
-    private String playerName = null;
-    private String opponentName = null;
+    private String playerName = "Henk";
 
     private int playerNr = 0;
 
@@ -46,30 +45,28 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         game = new TankGame();
         //String test = this.args[1];
 
-        try {
-            registerPlayer(); // this.args[0];
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        surface.setTitle(playerName);
+//        try {
+//            registerPlayer(); // this.args[0];
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
         // load our images for level and background
-        bg = loadImage("images/sky-blurry.png");
+        bg = loadImage("images/background.jpg");
 
         // FPS limit
         frameRate(30);
 
         // new Level(image, destructionRes)
-        level = new Level(this, loadImage("images/tree.png"), 5);
+        level = new Level(this, loadImage("images/level.png"), 5);
 
         // initialize the physics and rendering engines
         physics = new Physics(this);
         _renderer = new Renderer(this);
 //
 //        // create the playerObject
-        //playerObject = new PlayerObject(this, level,100,100);
-        //opponentObject = new PlayerObject(this, level, 150, 150);
+        playerObject = new PlayerObject(this, level,100,100);
+        opponentObject = new PlayerObject(this, level, 150, 150);
 
         physics.add(playerObject);
         physics.add(opponentObject);
@@ -114,7 +111,6 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         level.display();
         playerObject.display();
         text(playerName, playerObject.getX(), playerObject.getY());
-        text(opponentName + "test", playerObject.getX(), playerObject.getY() - 20);
 
         opponentObject.display();
 
@@ -148,18 +144,18 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
             playerObject.stopRight();
     }
 
-//    public void mousePressed() {
-//        if (mouseButton == LEFT)
-//            playerObject.shoot();
-//        else if (mouseButton == RIGHT)
-//            playerObject.shootAlt();
-//    }
-//    public void mouseReleased() {
-//        if (mouseButton == LEFT)
-//            playerObject.stopShooting();
-//        else if (mouseButton == RIGHT)
-//            playerObject.stopShootingAlt();
-//    }
+    public void mousePressed() {
+        if (mouseButton == LEFT)
+            playerObject.shoot();
+        else if (mouseButton == RIGHT)
+            playerObject.shootAlt();
+    }
+    public void mouseReleased() {
+        if (mouseButton == LEFT)
+            playerObject.stopShooting();
+        else if (mouseButton == RIGHT)
+            playerObject.stopShootingAlt();
+    }
     public float getMouseX() {
         return mouseX - translateX;
     }
@@ -260,7 +256,7 @@ public class TankGameApplication extends PApplet implements ITankGameGUI {
         } else {
             println("Your opponent is " + name);
         }
-        opponentName = name;
+        //opponentName = name;
     }
 
     @Override

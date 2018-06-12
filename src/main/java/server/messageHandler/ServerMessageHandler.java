@@ -8,8 +8,6 @@ import server.models.Player;
 import server.models.Tank;
 import server.models.TankGame;
 
-import static processing.core.PApplet.println;
-
 public class ServerMessageHandler implements IServerMessageHandler {
 
     private TankGame tankGame;
@@ -31,13 +29,14 @@ public class ServerMessageHandler implements IServerMessageHandler {
             case READY:
                 playerReady(sessionId);
                 break;
+            case JUMP:
+                moveTank(Actions.JUMP, sessionId);
+                break;
             case LEFT:
                 moveTank(Actions.LEFT, sessionId);
-                println(sessionId);
                 break;
             case STOPLEFT:
                 moveTank(Actions.STOPLEFT, sessionId);
-                println(sessionId);
                 break;
             case RIGHT:
                 moveTank(Actions.RIGHT, sessionId);
@@ -63,6 +62,9 @@ public class ServerMessageHandler implements IServerMessageHandler {
             throw new IllegalArgumentException("No player found");
         }
         switch (action) {
+            case JUMP:
+                tankGame.jump(sessionId);
+                break;
             case LEFT:
                 tankGame.moveLeft(sessionId);
                 break;

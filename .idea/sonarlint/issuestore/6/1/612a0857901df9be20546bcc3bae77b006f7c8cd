@@ -1,4 +1,5 @@
 
-Fsquid:S1068"(Remove this unused "name" private field.(ÎƒŒ˛8ô”ú†ø,
-@squid:S1172k")Remove this unused method parameter "ip".(∫›·Ó
-Åsquid:S1450"cRemove the "clientEndPointSocket" field and declare it as a local variable in the relevant methods.(∂ñ∫Í8¥‹ù†ø,
+Ysquid:UselessImportCheck"1Remove this unused import 'server.models.Player'.(ßôπz8πø®ø,
+squid:S1450"cRemove the "clientEndPointSocket" field and declare it as a local variable in the relevant methods.(∂ñ∫Í8¥‹ù†ø,
+Dsquid:S1068"(Remove this unused "name" private field.(ÎƒŒ˛8ô”ú†ø,
+>squid:S1172")Remove this unused method parameter "ip".(∫›·Ó

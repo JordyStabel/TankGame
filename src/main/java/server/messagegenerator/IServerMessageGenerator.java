@@ -15,6 +15,8 @@ public interface IServerMessageGenerator extends Runnable {
     @Override
     void run();
 
+    void playerJump(String id);
+
     void playerMoveLeft(String id);
 
     void playerStopLeft(String id);

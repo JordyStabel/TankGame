@@ -145,3 +145,17 @@ p
 @src/main/java/client/connection/ClientSocketResponseHandler.java,d\e\de95110d4d7215d73c94e02c3f3f4fb6c16ebfe2
 P
  src/main/java/client/Client.java,c\5\c5c2abc05e75daf87e5d896f0c1528ea106af1a0
+U
+%src/main/java/server/models/Tank.java,e\7\e77f4b7c87cff85dd9d1fc537d313316ebbb2ce6
+d
+4src/main/java/client/game/tankgameobjects/Level.java,5\7\5772a2aaa8e1a081f9a0f039e36d9f7a5b038566
+k
+;src/main/java/client/game/tankgameobjects/PlayerObject.java,8\9\8954860b2806682b006b1708b40d6577c2eaf6f1
+f
+6src/main/java/client/game/tankgameobjects/Physics.java,2\5\257f75a516f0c64f9d1b81243994bcebdbad0943
+l
+<src/main/java/client/game/tankgameobjects/IRenderObject.java,1\2\12582422f6f0cd420c8b780107accace63cb8632
+m
+=src/main/java/client/game/tankgameobjects/IPhysicsObject.java,1\6\16e5e4d176a02040b6fb8bc7d0935b8640c76cbb
+g
+7src/main/java/client/game/tankgameobjects/Renderer.java,5\1\5147881f0f7a2495e4584050c3bfbb68ad39b38d

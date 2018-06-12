@@ -1,0 +1,18 @@
+
+xsquid:S00116"TRename this field "_renderer" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥éâ­þÿÿÿÿ8¨§Ð¬¿,
+dsquid:S2184‡"@Cast one of the operands of this integer division to a "double".(òˆµ¢üÿÿÿÿ8¨§Ð¬¿,
+Ž"squid:ClassVariableVisibilityCheck,"TMake onGround a static final constant or non-public and provide accessors if needed.(Îæô¶ûÿÿÿÿ8¨§Ð¬¿,
+_squid:S2184¢"@Cast one of the operands of this integer division to a "double".(üµÖ¸8¨§Ð¬¿,
+Ysquid:S2209ª"5Change this instance-reference to a static reference.(¥ýøÁøÿÿÿÿ8¨§Ð¬¿,
+qsquid:S3776Ÿ"RRefactor this method to reduce its Cognitive Complexity from 93 to the 15 allowed.(‹å»Õ8¨§Ð¬¿,
+_squid:S2184£"@Cast one of the operands of this integer division to a "double".(€è¤¹8¨§Ð¬¿,
+esquid:S2184ô"ACast one of the operands of this addition operation to a "float".(óÿ‰ëøÿÿÿÿ8¨§Ð¬¿,
+Nsquid:S1066¥"/Merge this if statement with the enclosing one.(úœæé8¨§Ð¬¿,
+hsquid:S2184‡"DCast one of the operands of this subtraction operation to a "float".(òˆµ¢üÿÿÿÿ8¨§Ð¬¿,
+Tsquid:S2209²"5Change this instance-reference to a static reference.(’çµÇ8¨§Ð¬¿,
+bsquid:S2251ò">"xCheck" is decremented and will never reach "stop condition".(˜õŽçøÿÿÿÿ8¨§Ð¬¿,
+dsquid:S2184ô"@Cast one of the operands of this integer division to a "double".(óÿ‰ëøÿÿÿÿ8¨§Ð¬¿,
+Fsquid:S2189ò""Correct this loop's end condition.(˜õŽçøÿÿÿÿ8¨§Ð¬¿,
+dsquid:S2184Ú"@Cast one of the operands of this integer division to a "double".(£ùâ¹þÿÿÿÿ8¨§Ð¬¿,
+Ysquid:S2209»"5Change this instance-reference to a static reference.(•ò‘ëÿÿÿÿÿ8¨§Ð¬¿,
+hsquid:S2184Ú"DCast one of the operands of this subtraction operation to a "float".(£ùâ¹þÿÿÿÿ8¨§Ð¬¿,

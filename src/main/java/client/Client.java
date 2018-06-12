@@ -65,10 +65,6 @@ public class Client extends PApplet {
 //            e.printStackTrace();
 //        } //
 
-        Player player = tankGame.getPlayers().get(0);
-
-        surface.setTitle(player.getPlayerName());
-
         // load our images for level and background
         bg = loadImage("images/background.jpg");
 
@@ -138,7 +134,10 @@ public class Client extends PApplet {
     /* Controls */
     public void keyPressed() {
         if (key == 'w' || key == 'W')
+        {
             playerObject.jump();
+            clientEndPointSocket.sendMessage(new Message(Actions.JUMP));
+        }
         if (key == 'a' || key == 'A')
         {
             playerObject.moveLeft();
@@ -173,18 +172,18 @@ public class Client extends PApplet {
         }
     }
 
-//        public void mousePressed() {
-//        if (mouseButton == LEFT)
-//            playerObject.shoot();
-//        else if (mouseButton == RIGHT)
-//            playerObject.shootAlt();
-//    }
-//    public void mouseReleased() {
-//        if (mouseButton == LEFT)
-//            playerObject.stopShooting();
-//        else if (mouseButton == RIGHT)
-//            playerObject.stopShootingAlt();
-//    }
+        public void mousePressed() {
+        if (mouseButton == LEFT)
+            playerObject.shoot();
+        else if (mouseButton == RIGHT)
+            playerObject.shootAlt();
+    }
+    public void mouseReleased() {
+        if (mouseButton == LEFT)
+            playerObject.stopShooting();
+        else if (mouseButton == RIGHT)
+            playerObject.stopShootingAlt();
+    }
 
     public float getMouseX() {
         return mouseX - translateX;
@@ -393,30 +392,11 @@ public class Client extends PApplet {
         void display();
     }
 
-//    private void registerPlayer() throws Exception {
-//        playerName = "Jordy + " + random(0,100);
-//        if ("".equals(playerName) || playerName == null) {
-//            println("Enter your name before continuing");
-//        } else {
-//            println(playerName + " Has registered!");
-//            playerNr = game.registerPlayer(playerName, this, singlePlayerMode);
-//            if (playerNr != -1) {
-//                println("player " + playerName + " registered, with playernumber: " + playerNr);
-//            } else {
-//                println("Name already defined");
-//            }
-//        }
-//    }
 
-//    private void notifyWhenReady() {
-//        // Notify that the player is ready is startSocket the game.
-//        bothReady = game.notifyWhenReady(playerNr);
-//        if (bothReady) {
-//            startGame();
-//        } else {
-//            println("Wait for the other player to ready up");
-//        }
-//    }
+    //TODO: Create a switch for this
+    public void opponentJump(String id){
+        opponentObject.jump();
+    }
 
     public void opponentMoveLeft(String id){
         opponentObject.moveLeft();
@@ -433,10 +413,4 @@ public class Client extends PApplet {
     public void opponentStopRight(String id){
         opponentObject.stopRight();
     }
-
-    /* Level */
-// Provides methods for determining solid/empty pixels, and for removing/adding solid pixels
-//    static public void main(String args[]) {
-//        PApplet.main(new String[] { "tankgamegui.TankGameApplication" } ); //, args[0]
-//    }
 }

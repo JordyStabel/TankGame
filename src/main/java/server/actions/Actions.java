@@ -10,6 +10,7 @@ public enum Actions {
     RIGHT,
     STOPRIGHT,
     SHOOT,
+    JUMP,
     GAMEDATA,
     UPDATES;
 }

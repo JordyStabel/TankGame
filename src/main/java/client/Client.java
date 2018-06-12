@@ -71,7 +71,7 @@ public class Client extends PApplet {
 
         //Player player = tankGame.getPlayers().get(0);
 
-        //surface.setTitle(player.getPlayerName());
+        //surface.setTitle();
 
         // load our images for level and background
         bg = loadImage("images/sky-blurry.png");
@@ -157,21 +157,24 @@ public class Client extends PApplet {
         if (key == 'a' || key == 'A')
             playerObject.stopLeft();
         if (key == 'd' || key == 'D')
+        {
             playerObject.stopRight();
+            clientEndpointSocket.sendMessage(new Message(Actions.STOPRIGHT));
+        }
     }
 
-        public void mousePressed() {
-        if (mouseButton == LEFT)
-            playerObject.shoot();
-        else if (mouseButton == RIGHT)
-            playerObject.shootAlt();
-    }
-    public void mouseReleased() {
-        if (mouseButton == LEFT)
-            playerObject.stopShooting();
-        else if (mouseButton == RIGHT)
-            playerObject.stopShootingAlt();
-    }
+//        public void mousePressed() {
+//        if (mouseButton == LEFT)
+//            playerObject.shoot();
+//        else if (mouseButton == RIGHT)
+//            playerObject.shootAlt();
+//    }
+//    public void mouseReleased() {
+//        if (mouseButton == LEFT)
+//            playerObject.stopShooting();
+//        else if (mouseButton == RIGHT)
+//            playerObject.stopShootingAlt();
+//    }
 
     public float getMouseX() {
         return mouseX - translateX;
@@ -407,6 +410,10 @@ public class Client extends PApplet {
 
     public void opponentMoveRight(){
         opponentObject.moveRight();
+    }
+
+    public void opponentStopRight(){
+        opponentObject.stopRight();
     }
 
     /* Level */

@@ -9,6 +9,8 @@ import server.websocket.IServerWebSocket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import static processing.core.PApplet.println;
+
 public class ServerMessageGenerator implements IServerMessageGenerator {
 
     private static final Logger LOGGER = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
@@ -62,5 +64,19 @@ public class ServerMessageGenerator implements IServerMessageGenerator {
 //            }
 //        }
 //        serverSocket.broadcast(field);
+    }
+
+    @Override
+    public void playerMoveRight() {
+        Message message = new Message(Actions.RIGHT);
+        serverSocket.broadcast(message);
+        println("Move Right");
+    }
+
+    @Override
+    public void playerStopRight() {
+        Message message = new Message(Actions.STOPRIGHT);
+        serverSocket.broadcast(message);
+        println("Stop Right");
     }
 }

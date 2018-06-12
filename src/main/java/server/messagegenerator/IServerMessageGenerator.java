@@ -14,4 +14,8 @@ public interface IServerMessageGenerator extends Runnable {
 
     @Override
     void run();
+
+    void playerMoveRight();
+
+    void playerStopRight();
 }

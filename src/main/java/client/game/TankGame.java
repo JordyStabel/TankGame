@@ -65,6 +65,10 @@ public class TankGame {
         client.opponentMoveRight();
     }
 
+    public void playerStopRight(){
+        client.opponentStopRight();
+    }
+
 //    //public Apple getApple() {
 //        return apple;
 //    }

@@ -7,6 +7,7 @@ public enum Actions {
     STOP,
     LEFT,
     RIGHT,
+    STOPRIGHT,
     SHOOT,
     GAMEDATA,
     UPDATES;

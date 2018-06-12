@@ -1,0 +1,17 @@
+
+Lsquid:S1066“"/Merge this if statement with the enclosing one.(ıÍ’Áûÿÿÿÿ
+bsquid:CommentedOutCodeLineB"<This block of commented-out lines of code should be removed.(×ğòÁ
+Osquid:S1068"3Remove this unused "executorService" private field.(’ şüÿÿÿÿ
+Bsquid:S1481$"+Remove this unused "player" local variable.(‡Çéõ
+=squid:S1170"!Make this final field static too.(«Êşÿÿÿÿ
+csquid:S00112i"FDefine and throw a dedicated exception instead of using a generic one.(ÆÎôôûÿÿÿÿ
+xsquid:S00116"[Rename this field "TICKS_PER_SECOND" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«Êşÿÿÿÿ
+Qsquid:S1854$":Remove this useless assignment to local variable "player".(‡Çéõ
+bsquid:CommentedOutCodeLine>"<This block of commented-out lines of code should be removed.(‹ûµ¤
+isquid:S00117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àçù
+=squid:S1170"!Make this final field static too.(ÈúõÅùÿÿÿÿ
+rsquid:S00116"URename this field "SKIP_TICKS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈúõÅùÿÿÿÿ
+^squid:S00112k"FDefine and throw a dedicated exception instead of using a generic one.(¦Îæ
+osquid:S1450"YRemove the "gameThread" field and declare it as a local variable in the relevant methods.(÷Şš
+?squid:S1148e"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+asquid:CommentedOutCodeLine&"<This block of commented-out lines of code should be removed.(º¸Án

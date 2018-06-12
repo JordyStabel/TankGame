@@ -40,7 +40,10 @@ public class ClientSocketResponseHandler implements IClientMessageHandler {
                 updateGame(gameData);
                 break;
             case RIGHT:
-                tankGame.playerMoveRight();
+                client.opponentMoveRight();
+                break;
+            case STOPRIGHT:
+                client.opponentStopRight();
                 break;
             case UPDATES:
                 break;

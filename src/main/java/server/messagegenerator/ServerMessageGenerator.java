@@ -48,7 +48,7 @@ public class ServerMessageGenerator implements IServerMessageGenerator {
     public void updatePlayers(){
         GameData gameData = new GameData(tankGame.getPlayers());
         Message message = new Message(Actions.GAMEDATA, gameData);
-        serverSocket.broadcast(message);
+        serverSocket.broadcast(message, null);
     }
 
     @Override
@@ -69,28 +69,28 @@ public class ServerMessageGenerator implements IServerMessageGenerator {
     @Override
     public void playerMoveLeft(String id) {
         Message message = new Message(Actions.LEFT, id);
-        serverSocket.broadcast(message);
+        serverSocket.broadcast(message, id);
         println("Move Left");
     }
 
     @Override
     public void playerStopLeft(String id) {
         Message message = new Message(Actions.STOPLEFT, id);
-        serverSocket.broadcast(message);
+        serverSocket.broadcast(message, id);
         println("Stop Left");
     }
 
     @Override
     public void playerMoveRight(String id) {
         Message message = new Message(Actions.RIGHT, id);
-        serverSocket.broadcast(message);
+        serverSocket.broadcast(message, id);
         println("Move Right");
     }
 
     @Override
     public void playerStopRight(String id) {
         Message message = new Message(Actions.STOPRIGHT, id);
-        serverSocket.broadcast(message);
+        serverSocket.broadcast(message, id);
         println("Stop Right");
     }
 }

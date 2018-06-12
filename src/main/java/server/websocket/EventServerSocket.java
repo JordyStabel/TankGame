@@ -49,7 +49,7 @@ public class EventServerSocket implements IServerWebSocket {
         }
 
         if (message.isEmpty()) {
-            sendMessage("No message found", session);
+            sendMessage("No message found", session, session.getId());
             return;
         }
 
@@ -75,15 +75,15 @@ public class EventServerSocket implements IServerWebSocket {
     public void broadcast(String s, String session) {
         for (Iterator<Map.Entry<String, Session>> iterator = sessions.entrySet().iterator(); iterator.hasNext(); ) {
             Map.Entry<String, Session> entry = iterator.next();
-            sendMessage(s, entry.getValue());
+            sendMessage(s, entry.getValue(), session);
         }
     }
 
-    private synchronized void sendMessage(String message, Session session) {
+    private synchronized void sendMessage(String message, Session session, String id) {
         if (message == null || session == null) {
             throw new IllegalArgumentException("Message or session can't be null");
         }
-        if (!message.toLowerCase().contains(session.getId().toLowerCase()))
+        if (id != session.getId()) //!message.toLowerCase().contains(session.getId().toLowerCase())
         {
             try {
                 session.getBasicRemote().sendText(message);
@@ -95,7 +95,7 @@ public class EventServerSocket implements IServerWebSocket {
 
     @Override
     public void sendTo(String sessionId, Json object) {
-        sendMessage(object.convertToJson(), sessions.get(sessionId));
+        sendMessage(object.convertToJson(), sessions.get(sessionId), sessionId);
     }
 
     @Override

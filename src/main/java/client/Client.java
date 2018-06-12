@@ -49,7 +49,7 @@ public class Client extends PApplet {
     }
 
     public void settings() {
-        size(800, 600, P2D);
+        size(1280, 400, P2D);
     }
 
     // setup(), called before any looping is done
@@ -70,13 +70,13 @@ public class Client extends PApplet {
         surface.setTitle(player.getPlayerName());
 
         // load our images for level and background
-        bg = loadImage("images/sky-blurry.png");
+        bg = loadImage("images/background.jpg");
 
         // FPS limit
         frameRate(60);
 
         // new Level(image, destructionRes)
-        level = new Level(this, loadImage("images/tree.png"), 5);
+        level = new Level(this, loadImage("images/level.png"), 5);
 
         // initialize the physics and rendering engines
         physics = new Physics(this);
